@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 1,
+                        "startOffset": 13,
+                        "endColumn": 43,
+                        "endOffset": 55
+                    }
+                }
+            }
+        ]
+    }
+]

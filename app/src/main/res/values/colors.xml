@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#e03755</color>
+    <color name="colorPrimaryDark">#9e2e44</color>
+    <color name="orange">#FF8200</color>
+    <color name="cyan">#00D2D7</color>
+    <color name="colorAccent">#00375B</color>
+    <color name="darkBlue">#001F41</color>
+
+    <!--<color name="colorPrimary">#FF9800</color>-->
+    <!--<color name="colorPrimaryDark">#F57C00</color>-->
+    <!--<color name="colorPrimaryDark">#F57C00</color>-->
+    <!--<color name="colorAccent">#4CAF50</color>-->
+    <color name="colorDonut">#AB47BC</color>
+
+    <color name="accent">#4CAF50</color>
+    <color name="background_colors">#388e3c</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#d9d9d9</color>
+
+    <!-- Fonts color -->
+    <color name="font_black">#000000</color>
+    <color name="font_white">#ffffff</color>
+
+    <!-- Donut circular progressbar color -->
+    <color name="ram_free_memory">#f8bbd0</color>
+    <color name="ram_used_memory">#e91e63</color>
+    <color name="int_free_memory">#b3e5fc</color>
+    <color name="int_used_memory">#0277bd</color>
+    <color name="ext_free_memory">#ffecb3</color>
+    <color name="ext_used_memory">#ffb300</color>
+
+
+    <color name="purple_500">#9e2e44</color>
+    <color name="deep_purple_500">#a65262</color>
+    <color name="indigo_500">#99628a</color>
+    <color name="blue_500">#7e2566</color>
+    <color name="cyan_500">#64418b</color>
+    <color name="light_blue_500">#3e2483</color>
+
+        <!-- 545454 -->
+    <!-- 044463 -->
+    <!-- C73232 -->
+    <!-- 2E2F52 -->
+</resources>

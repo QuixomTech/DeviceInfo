@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/arc_cpu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            custom:arc_bottom_text="@string/cpu_t"
+            custom:arc_bottom_text_size="12sp"
+            custom:arc_finished_color="@color/primary_text"
+            custom:arc_stroke_width="7dp"
+            custom:arc_suffix_text_padding="4dp"
+            custom:arc_text_color="@color/font_white"
+            custom:arc_text_size="35sp"
+            android:visibility="gone"
+            custom:arc_unfinished_color="@color/font_white" />
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/arc_ram"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorPrimary"
+            custom:arc_bottom_text="@string/ram_m"
+            custom:arc_bottom_text_size="12sp"
+            custom:arc_finished_color="@color/colorAccent"
+            custom:arc_stroke_width="7dp"
+            custom:arc_suffix_text_padding="-2dp"
+            custom:arc_suffix_text_size="12sp"
+            custom:arc_text_color="@color/font_white"
+            custom:arc_text_size="20sp"
+            fontPath="fonts/Roboto-Bold.ttf"
+            tools:ignore="MissingPrefix"
+            custom:arc_unfinished_color="@color/font_white" />
+
+        <TextView
+            android:id="@+id/tv_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/circle_view"
+            android:drawablePadding="2dp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/used" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/tv_used"
+            android:layout_toRightOf="@id/arc_ram"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_system_apps_memory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:text="@string/system_and_apps"
+                android:textColor="@color/darkBlue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_available_ram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:text="@string/available_ram"
+                android:textColor="@color/darkBlue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_total_ram_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:text="@string/total_ram_space"
+                android:textColor="@color/darkBlue"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_cpu_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="20dp">
+
+                <TableRow android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/cpu_model"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cpu_model1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/cores"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/actual"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_actual_ram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/physical_available_ram"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_physical_ram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/abi"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_abi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/cpu_variant"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cpu_variant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/serial"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_serial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/cpu_implementer"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cpu_implementer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/cpu_part"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cpu_part"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/cpu_revision"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cpu_revision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/hardware"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hardware"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="12dp"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/feature"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_features"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </TableRow>
+
+            </TableLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

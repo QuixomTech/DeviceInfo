@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/wifi"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wifi"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/wifi_direct"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wifi_direct"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/bluetooth"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bluetooth"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/bluetooth_le"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bluetooth_le"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/gps"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gps"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/camera_flash"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_camera_flash"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/camera_front"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_camera_front"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/microphone"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_microphone"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/nfc"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_nfc"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/usb_host"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_usb_host"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/usb_accessory"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_usb_accessory"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/multitouch"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_multitouch"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/audio_low_latency"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_audio_low_latency"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/audio_output"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_audio_output"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/professional_audio"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_professional_audio"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/consumer_ir"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_consumer_ir"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/gamepad_support"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gamepad_support"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/hifi_sensor"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hifi_sensor"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/printing"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_printing"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/cdma"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cdma"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/gsm"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gsm"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/fingerprint"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fingerprint"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/app_widgets"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_app_widgets"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/sip"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_sip"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="5"
+                        android:maxLines="4"
+                        android:text="@string/sip_based_voip"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_sip_based_voip"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxEms="4"
+                        android:maxLines="4"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        tools:ignore="MissingPrefix" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

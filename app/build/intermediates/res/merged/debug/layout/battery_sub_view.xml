@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/ic_battery_type"
+            android:drawablePadding="10dp"
+            android:gravity="center|start"
+            android:text="@string/battery_type"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/tv_battery_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/primary_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/ic_hydro_power"
+            android:drawablePadding="10dp"
+            android:gravity="center|start"
+            android:text="@string/power_source"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/tv_power_source"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/primary_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/ic_ecological_solar_power_for_a_battery"
+            android:drawablePadding="10dp"
+            android:gravity="center|start"
+            android:text="@string/battery_temperature"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/tv_battery_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/primary_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/ic_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center|start"
+            android:text="@string/battery_voltage"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/tv_battery_voltage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/primary_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/ic_battery_scale"
+            android:drawablePadding="10dp"
+            android:gravity="center|start"
+            android:text="@string/battery_scale"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/tv_battery_scale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/primary_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:drawableLeft="@drawable/ic_drop_of_liquid"
+            android:drawablePadding="10dp"
+            android:gravity="center|start"
+            android:text="@string/battery_health"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/tv_battery_health"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/primary_text" />
+    </LinearLayout>
+</LinearLayout>

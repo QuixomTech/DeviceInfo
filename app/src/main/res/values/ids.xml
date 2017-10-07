@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CPU Info -->
+    <item name="tv_cpu_model" type="id" />
+    <item name="tv_cores" type="id" />
+    <item name="tv_actual_ram" type="id" />
+    <item name="tv_physical_available_ram" type="id" />
+    <item name="tv_abi" type="id" />
+    <item name="tv_cpu_variant" type="id" />
+    <item name="tv_serial" type="id" />
+    <item name="tv_cpu_implementer" type="id" />
+    <item name="tv_cpu_part" type="id" />
+    <item name="tv_cpu_revision" type="id" />
+    <item name="tv_hardware" type="id" />
+    <item name="tv_features" type="id" />
+
+</resources>

@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">DevInfo</string>
+
+    <string name="send_to">Send to</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Screens Header & Navigation drawer items -->
+    <string name="device">Device</string>
+    <string name="os">OS</string>
+    <string name="sensor">Sensor</string>
+    <string name="cpu">CPU</string>
+    <string name="gpu">GPU</string>
+    <string name="battery">Battery</string>
+    <string name="network">Network</string>
+    <string name="camera">Camera</string>
+    <string name="storage">Storage</string>
+    <string name="features">Features</string>
+    <string name="user_apps">User Apps</string>
+    <string name="system_apps">System Apps</string>
+    <string name="about_us">About Us</string>
+    <string name="expanse_the_world">Expanse the World</string>
+    <string name="share">Share</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="feedback">Feedback</string>
+    <string name="connect_us">Connect Us</string>
+
+    <!-- Home screen -->
+    <string name="manufacturer">Manufacturer</string>
+    <string name="brand">Brand</string>
+    <string name="model">Model</string>
+    <string name="board">Board</string>
+    <string name="hardware">Hardware</string>
+    <string name="serial_no">Serial No</string>
+    <string name="android_id">Android ID</string>
+    <string name="screen_resolution">Screen Resolution</string>
+    <string name="boot_loader">Boot Loader</string>
+    <string name="user">User</string>
+    <string name="host">Host</string>
+    <string name="imei_number">IMEI Number</string>
+
+    <string name="version">Version</string>
+    <string name="version_name">Version Name</string>
+    <string name="api_level">API Level</string>
+    <string name="build_id">Build ID</string>
+    <string name="build_name">Build Time</string>
+    <string name="fingerprint">Fingerprint</string>
+
+    <!-- OS version names -->
+    <string name="honeycomb">Honeycomb</string>
+    <string name="release_date">Release Date:\u0020</string>
+    <string name="ics">Ice Cream Sandwich</string>
+    <string name="jellybean">Jelly Bean</string>
+    <string name="kitkat">Kitkat</string>
+    <string name="lollipop">Lollipop</string>
+    <string name="marshmallow">Marshmallow</string>
+    <string name="nougat">Nougat</string>
+    <string name="oreo">Oreo</string>
+    <string name="unknown_version">Unknown version</string>
+
+    <!-- Battery -->
+    <string name="battery_type">Battery Type</string>
+    <string name="power_source">Power Source</string>
+    <string name="battery_temperature">Battery Temperature </string>
+    <string name="battery_voltage">Battery Voltage </string>
+    <string name="battery_scale">Battery Scale </string>
+    <string name="battery_health">Battery Health </string>
+    <string name="ac_power">AC Power</string>
+
+    <!-- Battery health level -->
+    <string name="good">Good</string>
+    <string name="failed">Failed</string>
+    <string name="dead">Dead</string>
+    <string name="over_voltage">Overvoltage</string>
+    <string name="cold">Cold</string>
+    <string name="over_heated">Overheated</string>
+    <string name="unknown">Unknown</string>
+
+    <!-- CPU -->
+    <string name="cpu_t">CPU</string>
+    <string name="ram_m">RAM</string>
+    <string name="used">Used</string>
+    <string name="system_and_apps">System and Apps</string>
+    <string name="available_ram">Available RAM</string>
+    <string name="total_ram_space">Total RAM Space</string>
+    <string name="cpu_model">CPU Model</string>
+    <string name="cores">Cores</string>
+    <string name="actual">Actual RAM</string>
+    <string name="physical_available_ram">Physical Available RAM</string>
+    <string name="abi">ABI</string>
+    <string name="cpu_variant">CPU Variant</string>
+    <string name="serial">Serial</string>
+    <string name="cpu_implementer">CPU Implementer</string>
+    <string name="cpu_part">CPU Part</string>
+    <string name="cpu_revision">CPU Revision</string>
+    <string name="feature">Features</string>
+
+    <!-- GPU -->
+    <string name="gl_renderer">GL_Renderer</string>
+    <string name="gl_vendor">GL_Vendor</string>
+    <string name="gl_version">GL_Version</string>
+    <string name="gl_extension">GL_Extension</string>
+
+    <!-- Sensors -->
+    <string name="sensors">Sensors</string>
+    <string name="available_sensor">Sensor available on your Device</string>
+    <string name="available_sensors">Sensors available on your Device</string>
+    <string name="sensor_name">Sensor Name</string>
+    <string name="int_type">Sensor Type</string>
+    <string name="vendor">Vendor</string>
+    <string name="resolution">Resolution</string>
+    <string name="power">Power</string>
+    <string name="maximum_range">Maximum Range</string>
+    <string name="is_dynamic">isDynamicSensor</string>
+    <string name="is_wakeup_sensor">isWakeUpSensor</string>
+    <string name="sensor_id">Sensor ID</string>
+    <string name="reporting_mode">Reporting Mode</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Sensor details screen header text -->
+    <string name="geomagnetic_field">Geomagnetic field: \n\n</string>
+    <string name="proximity_sensor">Proximity:\u0020</string>
+    <string name="humidity_sensor">Humidity:\u0020</string>
+    <string name="illuminance">Illuminance:\u0020</string>
+    <string name="steps">Steps:\u0020</string>
+    <string name="temperature_sensor">Temperature:\u0020</string>
+    <string name="absolute_humidity_temperature_sensor">Absolute Humidity at Temperature:\u0020</string>
+    <string name="due_point_temperature">Dew point:\u0020</string>
+    <string name="angular_speed">Angular speed \n\n</string>
+    <string name="mu_tesla">\u0020µT</string>
+    <string name="degree_icon">\u0020\u00B0</string>
+    <string name="rad">\u0020rad/s</string>
+    <string name="cm">\u0020cm</string>
+    <string name="percentage">%</string>
+    <string name="lx">\u0020lx</string>
+    <string name="ma">\u0020mA</string>
+    <string name="ms">\u0020m/s</string>
+    <string name="pressure">Pressure:\u0020</string>
+    <string name="hpa">\u0020hPa</string>
+
+    <!-- Network screen -->
+    <string name="connection_status">Connection Status</string>
+    <string name="data_type">Data Type</string>
+    <string name="network_type">Network Type</string>
+    <string name="ip_address">IP Address</string>
+    <string name="mac_address">MAC Address</string>
+    <string name="ssid">SSID</string>
+    <string name="link_speed">Link Speed</string>
+    <string name="wifi">WiFi</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="connect">Connected</string>
+    <string name="disconnect">Not connected</string>
+    <string name="mbps">Mbps</string>
+
+    <!-- Device Features -->
+    <string name="wifi_direct">WiFi Direct</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_le">Bluetooth LE</string>
+    <string name="gps">GPS</string>
+    <string name="camera_flash">Camera Flash</string>
+    <string name="camera_front">Camera Front</string>
+    <string name="microphone">Microphone</string>
+    <string name="nfc">NFC</string>
+    <string name="usb_host">USB Host</string>
+    <string name="usb_accessory">USB Accessory</string>
+    <string name="multitouch">Multitouch</string>
+    <string name="audio_low_latency">Audio low-latency</string>
+    <string name="audio_output">Audio Output</string>
+    <string name="professional_audio">Professional Audio</string>
+    <string name="consumer_ir">Consumer IR</string>
+    <string name="gamepad_support">Gamepad Support</string>
+    <string name="hifi_sensor">HIFI Sensor</string>
+    <string name="printing">printing</string>
+    <string name="cdma">cdma</string>
+    <string name="gsm">GSM</string>
+    <string name="app_widgets">App Widgets</string>
+    <string name="sip">SIP</string>
+    <string name="sip_based_voip">SIP-based VOIP</string>
+    <string name="available">Available</string>
+    <string name="not_supported">Not Supported</string>
+    <string name="please_provide_camera_perm">Please provide camera permission to view camera details. App-></string>
+    <!-- Storage -->
+    <string name="ram_usage">RAM Usage</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="external_storage">External Storage</string>
+    <string name="used_memory">Used:</string>
+    <string name="free">Free:</string>
+    <string name="total">Total:</string>
+</resources>

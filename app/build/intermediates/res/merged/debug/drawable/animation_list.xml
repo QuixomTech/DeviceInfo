@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/pacific_dream"
+        android:duration="10000" />
+    <item
+        android:drawable="@drawable/venice"
+        android:duration="5000" />
+    <item
+        android:drawable="@drawable/love_and_liberty"
+        android:duration="10000" />
+    <item
+        android:drawable="@drawable/can_you_feel_the_love_tonight"
+        android:duration="10000" />
+    <item
+        android:drawable="@drawable/honey_dew"
+        android:duration="10000" />
+    <item
+        android:drawable="@drawable/the_blue_lagoon"
+        android:duration="10000" />
+</animation-list>
