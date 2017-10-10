@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="calligraphy-2.2.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/fbff7c40a7aca9490f9d2ab7c31bb6ee0cf24095/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/fbff7c40a7aca9490f9d2ab7c31bb6ee0cf24095/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/uk.co.chrisjenx/calligraphy/2.2.0/1c9d5b9dbf2bfe7b615dfb6b526f004f63a5772c/calligraphy-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

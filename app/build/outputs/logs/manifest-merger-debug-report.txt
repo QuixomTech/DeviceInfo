@@ -2,7 +2,7 @@
 manifest
 ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:2:1-50:12
 	package
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:3:5-39
+		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
 		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -81,13 +81,13 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/akif/.andro
 		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:31:9-40
 	android:name
 		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:25:9-42
-activity#com.example.akif.devinfo.MainActivity
+activity#com.quixom.apps.deviceinfo.MainActivity
 ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:32:9-34:52
 	android:screenOrientation
 		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:34:13-49
 	android:name
 		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:33:13-41
-activity#com.example.akif.devinfo.Splash
+activity#com.quixom.apps.deviceinfo.Splash
 ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:36:9-47:20
 	android:screenOrientation
 		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:38:13-49

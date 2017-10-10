@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_solar_system.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_solar_system.png"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_information.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_information.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_solar_system.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_solar_system.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_if_ibeacon_proximity_1613770.png",
