@@ -37,7 +37,6 @@ import com.quixom.apps.deviceinfo.models.DeviceInfo;
 import com.quixom.apps.deviceinfo.utilities.FragmentUtil;
 import com.quixom.apps.deviceinfo.utilities.KeyUtil;
 import com.quixom.apps.deviceinfo.utilities.Methods;
-import com.quixom.apps.deviceinfo.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -307,7 +306,7 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment = getFragmentFromDrawer();
                 if (fragment != null) {
                     fragmentUtil.clearBackStackFragmets();
-                    fragmentUtil.replaceFragment(fragment, false, false);
+                    fragmentUtil.replaceFragment(fragment, false, true);
                 }
             }
         }, 300);

@@ -1,10 +1,13 @@
 package com.quixom.apps.deviceinfo.utilities;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.graphics.ImageFormat;
 import android.graphics.SurfaceTexture;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.params.StreamConfigurationMap;
+import android.os.Build;
 import android.util.Size;
 
 import java.util.ArrayList;
@@ -31,6 +34,7 @@ public class DeviceCamera
         private Size[] m_SupportedImageSize = null;
 
 
+        @TargetApi(Build.VERSION_CODES.LOLLIPOP)
         CameraImageFormat(int iFormat, StreamConfigurationMap cStreamConfigurationMap)
         {
             m_szFormatName = new String(getFormatNameFromIndex(iFormat));
@@ -191,6 +195,7 @@ public class DeviceCamera
         }
     }
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     protected boolean init()
     {
         boolean bResult = m_Camera2Utility!=null;
@@ -251,6 +256,8 @@ public class DeviceCamera
         return bResult;
     }
 
+    @SuppressLint("DefaultLocale")
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void dumpCameraInfo()
     {
         m_Camera2Utility.log(String.format("--------------------------------"));

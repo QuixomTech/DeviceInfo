@@ -7,16 +7,15 @@ import android.graphics.Point
 import android.os.Build
 import android.os.Bundle
 import android.util.DisplayMetrics
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.view.WindowManager
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
+import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.utilities.GPU
 import com.quixom.apps.deviceinfo.utilities.Methods
-import com.quixom.apps.deviceinfo.R
 import java.text.DecimalFormat
+
+
 
 
 class DisplayFragment : BaseFragment(){
@@ -115,10 +114,17 @@ class DisplayFragment : BaseFragment(){
         tvScreenSize?.text = screenSizes
 
         /*** Screen physical size */
-        val width = dm.widthPixels
-        val height = dm.heightPixels
-        val wi = width.toDouble() / dm.xdpi.toDouble()
-        val hi = height.toDouble() / dm.ydpi.toDouble()
+        mActivity.windowManager.defaultDisplay.getMetrics(dm)
+
+        var width = dm.widthPixels
+        var height = dm.heightPixels
+
+        val realSize = Point()
+        Display::class.java.getMethod("getRealSize", Point::class.java).invoke(display, realSize)
+        val pWidth = realSize.x
+        val pHeight = realSize.y
+        val wi = pWidth.toDouble() / dm.xdpi.toDouble()
+        val hi = pHeight.toDouble() / dm.ydpi.toDouble()
         val x = Math.pow(wi, 2.0)
         val y = Math.pow(hi, 2.0)
         val screenInches = Math.sqrt(x + y)
@@ -132,8 +138,8 @@ class DisplayFragment : BaseFragment(){
         }
 
         /*** Display screen width and height */
-            tvScreenTotalWidth?.text = width.toString().plus(mResources.getString(R.string.px))
-            tvScreenTotalHeight?.text = height.toString().plus(mResources.getString(R.string.px))
+            tvScreenTotalWidth?.text = pWidth.toString().plus(mResources.getString(R.string.px))
+            tvScreenTotalHeight?.text = pHeight.toString().plus(mResources.getString(R.string.px))
 
         /*** Screen refresh rate */
             tvRefreshRate?.text = display.refreshRate.toString().plus(mResources.getString(R.string.fps))

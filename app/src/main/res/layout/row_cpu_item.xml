@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingEnd="5dp"
+    android:paddingStart="10dp"
+    android:paddingTop="5dp"
+    android:weightSum="2"
+    tools:ignore="RtlCompat">
+
+    <TextView
+        android:id="@+id/tv_cpu_feature_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.8"
+        android:maxLines="4"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_cpu_feature_value"
+        fontPath="fonts/Roboto-Regular.ttf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.2"
+        android:maxLines="30"
+        android:textColor="@color/primary_text"
+        android:textSize="14sp"
+        tools:ignore="MissingPrefix" />
+</LinearLayout>
+

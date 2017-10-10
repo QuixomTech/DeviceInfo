@@ -3,25 +3,27 @@ package com.quixom.apps.deviceinfo.fragments
 import android.Manifest
 import android.annotation.TargetApi
 import android.content.Context
+import android.content.Context.CAMERA_SERVICE
 import android.content.pm.PackageManager
 import android.graphics.Camera
+import android.hardware.camera2.CameraCharacteristics
 import android.hardware.camera2.CameraManager
 import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
+import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
 import com.quixom.apps.deviceinfo.R
-import com.quixom.apps.deviceinfo.utilities.KeyUtil
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.text.method.ScrollingMovementMethod
-import android.widget.ScrollView
 import com.quixom.apps.deviceinfo.utilities.Camera2Utility
+import com.quixom.apps.deviceinfo.utilities.KeyUtil
 
 
 class CameraFragment : BaseFragment() {
@@ -61,6 +63,7 @@ class CameraFragment : BaseFragment() {
         rvCameraFeatures?.hasFixedSize()
 
         checkCameraPermission()
+        getCamera2Features()
     }
 
     override fun onHiddenChanged(hidden: Boolean) {
@@ -116,13 +119,38 @@ class CameraFragment : BaseFragment() {
         }
     }
 
-    private fun getCameraFeatures(): Unit {
+    private fun getCameraFeatures() {
         var cameraUtility = Camera2Utility(mActivity, false)
         cameraUtility.init()
         cameraUtility.deviceCameraSummary
         tvCameraFeature?.text = cameraUtility.deviceCameraSummary
         tvCameraFeature?.movementMethod = ScrollingMovementMethod()
         cameraUtility.unint()
+    }
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    private fun getCamera2Features() {
+        val manager: CameraManager? = mActivity.getSystemService(CAMERA_SERVICE) as CameraManager
+        var characteristics: CameraCharacteristics? = manager?.getCameraCharacteristics("0")
+
+        // Does the camera have a forwards facing lens?
+
+        for (test in characteristics?.availableCaptureRequestKeys!!) {
+            println("Facing = " + test?.name)
+        }
+
+        for (best in characteristics.availableCaptureResultKeys!!) {
+        }
+
+        val ae_material_mode= CameraCharacteristics.CONTROL_AE_ANTIBANDING_MODE_OFF
+        if (ae_material_mode == CameraCharacteristics.CONTROL_AE_ANTIBANDING_MODE_OFF) {
+            println("AE Material Mode ==" + ae_material_mode)
+        }
+
+        if (ae_material_mode == CameraCharacteristics.CONTROL_AE_ANTIBANDING_MODE_OFF) {
+            println("AE Material Mode ==" + ae_material_mode)
+        }
+
     }
 }
 

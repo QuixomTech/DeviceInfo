@@ -1,27 +1,26 @@
 package com.quixom.apps.deviceinfo.fragments
 
 import android.annotation.SuppressLint
+import android.content.Context.SENSOR_SERVICE
+import android.graphics.Color
+import android.hardware.Sensor
+import android.hardware.SensorManager
+import android.os.Build
 import android.os.Bundle
+import android.support.design.widget.CoordinatorLayout
+import android.support.design.widget.Snackbar
+import android.support.v4.content.ContextCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import com.quixom.apps.deviceinfo.adapters.SensorAdaptor
 import com.quixom.apps.deviceinfo.R
-import android.content.Context.SENSOR_SERVICE
-import android.graphics.Color
-import android.hardware.Sensor
-import android.hardware.SensorManager
-import android.support.design.widget.CoordinatorLayout
+import com.quixom.apps.deviceinfo.adapters.SensorAdaptor
 import com.quixom.apps.deviceinfo.models.SensorDATA
-import android.support.design.widget.Snackbar
-import com.quixom.apps.deviceinfo.R.id.coordinatorLayout
-import android.view.Gravity
-import android.os.Build
-import android.support.v4.content.ContextCompat
 
 class SensorCategoryFragment : BaseFragment() {
 
@@ -60,7 +59,7 @@ class SensorCategoryFragment : BaseFragment() {
         }
     }
 
-    private fun initToolbar(): Unit {
+    private fun initToolbar() {
         ivMenu?.visibility = View.VISIBLE
         ivBack?.visibility = View.GONE
         tvTitle?.text = mResources.getString(R.string.sensors)
@@ -70,8 +69,8 @@ class SensorCategoryFragment : BaseFragment() {
     }
 
     @SuppressLint("SetTextI18n")
-    fun initSensorsList() {
-        var lists = ArrayList<SensorDATA>()
+    private fun initSensorsList() {
+        val lists = ArrayList<SensorDATA>()
 
         val sm = mActivity.getSystemService(SENSOR_SERVICE) as SensorManager
         val list = sm.getSensorList(Sensor.TYPE_ALL)
@@ -98,14 +97,8 @@ class SensorCategoryFragment : BaseFragment() {
      *
      * @param message the message text.
      */
-    fun snackbar(view: View, message: String) {
-        var snackBar = Snackbar.make(view, message, Snackbar.LENGTH_INDEFINITE).apply {
-            show()
-        }
 
-    }
-
-    fun snackBarCustom(view: View, message: String) {
+    private fun snackBarCustom(view: View, message: String) {
         val mSnackBar = Snackbar.make(view, message, Snackbar.LENGTH_LONG)
         val view: View? = mSnackBar.view
         val mainTextView = mSnackBar.view.findViewById<View>(android.support.design.R.id.snackbar_text) as TextView
