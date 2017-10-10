@@ -82,29 +82,29 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/akif/.andro
 	android:name
 		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:25:9-42
 activity#com.example.akif.devinfo.MainActivity
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:32:9-40:20
+ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:32:9-34:52
 	android:screenOrientation
 		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:34:13-49
 	android:name
 		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:33:13-41
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:35:13-39:29
-action#android.intent.action.MAIN
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:36:17-69
-	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:36:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:38:17-77
-	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:38:27-74
 activity#com.example.akif.devinfo.Splash
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:42:9-47:20
+ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:36:9-47:20
 	android:screenOrientation
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:44:13-49
+		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:38:13-49
 	android:theme
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:45:13-47
+		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:39:13-44
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:43:13-35
+		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:37:13-35
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:41:13-45:29
+action#android.intent.action.MAIN
+ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:42:17-69
+	android:name
+		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:42:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:44:17-77
+	android:name
+		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:44:27-74
 uses-sdk
 INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:26.0.0-alpha1] /home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/AndroidManifest.xml:21:5-23:62
@@ -124,6 +124,7 @@ MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/akif/.a
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/akif/.android/build-cache/eea77ffc70cc313beb886002124b1567c389c3ac/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/akif/.android/build-cache/006049d4176f309c84948d6e3d135c154bdc18ed/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/akif/.android/build-cache/e4ca429e1680cbc7db778e0afe53e6dab2d6c123/output/AndroidManifest.xml:21:5-23:58
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.8] /home/akif/.android/build-cache/125b1f7bc6941aabbdd6b4a5d9701467c43fb3a4/output/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] /home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion

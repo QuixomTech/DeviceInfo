@@ -8,7 +8,7 @@ package com.github.lzyzsd.circleprogress;
 
 public final class R {
     public static final class attr {
-        public static final int arcProgressStyle = 0x7f01018c;
+        public static final int arcProgressStyle = 0x7f010190;
         public static final int arc_angle = 0x7f0100d0;
         public static final int arc_bottom_text = 0x7f0100da;
         public static final int arc_bottom_text_size = 0x7f0100db;
@@ -22,7 +22,7 @@ public final class R {
         public static final int arc_text_color = 0x7f0100d6;
         public static final int arc_text_size = 0x7f0100d5;
         public static final int arc_unfinished_color = 0x7f0100d3;
-        public static final int circleProgressStyle = 0x7f01018a;
+        public static final int circleProgressStyle = 0x7f01018e;
         public static final int circle_finished_color = 0x7f0100ee;
         public static final int circle_max = 0x7f0100ec;
         public static final int circle_prefix_text = 0x7f0100f1;
@@ -31,7 +31,7 @@ public final class R {
         public static final int circle_text_color = 0x7f0100f0;
         public static final int circle_text_size = 0x7f0100ef;
         public static final int circle_unfinished_color = 0x7f0100ed;
-        public static final int donutProgressStyle = 0x7f01018b;
+        public static final int donutProgressStyle = 0x7f01018f;
         public static final int donut_background_color = 0x7f01011d;
         public static final int donut_circle_starting_degree = 0x7f010121;
         public static final int donut_finished_color = 0x7f010115;
@@ -94,7 +94,7 @@ public final class R {
         public static final int DonutProgress_donut_text_size = 6;
         public static final int DonutProgress_donut_unfinished_color = 2;
         public static final int DonutProgress_donut_unfinished_stroke_width = 5;
-        public static final int[] Themes = { 0x7f01018a, 0x7f01018b, 0x7f01018c };
+        public static final int[] Themes = { 0x7f01018e, 0x7f01018f, 0x7f010190 };
         public static final int Themes_arcProgressStyle = 2;
         public static final int Themes_circleProgressStyle = 0;
         public static final int Themes_donutProgressStyle = 1;

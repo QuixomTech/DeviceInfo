@@ -149,7 +149,7 @@ class CPUFragment : BaseFragment() {
                 Data += String(byteArray)
                 val textView = TextView(mActivity)
                 textView.text = Data
-                textView.textColor = mResources.getColor(R.color.primary_text)
+                textView?.textColor = mResources.getColor(R.color.primary_text)
                 flParent?.addView(textView)
 
             }

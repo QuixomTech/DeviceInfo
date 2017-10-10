@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_marshmallow.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_marshmallow.png"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_if_speedometer_172557.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_if_speedometer_172557.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_marshmallow.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_marshmallow.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_smartphone.png",
@@ -28,12 +28,12 @@
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_humidity.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_user.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_user.png"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_if_vector_icons_81_1041639.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_if_vector_icons_81_1041639.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_user.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_user.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_drop_of_liquid.png",
@@ -44,12 +44,12 @@
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_lens.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_ics.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_ics.png"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_broken_link.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_broken_link.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_ics.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_ics.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_if_screen_rotation_326583.png",
@@ -70,6 +70,10 @@
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_processor.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_processor.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_screens.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_screens.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_if_running_172541.png",

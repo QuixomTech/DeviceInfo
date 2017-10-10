@@ -116,6 +116,10 @@
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_home_icon_silhouette.png"
     },
     {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_screens.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_screens.png"
+    },
+    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_nougat.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_nougat.png"
     },

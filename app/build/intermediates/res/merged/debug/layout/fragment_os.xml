@@ -46,7 +46,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:textColor="@color/secondary_text"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                tools:ignore="MissingPrefix" />
 
         </LinearLayout>
 

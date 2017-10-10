@@ -52,12 +52,12 @@
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_ecological_solar_power_for_a_battery.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_icon_43_one_finger_swipe_horizontally_329372.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_icon_43_one_finger_swipe_horizontally_329372.png"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_user.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_user.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_icon_43_one_finger_swipe_horizontally_329372.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_icon_43_one_finger_swipe_horizontally_329372.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_processor.png",
@@ -128,12 +128,12 @@
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_oreo.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_speedometer.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_speedometer.png"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_actionbar_ic.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_actionbar_ic.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_speedometer.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_speedometer.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_worldwide_communications.png",
@@ -172,6 +172,10 @@
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_thermostat_temperature_wheel.png"
     },
     {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_screens.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_screens.png"
+    },
+    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_hydro_power.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_hydro_power.png"
     },
@@ -184,12 +188,12 @@
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_home_icon_silhouette.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_android_logo.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_android_logo.png"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_broken_link.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_broken_link.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_android_logo.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_android_logo.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_android.png",

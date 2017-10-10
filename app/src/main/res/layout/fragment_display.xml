@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardUseCompatPadding="true">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/screen"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="16sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/screen_size"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_screen_size"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/screen_physical_size"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_physical_size"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/default_screen_orientation"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_default_orientation"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/screen_total_width"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_screen_total_width"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/screen_total_height"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_screen_total_height"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/refresh"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_refresh_rate"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/name"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_screen_name"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/max_gpu_texture_size"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_max_gpu"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardUseCompatPadding="true">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/density"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="16sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/screen_display_bucket"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_display_bucket"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/screen_dpi"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_display_dpi"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/xdpi"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_xdpi"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/ydpi"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_ydpi"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/screen_logical_density"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_logical_density"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/screen_scaled_density"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_scaled_density"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardUseCompatPadding="true">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/resolution"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="16sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/screen_usable_width"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_usable_width"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/screen_usable_height"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_usable_height"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/density_independent_width"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_independent_width"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight=".9"
+                            android:gravity="center|start"
+                            android:text="@string/density_independent_height"
+                            android:textColor="@color/secondary_text" />
+
+                        <TextView
+                            android:id="@+id/tv_independent_height"
+                            fontPath="fonts/Roboto-Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="MissingPrefix" />
+                    </TableRow>
+
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

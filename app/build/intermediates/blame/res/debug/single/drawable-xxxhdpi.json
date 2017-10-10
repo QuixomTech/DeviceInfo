@@ -32,12 +32,12 @@
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_battery_new.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_battery_alert_white_24dp.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/drawable-xxxhdpi/ic_battery_alert_white_24dp.png"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_android.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_android.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_battery_alert_white_24dp.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/drawable-xxxhdpi/ic_battery_alert_white_24dp.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_lollipop.png",
@@ -58,6 +58,10 @@
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_jellybean.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_jellybean.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_screens.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_screens.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_if_pressure.png",
@@ -160,12 +164,12 @@
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_speedometer.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_favorites.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_favorites.png"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_snowflake.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_snowflake.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_favorites.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_favorites.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_battery_charging_full_white_24dp.png",
@@ -188,12 +192,12 @@
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_ecological_solar_power_for_a_battery.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_worldwide_communications.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_worldwide_communications.png"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_logo_512.png",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_logo_512.png"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_worldwide_communications.png",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_worldwide_communications.png"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_broken_link.png",

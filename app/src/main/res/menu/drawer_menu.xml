@@ -20,7 +20,7 @@
             android:id="@+id/nav_cpu"
             android:icon="@drawable/ic_processor"
             android:title="@string/cpu" />
-        
+
         <item
             android:id="@+id/nav_battery"
             android:icon="@drawable/ic_battery_new"
@@ -42,6 +42,11 @@
             android:title="@string/storage" />
 
         <item
+            android:id="@+id/nav_display"
+            android:icon="@drawable/ic_screens"
+            android:title="@string/display" />
+
+        <item
             android:id="@+id/nav_features"
             android:icon="@drawable/ic_snowflake"
             android:title="@string/features" />
@@ -59,9 +64,10 @@
         <item
             android:id="@+id/nav_about_us"
             android:icon="@drawable/ic_information"
+            android:visible="false"
             android:title="@string/about_us" />
 
-        <item android:title="@string/expanse_the_world">
+        <item android:title="@string/expanse_the_world" android:visible="false">
             <menu>
                 <item
                     android:id="@+id/nav_share"
@@ -83,6 +89,7 @@
         <item
             android:id="@+id/nav_connect_us"
             android:icon="@drawable/ic_broken_link"
+            android:visible="false"
             android:title="@string/connect_us" />
     </group>
 </menu>

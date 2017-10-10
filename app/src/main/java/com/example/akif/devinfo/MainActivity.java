@@ -28,6 +28,7 @@ import com.example.akif.devinfo.fragments.AppsFragment;
 import com.example.akif.devinfo.fragments.BatteryFragment;
 import com.example.akif.devinfo.fragments.CPUFragment;
 import com.example.akif.devinfo.fragments.CameraFragment;
+import com.example.akif.devinfo.fragments.DisplayFragment;
 import com.example.akif.devinfo.fragments.HomeFragment;
 import com.example.akif.devinfo.fragments.NetworkFragment;
 import com.example.akif.devinfo.fragments.OSFragment;
@@ -171,29 +172,32 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_storage:
                         navItemIndex = 7;
                         break;
-                    case R.id.nav_features:
+                    case R.id.nav_display:
                         navItemIndex = 8;
                         break;
-                    case R.id.nav_user_apps:
+                    case R.id.nav_features:
                         navItemIndex = 9;
                         break;
-                    case R.id.nav_system_apps:
+                    case R.id.nav_user_apps:
                         navItemIndex = 10;
                         break;
-                    case R.id.nav_about_us:
+                    case R.id.nav_system_apps:
                         navItemIndex = 11;
                         break;
-                    case R.id.nav_share:
+                    case R.id.nav_about_us:
                         navItemIndex = 12;
                         break;
-                    case R.id.nav_rate_us:
+                    case R.id.nav_share:
                         navItemIndex = 13;
                         break;
-                    case R.id.nav_feedback:
+                    case R.id.nav_rate_us:
                         navItemIndex = 14;
                         break;
-                    case R.id.nav_connect_us:
+                    case R.id.nav_feedback:
                         navItemIndex = 15;
+                        break;
+                    case R.id.nav_connect_us:
+                        navItemIndex = 16;
                         break;
                     default:
                         navItemIndex = 0;
@@ -337,13 +341,13 @@ public class MainActivity extends AppCompatActivity {
             case 7:
                 return new StorageFragment();
             case 8:
-                return new PhoneFeaturesFragment();
+                return new DisplayFragment();
             case 9:
-                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_USER_APPS);
+                return new PhoneFeaturesFragment();
             case 10:
-                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_SYSTEM_APPS);
+                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_USER_APPS);
             case 11:
-                return HomeFragment.getInstance(7);
+                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_SYSTEM_APPS);
             case 12:
                 return HomeFragment.getInstance(7);
             case 13:
@@ -353,6 +357,8 @@ public class MainActivity extends AppCompatActivity {
             case 15:
                 return HomeFragment.getInstance(7);
             case 16:
+                return HomeFragment.getInstance(7);
+            case 17:
                 return HomeFragment.getInstance(7);
             default:
                 return new HomeFragment();

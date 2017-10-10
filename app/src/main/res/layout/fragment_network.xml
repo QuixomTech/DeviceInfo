@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -31,12 +32,14 @@
 
                 <TextView
                     android:id="@+id/tv_connection_status"
+                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:textColor="@color/primary_text" />
+                    android:textColor="@color/primary_text"
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -53,12 +56,14 @@
 
                 <TextView
                     android:id="@+id/tv_data_type"
+                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.2"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:textColor="@color/primary_text" />
+                    android:textColor="@color/primary_text"
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -75,12 +80,14 @@
 
                 <TextView
                     android:id="@+id/tv_network_type"
+                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.2"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:textColor="@color/primary_text" />
+                    android:textColor="@color/primary_text"
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -97,12 +104,14 @@
 
                 <TextView
                     android:id="@+id/tv_ip_address"
+                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.2"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:textColor="@color/primary_text" />
+                    android:textColor="@color/primary_text"
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -119,12 +128,14 @@
 
                 <TextView
                     android:id="@+id/tv_mac_address"
+                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:textColor="@color/primary_text" />
+                    android:textColor="@color/primary_text"
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -141,12 +152,14 @@
 
                 <TextView
                     android:id="@+id/tv_ssid"
+                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:textColor="@color/primary_text" />
+                    android:textColor="@color/primary_text"
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -163,12 +176,14 @@
 
                 <TextView
                     android:id="@+id/tv_link_speed"
+                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.2"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:textColor="@color/primary_text" />
+                    android:textColor="@color/primary_text"
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
         </TableLayout>

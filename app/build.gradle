@@ -16,7 +16,8 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            shrinkResources true
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -56,6 +57,9 @@ dependencies {
 
     /*** Calligraphy lib for custom fonts*/
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+
+    /*** GIF ImageView*/
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
 }
 repositories {
     mavenCentral()

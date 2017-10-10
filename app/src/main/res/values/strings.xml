@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DevInfo</string>
+    <string name="app_name">Device Info</string>
 
     <string name="send_to">Send to</string>
 
@@ -15,6 +15,7 @@
     <string name="gpu">GPU</string>
     <string name="battery">Battery</string>
     <string name="network">Network</string>
+    <string name="display">Display</string>
     <string name="camera">Camera</string>
     <string name="storage">Storage</string>
     <string name="features">Features</string>
@@ -140,6 +141,10 @@
     <string name="ms">\u0020m/s</string>
     <string name="pressure">Pressure:\u0020</string>
     <string name="hpa">\u0020hPa</string>
+    <string name="px">\u0020px</string>
+    <string name="fps">\u0020fps</string>
+    <string name="x">\u0020x\u0020</string>
+    <string name="dp">\u0020dp</string>
 
     <!-- Network screen -->
     <string name="connection_status">Connection Status</string>
@@ -189,4 +194,37 @@
     <string name="used_memory">Used:</string>
     <string name="free">Free:</string>
     <string name="total">Total:</string>
+
+    <!-- Display -->
+    <string name="screen">Screen</string>
+    <string name="density">Density</string>
+    <string name="screen_size">Screen size</string>
+    <string name="screen_display_bucket">Display bucket</string>
+    <string name="screen_dpi">Display dpi</string>
+    <string name="screen_logical_density">Logical density</string>
+    <string name="screen_scaled_density">Scaled density</string>
+    <string name="screen_usable_width">Usable width</string>
+    <string name="screen_usable_height">Usable height</string>
+    <string name="screen_total_width">Screen width</string>
+    <string name="screen_total_height">Screen height</string>
+    <string name="density_independent_width">Density independent width</string>
+    <string name="density_independent_height">Density independent height</string>
+    <string name="screen_physical_size">Physical size</string>
+    <string name="default_screen_orientation">Default orientation</string>
+    <string name="orientation_portrait">Portrait</string>
+    <string name="orientation_landscape">Landscape</string>
+    <string name="orientation_undefined">Undefined</string>
+    <string name="inches">\u0020inches</string>
+    <string name="max_gpu_texture_size">Max GPU texture size</string>
+    <string name="refresh">Refresh rate</string>
+    <string name="xdpi">xdpi</string>
+    <string name="ydpi">ydpi</string>
+    <string name="name">Name</string>
+    <string name="ldpi">Ldpi</string>
+    <string name="mdpi">mdpi</string>
+    <string name="hdpi">hdpi</string>
+    <string name="xhdpi">xhdpi</string>
+    <string name="xxhdpi">xxhdpi</string>
+    <string name="xxxhdpi">xxxhdpi</string>
+    <string name="dpi">\u0020dpi</string>
 </resources>

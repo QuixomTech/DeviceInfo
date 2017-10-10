@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.akif.devinfo.R;
+import com.example.akif.devinfo.utilities.GPU;
 import com.example.akif.devinfo.utilities.Methods;
 import com.example.akif.devinfo.utilities.Validation;
 
@@ -245,5 +246,7 @@ public class OSFragment extends BaseFragment {
         return infoText;
     }
 
-    private void getCameraDetails() {}
+    private void getCameraDetails() {
+
+    }
 }

@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     app:cardUseCompatPadding="true">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -20,13 +20,15 @@
             android:id="@+id/iv_app_icon"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
             android:layout_gravity="center_vertical"
             android:src="@mipmap/ic_launcher_round" />
 
         <LinearLayout
-            android:layout_width="275dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_app_icon"
             android:orientation="vertical">
 
             <TextView
@@ -56,9 +58,11 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
             android:layout_gravity="center"
             android:src="@drawable/ic_chevron_right_white_24dp"
             android:tint="@color/primary_text" />
-    </LinearLayout>
+    </RelativeLayout>
 
 </android.support.v7.widget.CardView>

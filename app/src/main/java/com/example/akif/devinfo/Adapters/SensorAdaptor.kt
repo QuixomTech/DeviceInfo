@@ -11,12 +11,7 @@ import com.example.akif.devinfo.MainActivity
 import com.example.akif.devinfo.R
 import com.example.akif.devinfo.fragments.SensorDetailFragment
 import com.example.akif.devinfo.models.SensorDATA
-import kotlinx.android.synthetic.main.row_sensors.view.*
-import kotlinx.android.synthetic.main.sensor_sub_view.view.*
-import org.jetbrains.anko.imageResource
 import android.graphics.Bitmap
-import android.graphics.drawable.BitmapDrawable
-import android.graphics.drawable.Drawable
 import com.example.akif.devinfo.utilities.Methods
 import java.io.ByteArrayOutputStream
 

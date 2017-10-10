@@ -44,12 +44,12 @@
         "source": "/home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/res/drawable/abc_btn_colored_material.xml"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
-        "source": "/home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/res/drawable/design_password_eye.xml"
-    },
-    {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
         "source": "/home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
+        "source": "/home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/res/drawable/design_password_eye.xml"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable/splash.xml",
@@ -170,6 +170,10 @@
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable/pacific_dream.xml",
         "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/drawable/pacific_dream.xml"
+    },
+    {
+        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable/ic_logo_splash_new.gif",
+        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/drawable/ic_logo_splash_new.gif"
     },
     {
         "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
