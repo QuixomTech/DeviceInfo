@@ -13,9 +13,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.quixom.apps.deviceinfo.utilities.Methods
 import com.github.lzyzsd.circleprogress.DonutProgress
 import com.quixom.apps.deviceinfo.R
+import com.quixom.apps.deviceinfo.utilities.Methods
 import java.text.DecimalFormat
 
 
@@ -91,7 +91,7 @@ class StorageFragment : BaseFragment() {
         }
     }
 
-    private fun initToolbar(): Unit {
+    private fun initToolbar() {
         ivMenu?.visibility = View.VISIBLE
         ivBack?.visibility = View.GONE
         tvTitle?.text = mResources.getString(R.string.storage)
@@ -101,12 +101,13 @@ class StorageFragment : BaseFragment() {
     }
 
     @SuppressLint("SetTextI18n")
-    private fun setUpStorageDetails(): Unit {
+    private fun setUpStorageDetails(){
 
         /** RAM Usage count */
         val totalRamValue = totalRamMemorySize()
         val freeRamValue = freeRamMemorySize()
         val usedRamValue = totalRamValue - freeRamValue
+
         tvUsedMemory?.text = mResources.getString(R.string.used_memory) + "\t" + formatSize(usedRamValue)
         tvFreeMemory?.text = mResources.getString(R.string.free) + "\t" + formatSize(freeRamValue)
         tvTotalMemory?.text = mResources.getString(R.string.total) + "\t" + formatSize(totalRamValue)
@@ -124,7 +125,9 @@ class StorageFragment : BaseFragment() {
         donutInternalStorage?.progress = Methods.calculatePercentage(usedInternalValue.toDouble(), totalInternalValue.toDouble()).toFloat()
 
 
-        val isSDPresent = android.os.Environment.getExternalStorageState() == android.os.Environment.MEDIA_MOUNTED
+//        val isSDPresent = android.os.Environment.getExternalStorageState() == android.os.Environment.MEDIA_MOUNTED
+//          val isSDPresent = ContextCompat.getExternalFilesDirs(mActivity, null).size >= 2
+        val isSDPresent = Environment.isExternalStorageRemovable()
         if (isSDPresent) {
             llExtMemory?.visibility = View.VISIBLE
             /** External Memory usage */
@@ -146,14 +149,14 @@ class StorageFragment : BaseFragment() {
         val activityManager = mActivity.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
         activityManager.getMemoryInfo(mi)
 
-        return mi.availMem / 1048576L
+        return mi.availMem
     }
 
     private fun totalRamMemorySize(): Long {
         val mi = ActivityManager.MemoryInfo()
         val activityManager = mActivity.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
         activityManager.getMemoryInfo(mi)
-        return mi.totalMem / 1048576L
+        return mi.totalMem
     }
 
     fun externalMemoryAvailable(): Boolean {
@@ -189,14 +192,14 @@ class StorageFragment : BaseFragment() {
     }
 
     fun getTotalExternalMemorySize(): Long {
-        if (externalMemoryAvailable()) {
+        return if (externalMemoryAvailable()) {
             val path = Environment.getExternalStorageDirectory()
             val stat = StatFs(path.path)
             val blockSize = stat.blockSize.toLong()
             val totalBlocks = stat.blockCount.toLong()
-            return totalBlocks * blockSize
+            totalBlocks * blockSize
         } else {
-            return 0
+            0
         }
     }
 
@@ -205,6 +208,7 @@ class StorageFragment : BaseFragment() {
             return "0"
         val units = arrayOf("B", "KB", "MB", "GB", "TB")
         val digitGroups = (Math.log10(size.toDouble()) / Math.log10(1024.0)).toInt()
+        println("digitGroups== " + digitGroups)
         return DecimalFormat("#,##0.#").format(size / Math.pow(1024.0, digitGroups.toDouble())) + " " + units[digitGroups]
     }
 
