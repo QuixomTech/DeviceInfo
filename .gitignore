@@ -4,6 +4,5 @@
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
-/build.gradle
 /app/deviceInfo.jks
 /build
