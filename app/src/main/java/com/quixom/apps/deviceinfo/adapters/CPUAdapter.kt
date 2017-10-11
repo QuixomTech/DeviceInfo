@@ -20,18 +20,26 @@ class CPUAdapter(internal var appslist: ArrayList<CPUFeatures>, internal var mAc
     }
 
     override fun onBindViewHolder(holder: CPUAdapter.DeviceVH?, position: Int) {
-        holder?.bindData(appslist[position])
+        holder?.bindData(appslist[position], position)
     }
 
     override fun getItemCount(): Int = appslist.size
 
     inner class DeviceVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bindData(featureCpu: CPUFeatures) {
+        fun bindData(featureCpu: CPUFeatures, position: Int) {
 
             val tvFeatureName: TextView = itemView.findViewById(R.id.tv_cpu_feature_name)
             val tvFeatureValue: TextView = itemView.findViewById(R.id.tv_cpu_feature_value)
+            val viewSeparator: View = itemView.findViewById(R.id.separatorView)
+
             tvFeatureName.text = featureCpu.featureLable
             tvFeatureValue.text = featureCpu.featureValue
+
+            if (featureCpu.featureLable == mActivity.resources.getString(R.string.processor) && position > 0) {
+                viewSeparator.visibility = View.VISIBLE
+            } else {
+                viewSeparator.visibility = View.GONE
+            }
         }
     }
 }

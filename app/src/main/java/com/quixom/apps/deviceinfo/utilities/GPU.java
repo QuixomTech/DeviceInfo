@@ -12,7 +12,6 @@ import android.widget.FrameLayout;
 
 import java.nio.IntBuffer;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.egl.EGLConfig;
@@ -30,16 +29,17 @@ public class GPU {
         public static class OpenGLGles10Info extends OpenGLInfo {
 
             // general
-            public String GL_RENDERER;
+     /*       public String GL_RENDERER;
             public String GL_VERSION;
-            public String GL_VENDOR;
+            public String GL_VENDOR;*/
 
             // texture related
             public int GL_MAX_TEXTURE_SIZE;
-            public int GL_MAX_TEXTURE_UNITS;
-            public int[] GL_MAX_VIEWPORT_DIMS;
+         /*   public int GL_MAX_TEXTURE_UNITS;
+            public int[] GL_MAX_VIEWPORT_DIMS;*/
 
             // fixed function pipeline constrains
+/*
             public int GL_MAX_MODELVIEW_STACK_DEPTH;
             public int GL_MAX_PROJECTION_STACK_DEPTH;
             public int GL_MAX_TEXTURE_STACK_DEPTH;
@@ -49,6 +49,7 @@ public class GPU {
             public int GL_STENCIL_BITS;
             public int GL_MAX_ELEMENTS_INDICES;
             public int GL_MAX_ELEMENTS_VERTICES;
+*/
 
             // extensions
             public String GL_EXTENSIONS;
@@ -59,42 +60,42 @@ public class GPU {
 
             @Override
             protected void loadOnCreate() {
-                GL_RENDERER = glGetString(GLES10.GL_RENDERER);
-                GL_VERSION = glGetString(GLES10.GL_VERSION);
-                GL_VENDOR = glGetString(GLES10.GL_VENDOR);
+//                GL_RENDERER = glGetString(GLES10.GL_RENDERER);
+//                GL_VERSION = glGetString(GLES10.GL_VERSION);
+//                GL_VENDOR = glGetString(GLES10.GL_VENDOR);
                 GL_MAX_TEXTURE_SIZE = glGetIntegerv(GLES10.GL_MAX_TEXTURE_SIZE);
-                GL_MAX_TEXTURE_UNITS = glGetIntegerv(GLES10.GL_MAX_TEXTURE_UNITS);
-                GL_MAX_LIGHTS = glGetIntegerv(GLES10.GL_MAX_LIGHTS);
-                GL_SUBPIXEL_BITS = glGetIntegerv(GLES10.GL_SUBPIXEL_BITS);
-                GL_MAX_ELEMENTS_VERTICES = glGetIntegerv(GLES10.GL_MAX_ELEMENTS_VERTICES);
-                GL_MAX_ELEMENTS_INDICES = glGetIntegerv(GLES10.GL_MAX_ELEMENTS_INDICES);
-                GL_MAX_MODELVIEW_STACK_DEPTH = glGetIntegerv(GLES10.GL_MAX_MODELVIEW_STACK_DEPTH);
-                GL_MAX_PROJECTION_STACK_DEPTH = glGetIntegerv(GLES10.GL_MAX_PROJECTION_STACK_DEPTH);
-                GL_MAX_TEXTURE_STACK_DEPTH = glGetIntegerv(GLES10.GL_MAX_TEXTURE_STACK_DEPTH);
-                GL_DEPTH_BITS = glGetIntegerv(GLES10.GL_DEPTH_BITS);
-                GL_STENCIL_BITS = glGetIntegerv(GLES10.GL_STENCIL_BITS);
+//                GL_MAX_TEXTURE_UNITS = glGetIntegerv(GLES10.GL_MAX_TEXTURE_UNITS);
+//                GL_MAX_LIGHTS = glGetIntegerv(GLES10.GL_MAX_LIGHTS);
+//                GL_SUBPIXEL_BITS = glGetIntegerv(GLES10.GL_SUBPIXEL_BITS);
+//                GL_MAX_ELEMENTS_VERTICES = glGetIntegerv(GLES10.GL_MAX_ELEMENTS_VERTICES);
+//                GL_MAX_ELEMENTS_INDICES = glGetIntegerv(GLES10.GL_MAX_ELEMENTS_INDICES);
+//                GL_MAX_MODELVIEW_STACK_DEPTH = glGetIntegerv(GLES10.GL_MAX_MODELVIEW_STACK_DEPTH);
+//                GL_MAX_PROJECTION_STACK_DEPTH = glGetIntegerv(GLES10.GL_MAX_PROJECTION_STACK_DEPTH);
+//                GL_MAX_TEXTURE_STACK_DEPTH = glGetIntegerv(GLES10.GL_MAX_TEXTURE_STACK_DEPTH);
+//                GL_DEPTH_BITS = glGetIntegerv(GLES10.GL_DEPTH_BITS);
+//                GL_STENCIL_BITS = glGetIntegerv(GLES10.GL_STENCIL_BITS);
                 GL_EXTENSIONS = glGetString(GLES10.GL_EXTENSIONS);
-                GL_MAX_VIEWPORT_DIMS = glGetIntegerv(GLES10.GL_MAX_VIEWPORT_DIMS, 2);
+//                GL_MAX_VIEWPORT_DIMS = glGetIntegerv(GLES10.GL_MAX_VIEWPORT_DIMS, 2);
             }
 
             @Override
             public String toString() {
                 return "OpenGLGles10Info{" + '\n' +
-                        "GL_RENDERER='" + GL_RENDERER + '\'' + '\n' +
-                        ", GL_VERSION='" + GL_VERSION + '\'' + '\n' +
-                        ", GL_VENDOR='" + GL_VENDOR + '\'' + '\n' +
+//                        "GL_RENDERER='" + GL_RENDERER + '\'' + '\n' +
+//                        ", GL_VERSION='" + GL_VERSION + '\'' + '\n' +
+//                        ", GL_VENDOR='" + GL_VENDOR + '\'' + '\n' +
                         ", GL_MAX_TEXTURE_SIZE=" + GL_MAX_TEXTURE_SIZE + '\n' +
-                        ", GL_MAX_TEXTURE_UNITS=" + GL_MAX_TEXTURE_UNITS + '\n' +
-                        ", GL_MAX_VIEWPORT_DIMS=" + Arrays.toString(GL_MAX_VIEWPORT_DIMS) + '\n' +
-                        ", GL_MAX_MODELVIEW_STACK_DEPTH=" + GL_MAX_MODELVIEW_STACK_DEPTH + '\n' +
-                        ", GL_MAX_PROJECTION_STACK_DEPTH=" + GL_MAX_PROJECTION_STACK_DEPTH + '\n' +
-                        ", GL_MAX_TEXTURE_STACK_DEPTH=" + GL_MAX_TEXTURE_STACK_DEPTH +
-                        ", GL_MAX_LIGHTS=" + GL_MAX_LIGHTS + '\n' +
-                        ", GL_SUBPIXEL_BITS=" + GL_SUBPIXEL_BITS + '\n' +
-                        ", GL_DEPTH_BITS=" + GL_DEPTH_BITS + '\n' +
-                        ", GL_STENCIL_BITS=" + GL_STENCIL_BITS + '\n' +
-                        ", GL_MAX_ELEMENTS_INDICES=" + GL_MAX_ELEMENTS_INDICES + '\n' +
-                        ", GL_MAX_ELEMENTS_VERTICES=" + GL_MAX_ELEMENTS_VERTICES + '\n' +
+//                        ", GL_MAX_TEXTURE_UNITS=" + GL_MAX_TEXTURE_UNITS + '\n' +
+//                        ", GL_MAX_VIEWPORT_DIMS=" + Arrays.toString(GL_MAX_VIEWPORT_DIMS) + '\n' +
+//                        ", GL_MAX_MODELVIEW_STACK_DEPTH=" + GL_MAX_MODELVIEW_STACK_DEPTH + '\n' +
+//                        ", GL_MAX_PROJECTION_STACK_DEPTH=" + GL_MAX_PROJECTION_STACK_DEPTH + '\n' +
+//                        ", GL_MAX_TEXTURE_STACK_DEPTH=" + GL_MAX_TEXTURE_STACK_DEPTH +
+//                        ", GL_MAX_LIGHTS=" + GL_MAX_LIGHTS + '\n' +
+//                        ", GL_SUBPIXEL_BITS=" + GL_SUBPIXEL_BITS + '\n' +
+//                        ", GL_DEPTH_BITS=" + GL_DEPTH_BITS + '\n' +
+//                        ", GL_STENCIL_BITS=" + GL_STENCIL_BITS + '\n' +
+//                        ", GL_MAX_ELEMENTS_INDICES=" + GL_MAX_ELEMENTS_INDICES + '\n' +
+//                        ", GL_MAX_ELEMENTS_VERTICES=" + GL_MAX_ELEMENTS_VERTICES + '\n' +
                         ", GL_EXTENSIONS='" + GL_EXTENSIONS + '\'' + '\n' +
                         '}';
             }
@@ -102,7 +103,7 @@ public class GPU {
 
         // endregion
 
-        // region OpenGLGles20
+     /*   // region OpenGLGles20
 
         public static class OpenGLGles20Info extends OpenGLInfo {
 
@@ -226,7 +227,7 @@ public class GPU {
                         ", GL_FRAGMENT_SHADER_GL_HIGH_FLOAT=" + Arrays.toString(GL_FRAGMENT_SHADER_GL_HIGH_FLOAT) +
                         '}';
             }
-        }
+        }*/
 
         @SuppressLint("StaticFieldLeak")
         private static Activity context;
@@ -286,9 +287,9 @@ public class GPU {
             new InfoLoader<OpenGLGles10Info>(new OpenGLGles10Info()).loadInfo(callback);
         }
 
-        public void loadOpenGLGles20Info(final OnCompleteCallback<OpenGLGles20Info> callback) {
-            new InfoLoader<OpenGLGles20Info>(new OpenGLGles20Info()).loadInfo(callback);
-        }
+//        public void loadOpenGLGles20Info(final OnCompleteCallback<OpenGLGles20Info> callback) {
+//            new InfoLoader<OpenGLGles20Info>(new OpenGLGles20Info()).loadInfo(callback);
+//        }
 
         // endregion
 
@@ -337,10 +338,10 @@ public class GPU {
                         final GLSurfaceView glView = new GLSurfaceView(context);
 
                         // egl info
-                        glView.setEGLConfigChooser(new EglChooser<T>(info));
+//                        glView.setEGLConfigChooser(new EglChooser<T>(info));
 
                         // need to be on top to be rendered at least for one frame
-                        glView.setZOrderOnTop(true);
+//                        glView.setZOrderOnTop(true);
 
                         // create new renderer; note: we only need the oncreate method for all the infos
                         renderer = new GPURenderer<T>(glView, info, callback);
@@ -419,21 +420,21 @@ public class GPU {
 
                 //Querying number of configurations
                 final int[] num_conf = new int[1];
-                egl.eglGetConfigs(display, null, 0, num_conf); //if configuration array is null it still returns the number of configurations
+//                egl.eglGetConfigs(display, null, 0, num_conf); //if configuration array is null it still returns the number of configurations
                 final int configurations = num_conf[0];
 
                 //Querying actual configurations
                 final EGLConfig[] conf = new EGLConfig[configurations];
-                egl.eglGetConfigs(display, conf, configurations, num_conf);
+//                egl.eglGetConfigs(display, conf, configurations, num_conf);
 
                 EGLConfig result = null;
 
                 for (int i = 0; i < configurations; i++) {
                     result = better(result, conf[i], egl, display);
 
-                    final Egl config = new Egl(egl, display, conf[i]);
+                    /*final Egl config = new Egl(egl, display, conf[i]);
                     if (config.EGL_RED_SIZE + config.EGL_BLUE_SIZE + config.EGL_GREEN_SIZE + config.EGL_ALPHA_SIZE >= 16)
-                        info.eglconfigs.add(config);
+                        info.eglconfigs.add(config);*/
                 }
 
                 return result;

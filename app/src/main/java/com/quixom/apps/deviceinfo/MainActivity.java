@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
     public static int navItemIndex = 0;
     private Handler mHandler = new Handler();
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

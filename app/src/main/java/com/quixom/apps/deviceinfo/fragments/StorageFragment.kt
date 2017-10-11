@@ -1,12 +1,11 @@
 package com.quixom.apps.deviceinfo.fragments
 
 import android.annotation.SuppressLint
+import android.annotation.TargetApi
 import android.app.ActivityManager
 import android.content.Context
-import android.os.Bundle
-import android.os.Environment
-import android.os.Handler
-import android.os.StatFs
+import android.os.*
+import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +15,10 @@ import android.widget.TextView
 import com.github.lzyzsd.circleprogress.DonutProgress
 import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.utilities.Methods
+import java.io.File
 import java.text.DecimalFormat
+
+
 
 
 class StorageFragment : BaseFragment() {
@@ -68,20 +70,25 @@ class StorageFragment : BaseFragment() {
         return view
     }
 
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         initToolbar()
 
+
         // Init
         val handler = Handler()
         val runnable = object : Runnable {
+            @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
             override fun run() {
-                setUpStorageDetails()
+                showRAMUsage()
                 handler.postDelayed(this, 1000)
             }
         }
 
-        handler.postDelayed(runnable, 1000)
+        handler.postDelayed(runnable, 0)
+        setUpStorageDetails()
+
     }
 
     override fun onHiddenChanged(hidden: Boolean) {
@@ -100,19 +107,9 @@ class StorageFragment : BaseFragment() {
         }
     }
 
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
     @SuppressLint("SetTextI18n")
-    private fun setUpStorageDetails(){
-
-        /** RAM Usage count */
-        val totalRamValue = totalRamMemorySize()
-        val freeRamValue = freeRamMemorySize()
-        val usedRamValue = totalRamValue - freeRamValue
-
-        tvUsedMemory?.text = mResources.getString(R.string.used_memory) + "\t" + formatSize(usedRamValue)
-        tvFreeMemory?.text = mResources.getString(R.string.free) + "\t" + formatSize(freeRamValue)
-        tvTotalMemory?.text = mResources.getString(R.string.total) + "\t" + formatSize(totalRamValue)
-
-        donutRAMUsage?.progress = Methods.calculatePercentage(usedRamValue.toDouble(), totalRamValue.toDouble()).toFloat()
+    private fun setUpStorageDetails() {
 
         /** Internal Memory usage */
         val totalInternalValue = getTotalInternalMemorySize()
@@ -124,15 +121,12 @@ class StorageFragment : BaseFragment() {
 
         donutInternalStorage?.progress = Methods.calculatePercentage(usedInternalValue.toDouble(), totalInternalValue.toDouble()).toFloat()
 
-
-//        val isSDPresent = android.os.Environment.getExternalStorageState() == android.os.Environment.MEDIA_MOUNTED
-//          val isSDPresent = ContextCompat.getExternalFilesDirs(mActivity, null).size >= 2
-        val isSDPresent = Environment.isExternalStorageRemovable()
-        if (isSDPresent) {
+        if (Methods.getExternalMounts().size > 0) {
+            val dirs: Array<File> = ContextCompat.getExternalFilesDirs(mActivity, null)
             llExtMemory?.visibility = View.VISIBLE
             /** External Memory usage */
-            val totalExternalValue = getTotalExternalMemorySize()
-            val freeExternalValue = getAvailableExternalMemorySize()
+            val totalExternalValue = getTotalExternalMemorySize(dirs)
+            val freeExternalValue = getAvailableExternalMemorySize(dirs)
             val usedExternalValue = totalExternalValue - freeExternalValue
             tvUsedExtMemory?.text = mResources.getString(R.string.used_memory) + "\t" + formatSize(usedExternalValue)
             tvFreeExtMemory?.text = mResources.getString(R.string.free) + "\t" + formatSize(freeExternalValue)
@@ -142,6 +136,20 @@ class StorageFragment : BaseFragment() {
         } else {
             llExtMemory?.visibility = View.GONE
         }
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun showRAMUsage() {
+        /** RAM Usage count */
+        val totalRamValue = totalRamMemorySize()
+        val freeRamValue = freeRamMemorySize()
+        val usedRamValue = totalRamValue - freeRamValue
+
+        tvUsedMemory?.text = mResources.getString(R.string.used_memory) + "\t" + formatSize(usedRamValue)
+        tvFreeMemory?.text = mResources.getString(R.string.free) + "\t" + formatSize(freeRamValue)
+        tvTotalMemory?.text = mResources.getString(R.string.total) + "\t" + formatSize(totalRamValue)
+
+        donutRAMUsage?.progress = Methods.calculatePercentage(usedRamValue.toDouble(), totalRamValue.toDouble()).toFloat()
     }
 
     private fun freeRamMemorySize(): Long {
@@ -159,45 +167,43 @@ class StorageFragment : BaseFragment() {
         return mi.totalMem
     }
 
-    fun externalMemoryAvailable(): Boolean {
-        return android.os.Environment.getExternalStorageState() == android.os.Environment.MEDIA_MOUNTED
-    }
-
-    fun getAvailableInternalMemorySize(): Long {
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
+    private fun getAvailableInternalMemorySize(): Long {
         val path = Environment.getDataDirectory()
         val stat = StatFs(path.path)
-        val blockSize = stat.blockSize.toLong()
-        val availableBlocks = stat.availableBlocks.toLong()
+        val blockSize = stat.blockSizeLong
+        val availableBlocks = stat.availableBlocksLong
         return availableBlocks * blockSize
     }
 
-    fun getTotalInternalMemorySize(): Long {
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
+    private fun getTotalInternalMemorySize(): Long {
         val path = Environment.getDataDirectory()
         val stat = StatFs(path.path)
-        val blockSize = stat.blockSize.toLong()
-        val totalBlocks = stat.blockCount.toLong()
+        val blockSize = stat.blockSizeLong
+        val totalBlocks = stat.blockCountLong
         return totalBlocks * blockSize
     }
 
-    fun getAvailableExternalMemorySize(): Long {
-        if (externalMemoryAvailable()) {
-            val path = Environment.getExternalStorageDirectory()
-            val stat = StatFs(path.path)
-            val blockSize = stat.blockSize.toLong()
-            val availableBlocks = stat.availableBlocks.toLong()
-            return availableBlocks * blockSize
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
+    private fun getTotalExternalMemorySize(dirs: Array<File>): Long {
+        return if (dirs.size > 1) {
+            val stat = StatFs(dirs[1].path)
+            val blockSize = stat.blockSizeLong
+            val totalBlocks = stat.blockCountLong
+            totalBlocks * blockSize
         } else {
-            return 0
+            0
         }
     }
 
-    fun getTotalExternalMemorySize(): Long {
-        return if (externalMemoryAvailable()) {
-            val path = Environment.getExternalStorageDirectory()
-            val stat = StatFs(path.path)
-            val blockSize = stat.blockSize.toLong()
-            val totalBlocks = stat.blockCount.toLong()
-            totalBlocks * blockSize
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
+    private fun getAvailableExternalMemorySize(dirs: Array<File>): Long {
+        return if (dirs.size > 1) {
+            val stat = StatFs(dirs[1].path)
+            val blockSize = stat.blockSizeLong
+            val availableBlocks = stat.availableBlocksLong
+            availableBlocks * blockSize
         } else {
             0
         }
@@ -211,8 +217,9 @@ class StorageFragment : BaseFragment() {
         return DecimalFormat("#,##0.#").format(size / Math.pow(1024.0, digitGroups.toDouble())) + " " + units[digitGroups]
     }
 
-    private fun returnToDecimalPlaces(values: Long): String {
-        val df = DecimalFormat("#.00")
-        return df.format(values)
+    /* Checks if external storage is available for read and write */
+    fun isExternalStorageWritable(): Boolean {
+        val state = Environment.getExternalStorageState()
+        return Environment.MEDIA_MOUNTED == state
     }
 }

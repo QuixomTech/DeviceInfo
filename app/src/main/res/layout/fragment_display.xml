@@ -199,7 +199,7 @@
                             tools:ignore="MissingPrefix" />
                     </TableRow>
 
-                    <TableRow android:layout_marginTop="10dp">
+                    <TableRow android:layout_marginTop="10dp" android:visibility="gone">
 
                         <TextView
                             android:layout_width="0dp"

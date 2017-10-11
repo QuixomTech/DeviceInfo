@@ -80,6 +80,7 @@
     <string name="unknown">Unknown</string>
 
     <!-- CPU -->
+    <string name="processor">processor</string>
     <string name="cpu_t">CPU</string>
     <string name="ram_m">RAM</string>
     <string name="used">Used</string>

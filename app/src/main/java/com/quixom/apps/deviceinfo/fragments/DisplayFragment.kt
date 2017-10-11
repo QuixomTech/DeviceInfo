@@ -11,12 +11,8 @@ import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import com.quixom.apps.deviceinfo.R
-import com.quixom.apps.deviceinfo.utilities.GPU
 import com.quixom.apps.deviceinfo.utilities.Methods
 import java.text.DecimalFormat
-
-
-
 
 class DisplayFragment : BaseFragment(){
 
@@ -42,7 +38,7 @@ class DisplayFragment : BaseFragment(){
     var tvIndependentHeight: TextView? = null
     var tvScreenDefaultOrientation: TextView? = null
     var tvMaxGpuSize: TextView? = null
-
+    val dm = DisplayMetrics()
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater!!.inflate(R.layout.fragment_display, container, false)
@@ -75,7 +71,6 @@ class DisplayFragment : BaseFragment(){
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
         initToolbar()
         getDisplayInfo()
     }
@@ -98,11 +93,8 @@ class DisplayFragment : BaseFragment(){
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     private fun getDisplayInfo() {
-        val dm = DisplayMetrics()
-        mActivity.windowManager.defaultDisplay.getMetrics(dm)
-        val dpiClassification = dm.densityDpi
         val display = (mActivity.getSystemService(Context.WINDOW_SERVICE) as WindowManager).defaultDisplay
-
+        mActivity.windowManager.defaultDisplay.getMetrics(dm)
 
         /*** Screen Size */
         val screenSizes: String = when (resources.configuration.screenLayout and Configuration.SCREENLAYOUT_SIZE_MASK) {
@@ -115,9 +107,6 @@ class DisplayFragment : BaseFragment(){
 
         /*** Screen physical size */
         mActivity.windowManager.defaultDisplay.getMetrics(dm)
-
-        var width = dm.widthPixels
-        var height = dm.heightPixels
 
         val realSize = Point()
         Display::class.java.getMethod("getRealSize", Point::class.java).invoke(display, realSize)
@@ -148,11 +137,13 @@ class DisplayFragment : BaseFragment(){
             tvScreenName?.text = display.name.toString()
 
         /*** Max GPU Texture size */
-        val gpu = GPU(mActivity)
 
-        gpu.loadOpenGLGles10Info { result -> val toString = result.toString()
-            tvMaxGpuSize?.text = result.GL_MAX_TEXTURE_SIZE.toString().plus(mResources.getString(R.string.x)).plus(result.GL_MAX_TEXTURE_SIZE)
-        }
+       /* Handler().postDelayed({
+            val gpu = GPU(mActivity)
+            gpu.loadOpenGLGles10Info { result -> result.toString()
+                tvMaxGpuSize?.text = result.GL_MAX_TEXTURE_SIZE.toString().plus(mResources.getString(R.string.x)).plus(result.GL_MAX_TEXTURE_SIZE)
+            }
+        }, 1000)*/
 
         /*** Screen Display buckets */
         when {
