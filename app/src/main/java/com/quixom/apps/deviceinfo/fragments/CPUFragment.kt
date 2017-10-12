@@ -102,7 +102,7 @@ class CPUFragment : BaseFragment() {
 
     @SuppressLint("SetTextI18n")
     @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
-    private fun getMemoryInfo(): Unit {
+    private fun getMemoryInfo() {
         activityManager = mActivity.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager?
         memoryInfo = ActivityManager.MemoryInfo()
         activityManager?.getMemoryInfo(memoryInfo)

@@ -17,6 +17,7 @@ public class KeyUtil {
     public static float KEY_LAST_KNOWN_HUMIDITY = 0f;
 
     public static final int KEY_CAMERA_CODE = 101;
+    public static final int KEY_CALL_PERMISSION = 102;
     public static final int IS_USER_COME_FROM_SYSTEM_APPS = 1;
     public static final int IS_USER_COME_FROM_USER_APPS = 2;
 }

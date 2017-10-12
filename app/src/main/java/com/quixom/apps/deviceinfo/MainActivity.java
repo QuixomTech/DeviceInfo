@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -22,6 +23,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.quixom.apps.deviceinfo.fragments.AboutUsFragment;
 import com.quixom.apps.deviceinfo.fragments.AppsFragment;
 import com.quixom.apps.deviceinfo.fragments.BatteryFragment;
 import com.quixom.apps.deviceinfo.fragments.CPUFragment;
@@ -82,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
         getAppsList();
         fragmentUtil.clearBackStackFragmets();
         fragmentUtil.replaceFragment(new HomeFragment(), true, false);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            this.getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
+        }
     }
 
     @Override
@@ -346,7 +352,7 @@ public class MainActivity extends AppCompatActivity {
             case 11:
                 return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_SYSTEM_APPS);
             case 12:
-                return HomeFragment.getInstance(7);
+                return new AboutUsFragment();
             case 13:
                 return HomeFragment.getInstance(7);
             case 14:

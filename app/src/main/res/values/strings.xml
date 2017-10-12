@@ -228,4 +228,14 @@
     <string name="xxhdpi">xxhdpi</string>
     <string name="xxxhdpi">xxxhdpi</string>
     <string name="dpi">\u0020dpi</string>
+
+    <!-- About us -->
+    <string name="developer_info">Developer Information</string>
+    <string name="dev_info">This app has been developed by Quixom Technology. Quixom is a mobile and web app development company oriented towards design thinking approach to mobile app development. Quixom has delivered apps for its customers all over the globe in sectors like gaming, delivery, ecommerce, IOT and many others. To get a free quote, email your requirements to info@quixom.com</string>
+    <string name="company_phone">+91 7567751959</string>
+    <string name="address">Quixom Tech \nB-12, Galaxy Signature \nOpp Sukhan Bungalows
+\nScience City Road, Ahmedabad</string>
+    <string name="website">www.quixom.com</string>
+    <string name="rating_us">Rate us</string>
+    <string name="about_app">Device Info is a detailed specification of your phone which includes all the possible hardware configurations and other required details about your own device.</string>
 </resources>

@@ -98,7 +98,7 @@ public class BatteryFragment extends BaseFragment {
             status = intent.getIntExtra(BatteryManager.EXTRA_STATUS, 0);
 
             technology = intent.getExtras().getString(BatteryManager.EXTRA_TECHNOLOGY);
-            temperature = intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0);
+            temperature = (intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0) / 10);
 
             voltage = intent.getIntExtra(BatteryManager.EXTRA_VOLTAGE, 0);
 
