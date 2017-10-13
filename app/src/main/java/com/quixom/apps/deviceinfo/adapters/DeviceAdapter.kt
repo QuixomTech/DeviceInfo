@@ -1,16 +1,16 @@
 package com.quixom.apps.deviceinfo.adapters
 
+import android.support.v4.content.ContextCompat.startActivity
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-
 import com.quixom.apps.deviceinfo.MainActivity
-import com.quixom.apps.deviceinfo.models.DeviceInfo
-import android.support.v4.content.ContextCompat.startActivity
 import com.quixom.apps.deviceinfo.R
+import com.quixom.apps.deviceinfo.models.DeviceInfo
+import com.quixom.apps.deviceinfo.utilities.Methods
 
 
 /**
@@ -44,6 +44,8 @@ class DeviceAdapter(internal var flag: Int?, internal var appslist: ArrayList<De
             ivAppLogo?.setImageDrawable(deviceInfo.appLogo)
 
             itemView.setOnClickListener({
+                Methods.avoidDoubleClicks(itemView)
+
                 val launchIntent = mActivity.packageManager.getLaunchIntentForPackage(deviceInfo.packageName)
                 if (launchIntent != null) {
                     startActivity(mActivity, launchIntent, null)

@@ -2,22 +2,24 @@ package com.quixom.apps.deviceinfo.fragments
 
 import android.Manifest
 import android.annotation.TargetApi
-import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.support.annotation.RequiresApi
 import android.support.v4.app.ActivityCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RatingBar
+import android.widget.RatingBar.OnRatingBarChangeListener
 import android.widget.TextView
 import com.quixom.apps.deviceinfo.BuildConfig
 import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.utilities.KeyUtil
+import com.quixom.apps.deviceinfo.utilities.RateUsApp
 import java.util.*
 
 
@@ -29,7 +31,7 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
     var ivBack: ImageView? = null
     var tvTitle: TextView? = null
 
-    var tvVersion: TextView?= null
+    var tvVersion: TextView? = null
     var tvCallIntent: TextView? = null
     var tvAddressIntent: TextView? = null
     var tvWebsiteIntent: TextView? = null
@@ -49,11 +51,11 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
         return view
     }
 
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         initToolbar()
-        tvVersion?.text = mResources.getString(R.string.version).plus(": "+BuildConfig.VERSION_CODE.toString())
+        tvVersion?.text = mResources.getString(R.string.version).plus(": " + BuildConfig.VERSION_CODE.toString())
         initOnclickListner()
     }
 
@@ -73,24 +75,28 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
         }
     }
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private fun initOnclickListner() {
         tvCallIntent?.setOnClickListener(this)
         tvAddressIntent?.setOnClickListener(this)
         tvWebsiteIntent?.setOnClickListener(this)
-        rbRatingBar?.setOnClickListener(this)
+
+        rbRatingBar?.onRatingBarChangeListener = OnRatingBarChangeListener { ratingBar, rating, fromUser ->
+            rbRatingBar?.rating = 5.0f
+            RateUsApp.rateUsApp(mActivity)
+        }
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onClick(view: View?) {
         when (view) {
-            tvCallIntent ->  checkCameraPermission()
+            tvCallIntent -> checkCameraPermission()
             tvAddressIntent -> mapIntent()
             tvWebsiteIntent -> webIntent()
-            rbRatingBar -> rateUsApp()
         }
     }
 
-    private fun  callIntent() {
+    private fun callIntent() {
         val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + mResources.getString(R.string.company_phone)))
         startActivity(intent)
     }
@@ -101,32 +107,16 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
         context.startActivity(intent)
     }
 
-    private fun  webIntent() {
+    private fun webIntent() {
         val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.quixom.com"))
         startActivity(browserIntent)
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    private fun rateUsApp() {
-        rbRatingBar?.rating = 5.0f
-        val uri = Uri.parse("market://details?id=com.quixom.deviceinfo")
-        val goToMarket = Intent(Intent.ACTION_VIEW, uri)
-        goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY or
-                Intent.FLAG_ACTIVITY_NEW_DOCUMENT or
-                Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
-        try {
-            startActivity(goToMarket)
-        } catch (e: ActivityNotFoundException) {
-            startActivity(Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://play.google.com/store/apps/details?id=com.quixom.deviceinfo")))
-        }
-
-    }
     /**
      * this method will show permission pop up messages to user.
      */
     private fun checkCameraPermission() {
-         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             val hasWriteCameraPermission = mActivity.checkSelfPermission(Manifest.permission.CAMERA)
             if (hasWriteCameraPermission != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(arrayOf(Manifest.permission.CALL_PHONE), KeyUtil.KEY_CALL_PERMISSION)
@@ -157,6 +147,5 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
             }
             else -> super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         }
-
     }
 }

@@ -66,7 +66,7 @@
             android:icon="@drawable/ic_information"
             android:title="@string/about_us" />
 
-        <item android:title="@string/expanse_the_world" android:visible="false">
+        <item android:title="@string/expanse_the_world" android:visible="true">
             <menu>
                 <item
                     android:id="@+id/nav_share"
@@ -81,6 +81,7 @@
                 <item
                     android:id="@+id/nav_feedback"
                     android:icon="@drawable/ic_chat"
+                    android:visible="false"
                     android:title="@string/feedback" />
             </menu>
         </item>

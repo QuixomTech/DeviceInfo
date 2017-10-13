@@ -11,7 +11,6 @@ import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
-import android.os.Environment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.text.SpannableString;
@@ -20,7 +19,6 @@ import android.text.style.ForegroundColorSpan;
 import android.text.style.RelativeSizeSpan;
 import android.util.DisplayMetrics;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
@@ -51,20 +49,6 @@ public class Methods {
 
     public Methods(MainActivity mActivity) {
         this.mActivity = mActivity;
-    }
-
-
-    /**
-     * It's dummy list
-     *
-     * @param list: list
-     * @return: list return with size 10
-     */
-    public static List<String> dummyList(List<String> list) {
-        for (int i = 0; i < 10; i++) {
-            list.add("" + i);
-        }
-        return list;
     }
 
     /**
@@ -112,14 +96,6 @@ public class Methods {
         }, DELAY_IN_MS);
     }
 
-    public static String getDir() {
-
-        String mFilePath = Environment.getExternalStorageDirectory().getAbsolutePath();
-        mFilePath += "/MainList/";
-
-        return mFilePath;
-    }
-
     /**
      * @param mainActivity use for get applicationContext
      * @param dp           value to convert into px
@@ -141,64 +117,6 @@ public class Methods {
     }
 
     /**
-     * Get height of the device.
-     *
-     * @param mainActivity: Main activity
-     * @return: height of device.
-     */
-    public static int getHeight(MainActivity mainActivity) {
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        mainActivity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        int height = displayMetrics.heightPixels;
-        return height;
-    }
-
-    /**
-     * Method for use status bar color white.
-     *
-     * @param mainActivity instance of mainActivity
-     */
-    public static void setStatusBarColors(MainActivity mainActivity, boolean whiteStatusBar) {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = mainActivity.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            if (whiteStatusBar) {
-                window.setStatusBarColor(ContextCompat.getColor(mainActivity, R.color.font_white));
-            } else {
-                window.setStatusBarColor(ContextCompat.getColor(mainActivity, R.color.colorPrimary));
-            }
-        }
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (whiteStatusBar) {
-                View decor = mainActivity.getWindow().getDecorView();
-                decor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-            }
-        }
-    }
-
-    /**
-     * Method for use status bar color white.
-     *
-     * @param mainActivity instance of mainActivity
-     */
-    public static void setStatusBarWhite(MainActivity mainActivity) {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = mainActivity.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(ContextCompat.getColor(mainActivity, R.color.font_white));
-        }
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            View decor = mainActivity.getWindow().getDecorView();
-            decor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        }
-    }
-
-
-    /**
      * Share using intent.
      *
      * @param message: message
@@ -206,7 +124,7 @@ public class Methods {
     public static void sharing(String message) {
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_SUBJECT, "MainList");
+        sendIntent.putExtra(Intent.EXTRA_SUBJECT,  mActivity.getResources().getString(R.string.app_name));
         sendIntent.putExtra(Intent.EXTRA_TEXT, message);
         sendIntent.setType("text/plain");
         mActivity.startActivity(Intent.createChooser(sendIntent, mActivity.getResources().getString(R.string.send_to)));
@@ -228,43 +146,6 @@ public class Methods {
             e.printStackTrace();
         }
         return timeInMilliseconds;
-    }
-
-    /**
-     * Get time formate for the notification.
-     *
-     * @param convetedTime: notification created date.
-     * @return: time with format.
-     */
-    public static String getTimeAgo(String convetedTime) {
-
-        String createdAtTime = getDateFormateGMTToLocal(convetedTime);
-        long createdTime = convertTomillisecond(createdAtTime);
-        long now = System.currentTimeMillis();
-
-        long difference = now - createdTime;
-
-        long secondsInMilli = 1000;
-        long minutesInMilli = secondsInMilli * 60;
-        long hoursInMilli = minutesInMilli * 60;
-        long daysInMilli = hoursInMilli * 24;
-
-        long second = difference / secondsInMilli;
-        long minutes = difference / minutesInMilli;
-        long hour = difference / hoursInMilli;
-        long days = difference / daysInMilli;
-
-        if (second < 60) {
-            return "just now.";
-        } else if (minutes < 60) {
-            return minutes + " min. ago";
-        } else if (hour < 24) {
-            return hour + " hours ago";
-        } else if (days < 7) {
-            return getDateFormate(createdAtTime, "EEE");
-        } else {
-            return getDateFormate(createdAtTime, "dd MMM");
-        }
     }
 
     /**

@@ -39,6 +39,7 @@ import com.quixom.apps.deviceinfo.models.DeviceInfo;
 import com.quixom.apps.deviceinfo.utilities.FragmentUtil;
 import com.quixom.apps.deviceinfo.utilities.KeyUtil;
 import com.quixom.apps.deviceinfo.utilities.Methods;
+import com.quixom.apps.deviceinfo.utilities.RateUsApp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
         // initializing navigation menu
         setUpNavigationView();
-
         drawerLayout.setStatusBarBackground(R.color.colorPrimaryDark);
 
         getAppsList();
@@ -354,9 +354,9 @@ public class MainActivity extends AppCompatActivity {
             case 12:
                 return new AboutUsFragment();
             case 13:
-                return HomeFragment.getInstance(7);
+                Methods.sharing("https://play.google.com/store/apps/details?id=com.quixom.deviceinfo");
             case 14:
-                return HomeFragment.getInstance(7);
+                RateUsApp.Companion.rateUsApp(MainActivity.this);
             case 15:
                 return HomeFragment.getInstance(7);
             case 16:

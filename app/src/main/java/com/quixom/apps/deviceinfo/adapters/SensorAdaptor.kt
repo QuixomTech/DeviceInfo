@@ -10,10 +10,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.quixom.apps.deviceinfo.MainActivity
+import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.fragments.SensorDetailFragment
 import com.quixom.apps.deviceinfo.models.SensorDATA
 import com.quixom.apps.deviceinfo.utilities.Methods
-import com.quixom.apps.deviceinfo.R
 import java.io.ByteArrayOutputStream
 
 
@@ -79,6 +79,8 @@ class SensorAdaptor(internal var c: MainActivity, internal var sensorList: Array
             }
 
             itemView.setOnClickListener({
+                Methods.avoidDoubleClicks(itemView)
+
                 val sensorDetailFragment = SensorDetailFragment()
                 val drawable = ivSensorImage?.drawable
                 val bitmap: Bitmap? = Methods.getBitmapFromVectorDrawable(c, drawable)
