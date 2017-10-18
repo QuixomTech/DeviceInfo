@@ -2,6 +2,7 @@ package com.quixom.apps.deviceinfo.fragments
 
 import android.annotation.SuppressLint
 import android.app.ActivityManager
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
@@ -21,9 +22,9 @@ import com.quixom.apps.deviceinfo.adapters.CPUAdapter
 import com.quixom.apps.deviceinfo.models.CPUFeatures
 import com.quixom.apps.deviceinfo.utilities.Methods
 import java.io.File
+import java.io.IOException
 import java.text.DecimalFormat
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class CPUFragment : BaseFragment() {
@@ -63,6 +64,8 @@ class CPUFragment : BaseFragment() {
         initToolbar()
         rvCpuFeatureList?.layoutManager = LinearLayoutManager(mActivity)
         rvCpuFeatureList?.hasFixedSize()
+
+        getCpuInfo()
 
         getCpuInfoMap()
 
@@ -157,5 +160,15 @@ class CPUFragment : BaseFragment() {
 
         //now adding the adapter to RecyclerView
         rvCpuFeatureList?.adapter = adapter
+    }
+
+    fun getCpuInfo() {
+        try {
+            val proc = Runtime.getRuntime().exec("cat /proc/cpuinfo")
+            val cpuDetails = proc.inputStream
+
+        } catch (e: IOException) {
+            Log.e(TAG, "------ getCpuInfo " + e.printStackTrace())
+        }
     }
 }

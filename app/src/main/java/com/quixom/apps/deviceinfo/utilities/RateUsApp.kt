@@ -22,8 +22,7 @@ class RateUsApp {
             try {
                 mActivity.startActivity(goToMarket)
             } catch (e: ActivityNotFoundException) {
-                mActivity.startActivity(Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://play.google.com/store/apps/details?id=com.quixom.deviceinfo")))
+                mActivity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.quixom.deviceinfo")))
             }
         }
     }

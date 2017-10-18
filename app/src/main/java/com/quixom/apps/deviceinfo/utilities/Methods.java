@@ -122,12 +122,10 @@ public class Methods {
      * @param message: message
      */
     public static void sharing(String message) {
-        Intent sendIntent = new Intent();
-        sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_SUBJECT,  mActivity.getResources().getString(R.string.app_name));
-        sendIntent.putExtra(Intent.EXTRA_TEXT, message);
+        Intent sendIntent = new Intent(Intent.ACTION_SEND);
         sendIntent.setType("text/plain");
-        mActivity.startActivity(Intent.createChooser(sendIntent, mActivity.getResources().getString(R.string.send_to)));
+        sendIntent.putExtra(android.content.Intent.EXTRA_TEXT, message);
+        mActivity.startActivity(Intent.createChooser(sendIntent,  "Sharing"));
     }
 
     /**

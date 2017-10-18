@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/ic_menu"
+        android:src="@drawable/ic_menu_button"
         android:visibility="visible" />
 
     <ImageView
@@ -35,7 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/ic_back"
+        android:src="@drawable/ic_go_back_left_arrow"
+        android:tint="@color/font_white"
         android:visibility="gone" />
 
 </RelativeLayout>

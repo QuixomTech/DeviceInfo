@@ -355,8 +355,10 @@ public class MainActivity extends AppCompatActivity {
                 return new AboutUsFragment();
             case 13:
                 Methods.sharing("https://play.google.com/store/apps/details?id=com.quixom.deviceinfo");
+                break;
             case 14:
                 RateUsApp.Companion.rateUsApp(MainActivity.this);
+                break;
             case 15:
                 return HomeFragment.getInstance(7);
             case 16:
@@ -366,6 +368,7 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return new HomeFragment();
         }
+        return null;
     }
 
     /**

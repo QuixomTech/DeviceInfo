@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Context.CAMERA_SERVICE
 import android.content.pm.PackageManager
 import android.graphics.Camera
+import android.hardware.camera2.CameraAccessException
 import android.hardware.camera2.CameraCharacteristics
 import android.hardware.camera2.CameraManager
 import android.os.Build
@@ -24,6 +25,7 @@ import android.widget.Toast
 import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.utilities.Camera2Utility
 import com.quixom.apps.deviceinfo.utilities.KeyUtil
+import com.quixom.apps.deviceinfo.views.CameraIn
 
 
 class CameraFragment : BaseFragment() {
@@ -63,7 +65,7 @@ class CameraFragment : BaseFragment() {
         rvCameraFeatures?.hasFixedSize()
 
         checkCameraPermission()
-        getCamera2Features()
+        CameraIn.getCameraInfoNew(mActivity)
     }
 
     override fun onHiddenChanged(hidden: Boolean) {
@@ -131,26 +133,21 @@ class CameraFragment : BaseFragment() {
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private fun getCamera2Features() {
         val manager: CameraManager? = mActivity.getSystemService(CAMERA_SERVICE) as CameraManager
-        var characteristics: CameraCharacteristics? = manager?.getCameraCharacteristics("0")
 
-        // Does the camera have a forwards facing lens?
+         try {
+            for (cameraId  in manager?.cameraIdList!!){
+                    val characteristic: CameraCharacteristics = manager.getCameraCharacteristics(cameraId)
+                    var b: IntArray? =  characteristic.get(CameraCharacteristics.COLOR_CORRECTION_AVAILABLE_ABERRATION_MODES)
 
-        for (test in characteristics?.availableCaptureRequestKeys!!) {
-            println("Facing = " + test?.name)
+                    val c: IntArray = characteristic.get(CameraCharacteristics.CONTROL_AVAILABLE_EFFECTS)
+                    val d: IntArray? = characteristic.get(CameraCharacteristics.HOT_PIXEL_AVAILABLE_HOT_PIXEL_MODES)
+                    val e: IntArray = characteristic.get(CameraCharacteristics.COLOR_CORRECTION_AVAILABLE_ABERRATION_MODES)
+                    val f = characteristic.get(CameraCharacteristics.FLASH_INFO_AVAILABLE)
+                    val a = characteristic.get(CameraCharacteristics.LENS_FACING)
+            }
+        } catch (e: CameraAccessException) {
+            e.printStackTrace();
         }
-
-        for (best in characteristics.availableCaptureResultKeys!!) {
-        }
-
-        val ae_material_mode= CameraCharacteristics.CONTROL_AE_ANTIBANDING_MODE_OFF
-        if (ae_material_mode == CameraCharacteristics.CONTROL_AE_ANTIBANDING_MODE_OFF) {
-            println("AE Material Mode ==" + ae_material_mode)
-        }
-
-        if (ae_material_mode == CameraCharacteristics.CONTROL_AE_ANTIBANDING_MODE_OFF) {
-            println("AE Material Mode ==" + ae_material_mode)
-        }
-
     }
 }
 

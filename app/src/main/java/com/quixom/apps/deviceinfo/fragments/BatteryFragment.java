@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.BatteryManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -15,12 +16,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.quixom.apps.deviceinfo.utilities.Validation;
 import com.quixom.apps.deviceinfo.R;
+import com.quixom.apps.deviceinfo.utilities.Validation;
+import com.quixom.apps.deviceinfo.waveview.WaveView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -41,9 +41,7 @@ public class BatteryFragment extends BaseFragment {
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.progressBar)
-    ProgressBar progressBar;
-    @BindView(R.id.ll_top)
-    LinearLayout llTop;
+    WaveView progressBar;
     @BindView(R.id.tv_battery_type)
     TextView tvBatteryType;
     @BindView(R.id.tv_power_source)
@@ -76,12 +74,11 @@ public class BatteryFragment extends BaseFragment {
     private BroadcastReceiver mBatLow = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            fabBatteryCharging.setImageResource(R.drawable.ic_battery_alert_white_24dp);
+            fabBatteryCharging.setImageResource(R.drawable.ic_low_battery);
         }
     };
 
     private BroadcastReceiver mBatInfoReceiver = new BroadcastReceiver() {
-
         @Override
         public void onReceive(Context c, Intent intent) {
 
@@ -113,8 +110,6 @@ public class BatteryFragment extends BaseFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
     }
 
     @Override
@@ -126,7 +121,6 @@ public class BatteryFragment extends BaseFragment {
         mActivity.registerReceiver(mBatInfoReceiver, filter);
         IntentFilter filter2 = new IntentFilter(Intent.ACTION_BATTERY_LOW);
         mActivity.registerReceiver(mBatLow, filter2);
-
         return view;
     }
 
@@ -141,7 +135,7 @@ public class BatteryFragment extends BaseFragment {
         if (fabBatteryCharging != null) {
             if (deviceStatus == BatteryManager.BATTERY_STATUS_CHARGING) {
                 fabBatteryCharging.setVisibility(View.VISIBLE);
-                fabBatteryCharging.setImageResource(R.drawable.ic_battery_charging_full_white_24dp);
+                fabBatteryCharging.setImageResource(R.drawable.ic_battery);
             }
 
             if (deviceStatus == BatteryManager.BATTERY_STATUS_DISCHARGING) {
@@ -161,9 +155,26 @@ public class BatteryFragment extends BaseFragment {
             }
         }
 
-        if (progressBar != null) {
-            progressBar.setProgress(level);
-        }
+        final Handler handler = new Handler();
+        final Runnable runnable = new Runnable() {
+            int counter = 0;
+            @Override
+            public void run() {
+                try {
+                    if (counter <= level) {
+                        progressBar.setProgress(counter);
+                        progressBar.postDelayed(this, 10000);
+                        counter++;
+                        handler.postDelayed(this, 20);
+                    } else {
+                        handler.removeCallbacks(this);
+                    }
+                } catch (NullPointerException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        handler.postDelayed(runnable, 20);
         tvBatteryTemperature.setText("".concat(String.valueOf(temperature)));
 
         if (Validation.isRequiredField(technology)) {
