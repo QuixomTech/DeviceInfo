@@ -19,10 +19,11 @@ import android.widget.TextView
 import com.github.lzyzsd.circleprogress.ArcProgress
 import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.adapters.CPUAdapter
-import com.quixom.apps.deviceinfo.models.CPUFeatures
+import com.quixom.apps.deviceinfo.models.FeaturesHW
 import com.quixom.apps.deviceinfo.utilities.Methods
 import java.io.File
 import java.io.IOException
+import java.io.InputStream
 import java.text.DecimalFormat
 import java.util.*
 
@@ -42,6 +43,9 @@ class CPUFragment : BaseFragment() {
 
     var activityManager: ActivityManager? = null
     var memoryInfo: ActivityManager.MemoryInfo? = null
+    var inputStream: InputStream? = null
+    var byteArray = ByteArray(1024)
+    var cpuData: String = ""
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater!!.inflate(R.layout.fragment_cpu, container, false)
@@ -65,8 +69,6 @@ class CPUFragment : BaseFragment() {
         rvCpuFeatureList?.layoutManager = LinearLayoutManager(mActivity)
         rvCpuFeatureList?.hasFixedSize()
 
-        getCpuInfo()
-
         getCpuInfoMap()
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
@@ -81,10 +83,10 @@ class CPUFragment : BaseFragment() {
                 val freeRamValue = freeRamMemorySize()
                 val usedRamValue = totalRamValue - freeRamValue
                 arcRAM?.progress = Methods.calculatePercentage(usedRamValue.toDouble(), totalRamValue.toDouble())
-                handler.postDelayed(this, 1000)
+                handler.postDelayed(this, 500)
             }
         }
-        handler.postDelayed(runnable, 1000)
+        handler.postDelayed(runnable, 500)
     }
 
     override fun onHiddenChanged(hidden: Boolean) {
@@ -144,13 +146,13 @@ class CPUFragment : BaseFragment() {
     }
 
     private fun getCpuInfoMap() {
-        val lists = ArrayList<CPUFeatures>()
+        val lists = ArrayList<FeaturesHW>()
         try {
             val s = Scanner(File("/proc/cpuinfo"))
             while (s.hasNextLine()) {
                 val vals = s.nextLine().split(": ")
                 if (vals.size > 1)
-                    lists.add(CPUFeatures(vals[0].trim({ it <= ' ' }), vals[1].trim({ it <= ' ' })))
+                    lists.add(FeaturesHW(vals[0].trim({ it <= ' ' }), vals[1].trim({ it <= ' ' })))
             }
         } catch (e: Exception) {
             Log.e("getCpuInfoMap", Log.getStackTraceString(e))
@@ -166,9 +168,26 @@ class CPUFragment : BaseFragment() {
         try {
             val proc = Runtime.getRuntime().exec("cat /proc/cpuinfo")
             val cpuDetails = proc.inputStream
-
+            println("cpuDetails = " + cpuDetails)
         } catch (e: IOException) {
             Log.e(TAG, "------ getCpuInfo " + e.printStackTrace())
         }
+    }
+
+    private fun getCPUInformation() {
+
+      /*  try {
+            val proc = Runtime.getRuntime().exec("/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq")
+            inputStream = proc?.inputStream
+
+            while (inputStream?.read(byteArray) != -1) {
+                cpuData += String(byteArray)
+                println("cpuData###### ==" + cpuData)
+            }
+            inputStream!!.close()
+
+        } catch (e: Exception) {
+            println(e.printStackTrace())
+        }*/
     }
 }

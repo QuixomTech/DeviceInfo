@@ -25,7 +25,9 @@ import android.view.inputmethod.InputMethodManager;
 import com.quixom.apps.deviceinfo.MainActivity;
 import com.quixom.apps.deviceinfo.R;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.RandomAccessFile;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.text.DateFormat;
@@ -515,5 +517,53 @@ public class Methods {
             }
         }
         return out;
+    }
+
+    /**
+     * Get max cpu rate.
+     *
+     * This works by examining the list of CPU frequencies in the pseudo file
+     * "/sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state" and how much time has been spent
+     * in each. It finds the highest non-zero time and assumes that is the maximum frequency (note
+     * that sometimes frequencies higher than that which was designed can be reported.) So it is not
+     * impossible that this method will return an incorrect CPU frequency.
+     *
+     * Also note that (obviously) this will not reflect different CPU cores with different
+     * maximum speeds.
+     *
+     * @return cpu frequency in MHz
+     */
+    public static int getMaxCPUFreqMHz() {
+
+        int maxFreq = -1;
+        try {
+
+            RandomAccessFile reader = new RandomAccessFile( "/sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state", "r" );
+
+            boolean done = false;
+            while ( ! done ) {
+                String line = reader.readLine();
+                if ( null == line ) {
+                    done = true;
+                    break;
+                }
+                String[] splits = line.split( "\\s+" );
+                assert ( splits.length == 2 );
+
+                int timeInState = Integer.parseInt( splits[1] );
+                if ( timeInState > 0 ) {
+                    int freq = Integer.parseInt( splits[0] ) / 1000;
+                    System.out.println("maxFreq = " + freq);
+                    if ( freq > maxFreq ) {
+                        maxFreq = freq;
+                    }
+                }
+            }
+
+        } catch ( IOException ex ) {
+            ex.printStackTrace();
+        }
+
+        return maxFreq;
     }
 }
