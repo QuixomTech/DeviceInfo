@@ -1,7 +1,7 @@
 # DeviceInfo
 DevInfo is a detailed specification of your phone which includes all the possible hardware configurations and other required details about your own device.
 
-![Device Info](https://i.imgur.com/5fo9s0B.jpg)
+![Device Info](https://i.imgur.com/GdISEJ6.png)
 
 [Device Info](https://play.google.com/store/apps/details?id=com.quixom.deviceinfo) is a detailed specification of your phone which includes all the possible hardware configurations and other required details about your own device. Tech savvy people often tend to be curious about their own hardware and what lies beneath their devices. [Device Info](https://play.google.com/store/apps/details?id=com.quixom.deviceinfo) provides its users with all kind of information which grouped as detailed below:
 
