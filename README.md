@@ -1,7 +1,11 @@
+![Device Info](https://i.imgur.com/GdISEJ6.png)
+
 # DeviceInfo
 DevInfo is a detailed specification of your phone which includes all the possible hardware configurations and other required details about your own device.
 
-![Device Info](https://i.imgur.com/GdISEJ6.png)
+Currently application available on the Play store you can refer it for how can it work.
+
+*[![Play Store Badge](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.quixom.deviceinfo)*
 
 [Device Info](https://play.google.com/store/apps/details?id=com.quixom.deviceinfo) is a detailed specification of your phone which includes all the possible hardware configurations and other required details about your own device. Tech savvy people often tend to be curious about their own hardware and what lies beneath their devices. [Device Info](https://play.google.com/store/apps/details?id=com.quixom.deviceinfo) provides its users with all kind of information which grouped as detailed below:
 
@@ -106,7 +110,3 @@ Features
 List of Apps & List of System Apps
 
 [Device Info](https://play.google.com/store/apps/details?id=com.quixom.deviceinfo) has been built using Kotlin which is the new adaptation in terms of programming language for Android native application development.
-
-Currently application available on the Play store you can refer it for how can it work.
-
-*[![Play Store Badge](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.quixom.deviceinfo)*
