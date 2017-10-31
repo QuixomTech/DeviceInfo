@@ -3,7 +3,7 @@
 # DeviceInfo
 DevInfo is a detailed specification of your phone which includes all the possible hardware configurations and other required details about your own device.
 
-Currently application available on the Play store you can refer it for how can it work.
+###### Currently application available on the Play store you can refer it for how can it work.
 
 *[![Play Store Badge](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.quixom.deviceinfo)*
 
