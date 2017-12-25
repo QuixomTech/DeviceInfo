@@ -1,5 +1,6 @@
 ![Device Info](https://i.imgur.com/GdISEJ6.png)
 
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Device%20Info-green.svg?style=flat )]( https://android-arsenal.com/details/1/6588 )
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/QuixomTech/DeviceInfo/blob/master/LICENSE)
 
 # DeviceInfo
