@@ -1,5 +1,7 @@
 ![Device Info](https://i.imgur.com/GdISEJ6.png)
 
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/QuixomTech/DeviceInfo/blob/master/LICENSE)
+
 # DeviceInfo
 DevInfo is a detailed specification of your phone which includes all the possible hardware configurations and other required details about your own device.
 
