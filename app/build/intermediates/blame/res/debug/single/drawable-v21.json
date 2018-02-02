@@ -1,34 +1,34 @@
 [
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
-        "source": "/home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/res/drawable-v21/notification_action_background.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/res/drawable-v21/design_password_eye.xml"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
-        "source": "/home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/res/drawable-v21/avd_hide_password.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/quixomtech/.android/build-cache/1eb0440aa760fe83dc43d4c2436017b36cf5f060/output/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
-        "source": "/home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/home/quixomtech/.android/build-cache/c938e45f64a4d91d4986bf62665300e57f8c89eb/output/res/drawable-v21/notification_action_background.xml"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
-        "source": "/home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/res/drawable-v21/avd_show_password.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/quixomtech/.android/build-cache/1eb0440aa760fe83dc43d4c2436017b36cf5f060/output/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
-        "source": "/home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
-        "source": "/home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/res/drawable-v21/abc_edit_text_material.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/res/drawable-v21/avd_hide_password.xml"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
-        "source": "/home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/res/drawable-v21/design_password_eye.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/quixomtech/.android/build-cache/1eb0440aa760fe83dc43d4c2436017b36cf5f060/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
-        "source": "/home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/res/drawable-v21/abc_btn_colored_material.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/res/drawable-v21/avd_show_password.xml"
     }
 ]

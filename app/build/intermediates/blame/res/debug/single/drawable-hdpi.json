@@ -1,238 +1,246 @@
 [
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_kitkat.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_kitkat.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_home.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_home.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_logo_512.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_logo_512.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_speedometer.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_speedometer.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_lens.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_lens.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_speedometer_172557.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_speedometer_172557.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_snowflake.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_snowflake.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_android_logo.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_android_logo.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_marshmallow.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_marshmallow.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_wifi_signal.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_wifi_signal.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_database.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_database.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_go_back_left_arrow.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_go_back_left_arrow.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_favorites.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_favorites.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_android_honeycomb.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_android_honeycomb.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_running_172541.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_running_172541.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_menu_button.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_button.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_menu.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/drawable-hdpi/ic_menu.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_sim.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_sim.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_inclined_magnet.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_inclined_magnet.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_oreo.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_oreo.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_pressure.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_pressure.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_hydro_power.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_hydro_power.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_icon.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_icon.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_battery_type.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_battery_type.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_ecological_solar_power_for_a_battery.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_ecological_solar_power_for_a_battery.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_ibeacon_proximity_1613770.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_ibeacon_proximity_1613770.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_user.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_user.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_nougat.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_nougat.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_icon_43_one_finger_swipe_horizontally_329372.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_icon_43_one_finger_swipe_horizontally_329372.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_important_devices_black_24dp.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_important_devices_black_24dp.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_processor.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_processor.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_ics.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_ics.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_back.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/drawable-hdpi/ic_back.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_move_to_the_next_page_symbol.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_move_to_the_next_page_symbol.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_battery_new.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_battery_new.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_information.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_information.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_battery_alert_white_24dp.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/drawable-hdpi/ic_battery_alert_white_24dp.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_magnet_with_bolt.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_magnet_with_bolt.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_nougat.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_nougat.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_running_172541.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_running_172541.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_chat.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_chat.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_camping_nature_10_808486.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_camping_nature_10_808486.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_drop_of_liquid.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_drop_of_liquid.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_screen_rotation_326583.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_screen_rotation_326583.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_vector_icons_81_1041639.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_vector_icons_81_1041639.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_humidity.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_humidity.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_humidity.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_humidity.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_thermostat_temperature_wheel.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_thermostat_temperature_wheel.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_screen_rotation_326583.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_screen_rotation_326583.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_lens.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_lens.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_information.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_information.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_kitkat.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_kitkat.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_cardiogram.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_cardiogram.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_battery_new.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_battery_new.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_house.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_house.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_location_on_black_24dp.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_location_on_black_24dp.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_battery_charging_full_white_24dp.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/drawable-hdpi/ic_battery_charging_full_white_24dp.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_cardiogram.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_cardiogram.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_battery_type.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_battery_type.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_earth1_216620.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_earth1_216620.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_speedometer_172557.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_speedometer_172557.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_vector_icons_81_1041639.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_vector_icons_81_1041639.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_oreo.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_oreo.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_low_battery.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_low_battery.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_actionbar_ic.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_actionbar_ic.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_snowflake.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_snowflake.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_speedometer.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_speedometer.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_marshmallow.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_marshmallow.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_worldwide_communications.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_worldwide_communications.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_icon.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_icon.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_wifi_signal.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_wifi_signal.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_database.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_database.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_magnet_with_bolt.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_magnet_with_bolt.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_battery.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_battery.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_home.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_home.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_share.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_share.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_share.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_share.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_default_os_ic.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_default_os_ic.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_battery_scale.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_battery_scale.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_call_black_24dp.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_call_black_24dp.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_earth1_216620.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_earth1_216620.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_battery_scale.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_battery_scale.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_default_os_ic.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_default_os_ic.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_favorites.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_favorites.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_thermostat_temperature_wheel.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_thermostat_temperature_wheel.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_broken_link.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_broken_link.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_screens.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_screens.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_chat.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_chat.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_hydro_power.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_hydro_power.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_pressure.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_pressure.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_chevron_right_white_24dp.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/drawable-hdpi/ic_chevron_right_white_24dp.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_solar_system.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_solar_system.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_home_icon_silhouette.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_home_icon_silhouette.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_processor.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_processor.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_broken_link.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_broken_link.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_temperature.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_temperature.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_android_logo.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_android_logo.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_actionbar_ic.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_actionbar_ic.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_android.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_android.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_no_simcard.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_no_simcard.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_lollipop.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_lollipop.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_user.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_user.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_camping_nature_10_808486.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_camping_nature_10_808486.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_inclined_magnet.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_inclined_magnet.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_temperature.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_temperature.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_worldwide_communications.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_worldwide_communications.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_smartphone.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_smartphone.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_jellybean.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_jellybean.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_ics.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_ics.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_icon_43_one_finger_swipe_horizontally_329372.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_icon_43_one_finger_swipe_horizontally_329372.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_if_ibeacon_proximity_1613770.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_if_ibeacon_proximity_1613770.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_lollipop.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_lollipop.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_jellybean.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_jellybean.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_smartphone.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_smartphone.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_android_honeycomb.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_android_honeycomb.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_house.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_house.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_solar_system.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_solar_system.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_drop_of_liquid.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_drop_of_liquid.png"
+    },
+    {
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_screens.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_screens.png"
+    },
+    {
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_ecological_solar_power_for_a_battery.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/generated/res/pngs/debug/drawable-hdpi/ic_ecological_solar_power_for_a_battery.png"
     }
 ]

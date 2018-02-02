@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/quixomtech/.android/build-cache/1eb0440aa760fe83dc43d4c2436017b36cf5f060/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/quixomtech/.android/build-cache/1eb0440aa760fe83dc43d4c2436017b36cf5f060/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

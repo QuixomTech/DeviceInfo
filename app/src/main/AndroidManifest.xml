@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <uses-feature
         android:name="android.hardware.sensor.proximity"
@@ -22,12 +23,11 @@
     <uses-feature android:name="android.hardware.camera" />
 
     <supports-screens
-        android:smallScreens="true"
-        android:normalScreens="true"
         android:largeScreens="true"
+        android:normalScreens="true"
         android:resizeable="true"
-        />
-    
+        android:smallScreens="true" />
+
     <application
         android:name=".DeviceApplication"
         android:allowBackup="true"
@@ -43,7 +43,7 @@
         <activity
             android:name=".Splash"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
+            android:theme="@style/SplashTheme">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

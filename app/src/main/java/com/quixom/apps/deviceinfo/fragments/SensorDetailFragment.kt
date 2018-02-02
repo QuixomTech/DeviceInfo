@@ -61,8 +61,8 @@ class SensorDetailFragment : BaseFragment(), SensorEventListener {
         return sensorDetailFragment
     }
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_sensors_detail, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_sensors_detail, container, false)
 
         ivMenuSensor = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)

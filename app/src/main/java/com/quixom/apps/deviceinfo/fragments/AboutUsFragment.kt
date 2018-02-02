@@ -37,8 +37,8 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
     var tvWebsiteIntent: TextView? = null
     var rbRatingBar: RatingBar? = null
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_about_us, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_about_us, container, false)
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)
         tvTitle = view.findViewById(R.id.tv_title)
@@ -87,6 +87,7 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onClick(view: View?) {
         when (view) {
@@ -104,7 +105,7 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
     private fun mapIntent() {
         val uri = String.format(Locale.ENGLISH, "geo:%f,%f", 23.077309, 72.507228)
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
-        context.startActivity(intent)
+        context?.startActivity(intent)
     }
 
     private fun webIntent() {
@@ -115,9 +116,10 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
     /**
      * this method will show permission pop up messages to user.
      */
+    @RequiresApi(Build.VERSION_CODES.M)
     private fun checkCameraPermission() {
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            val hasWriteCameraPermission = mActivity.checkSelfPermission(Manifest.permission.CAMERA)
+            val hasWriteCameraPermission = mActivity?.checkSelfPermission(Manifest.permission.CAMERA)
             if (hasWriteCameraPermission != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(arrayOf(Manifest.permission.CALL_PHONE), KeyUtil.KEY_CALL_PERMISSION)
             } else {

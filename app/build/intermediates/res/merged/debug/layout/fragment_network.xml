@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:airbnb="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -188,4 +189,19 @@
             </TableRow>
         </TableLayout>
     </android.support.v7.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        airbnb:lottie_autoPlay="true"
+        airbnb:lottie_fileName="wifi_connected.json"
+        airbnb:lottie_cacheStrategy="strong"
+        airbnb:lottie_enableMergePathsForKitKatAndAbove="true"
+        airbnb:lottie_repeatCount="10"
+        android:layout_gravity="center_horizontal"
+        airbnb:lottie_loop="true"
+        tools:targetApi="lollipop" />
+
 </LinearLayout>

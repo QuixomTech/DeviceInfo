@@ -34,6 +34,7 @@ import com.quixom.apps.deviceinfo.fragments.NetworkFragment;
 import com.quixom.apps.deviceinfo.fragments.OSFragment;
 import com.quixom.apps.deviceinfo.fragments.PhoneFeaturesFragment;
 import com.quixom.apps.deviceinfo.fragments.SensorCategoryFragment;
+import com.quixom.apps.deviceinfo.fragments.SimFragment;
 import com.quixom.apps.deviceinfo.fragments.StorageFragment;
 import com.quixom.apps.deviceinfo.models.DeviceInfo;
 import com.quixom.apps.deviceinfo.utilities.FragmentUtil;
@@ -169,38 +170,41 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_network:
                         navItemIndex = 5;
                         break;
-                    case R.id.nav_camera:
+                    case R.id.nav_sim:
                         navItemIndex = 6;
                         break;
-                    case R.id.nav_storage:
+                    case R.id.nav_camera:
                         navItemIndex = 7;
                         break;
-                    case R.id.nav_display:
+                    case R.id.nav_storage:
                         navItemIndex = 8;
                         break;
-                    case R.id.nav_features:
+                    case R.id.nav_display:
                         navItemIndex = 9;
                         break;
-                    case R.id.nav_user_apps:
+                    case R.id.nav_features:
                         navItemIndex = 10;
                         break;
-                    case R.id.nav_system_apps:
+                    case R.id.nav_user_apps:
                         navItemIndex = 11;
                         break;
-                    case R.id.nav_about_us:
+                    case R.id.nav_system_apps:
                         navItemIndex = 12;
                         break;
-                    case R.id.nav_share:
+                    case R.id.nav_about_us:
                         navItemIndex = 13;
                         break;
-                    case R.id.nav_rate_us:
+                    case R.id.nav_share:
                         navItemIndex = 14;
                         break;
-                    case R.id.nav_feedback:
+                    case R.id.nav_rate_us:
                         navItemIndex = 15;
                         break;
-                    case R.id.nav_connect_us:
+                    case R.id.nav_feedback:
                         navItemIndex = 16;
+                        break;
+                    case R.id.nav_connect_us:
+                        navItemIndex = 17;
                         break;
                     default:
                         navItemIndex = 0;
@@ -340,30 +344,32 @@ public class MainActivity extends AppCompatActivity {
             case 5:
                 return new NetworkFragment();
             case 6:
-                return new CameraFragment();
+                return new SimFragment();
             case 7:
-                return new StorageFragment();
+                return new CameraFragment();
             case 8:
-                return new DisplayFragment();
+                return new StorageFragment();
             case 9:
-                return new PhoneFeaturesFragment();
+                return new DisplayFragment();
             case 10:
-                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_USER_APPS);
+                return new PhoneFeaturesFragment();
             case 11:
-                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_SYSTEM_APPS);
+                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_USER_APPS);
             case 12:
-                return new AboutUsFragment();
+                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_SYSTEM_APPS);
             case 13:
+                return new AboutUsFragment();
+            case 14:
                 Methods.sharing("https://play.google.com/store/apps/details?id=com.quixom.deviceinfo");
                 break;
-            case 14:
+            case 15:
                 RateUsApp.Companion.rateUsApp(MainActivity.this);
                 break;
-            case 15:
-                return HomeFragment.getInstance(7);
             case 16:
                 return HomeFragment.getInstance(7);
             case 17:
+                return HomeFragment.getInstance(7);
+            case 18:
                 return HomeFragment.getInstance(7);
             default:
                 return new HomeFragment();

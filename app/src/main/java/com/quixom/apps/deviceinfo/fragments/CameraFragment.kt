@@ -12,6 +12,7 @@ import android.hardware.camera2.CameraManager
 import android.hardware.camera2.params.StreamConfigurationMap
 import android.os.Build
 import android.os.Bundle
+import android.support.annotation.RequiresApi
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.widget.LinearLayoutManager
@@ -35,6 +36,7 @@ import java.util.*
 
 
 class CameraFragment : BaseFragment(), View.OnClickListener {
+    @RequiresApi(Build.VERSION_CODES.M)
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onClick(view: View?) {
         when (view) {
@@ -64,8 +66,8 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
     private var cameraManager: CameraManager? = null
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_camera, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_camera, container, false)
 
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)
@@ -117,6 +119,7 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     /**
      * this method will show permission pop up messages to user.

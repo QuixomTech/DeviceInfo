@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "com.quixom.deviceinfo"
         minSdkVersion 15
@@ -58,8 +58,9 @@ dependencies {
     /*** Calligraphy lib for custom fonts*/
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
 
-    /*** GIF ImageView*/
-    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    /** Lottie by Airbnb*/
+    compile 'com.airbnb.android:lottie:2.5.0-beta3'
+
 }
 repositories {
     mavenCentral()

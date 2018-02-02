@@ -3,35 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:wave="wave"
     android:clipToPadding="false"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="NamespaceTypo">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/ll_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
         android:background="@color/colorPrimary"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:orientation="vertical">
+
+        <com.quixom.apps.deviceinfo.waveview.WaveView
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            wave:above_wave_color="@color/light_blue_500"
+            wave:blow_wave_color="@color/cyan_500"
+            wave:wave_height="large"
+            wave:wave_hz="normal"
+            wave:wave_length="large" />
 
         <ProgressBar
-            android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_gravity="center_horizontal" />
 
         <TextView
             android:id="@+id/tv_battery_level"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
             android:textColor="@color/primary_text"
             android:textSize="50sp" />
 
@@ -42,7 +54,7 @@
             android:textColor="@color/secondary_text"
             android:textSize="10sp" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_battery_charging"
@@ -50,10 +62,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="230dp"
         android:scaleType="center"
-        android:src="@drawable/ic_battery_charging_full_white_24dp"
-        android:visibility="gone"
+        android:src="@drawable/ic_battery"
+        android:visibility="visible"
         app:fabSize="auto" />
 
     <LinearLayout

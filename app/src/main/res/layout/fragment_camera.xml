@@ -4,9 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:airbnb="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <include layout="@layout/toolbar" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        airbnb:lottie_autoPlay="true"
+        airbnb:lottie_fileName="camera_anim.json"
+        airbnb:lottie_cacheStrategy="strong"
+        airbnb:lottie_enableMergePathsForKitKatAndAbove="true"
+        airbnb:lottie_repeatCount="10"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        airbnb:lottie_loop="true"
+        tools:targetApi="lollipop" />
 
     <LinearLayout
         android:id="@+id/ll_parent_camera"

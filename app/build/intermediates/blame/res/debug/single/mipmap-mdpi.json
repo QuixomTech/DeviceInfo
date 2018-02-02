@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
-        "source": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
+        "source": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     }
 ]

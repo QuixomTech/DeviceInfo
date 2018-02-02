@@ -47,7 +47,7 @@ class CPUFragment : BaseFragment() {
     var byteArray = ByteArray(1024)
     var cpuData: String = ""
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater!!.inflate(R.layout.fragment_cpu, container, false)
 
         ivMenu = view.findViewById(R.id.iv_menu)

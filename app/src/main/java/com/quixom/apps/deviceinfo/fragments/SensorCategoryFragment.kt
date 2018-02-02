@@ -31,8 +31,8 @@ class SensorCategoryFragment : BaseFragment() {
     var coordinateLayout: CoordinatorLayout? = null
 
     var rvSensorsList: RecyclerView? = null
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_sensors_categories, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_sensors_categories, container, false)
 
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)

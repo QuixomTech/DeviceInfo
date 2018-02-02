@@ -15,6 +15,7 @@
     <string name="gpu">GPU</string>
     <string name="battery">Battery</string>
     <string name="network">Network</string>
+    <string name="sim">SIM</string>
     <string name="display">Display</string>
     <string name="camera">Camera</string>
     <string name="storage">Storage</string>
@@ -80,6 +81,7 @@
     <string name="unknown">Unknown</string>
 
     <!-- CPU -->
+    <string name="processor_label">Processor</string>
     <string name="processor">processor</string>
     <string name="cpu_t">CPU</string>
     <string name="ram_m">RAM</string>
@@ -238,4 +240,6 @@
     <string name="website">www.quixom.com</string>
     <string name="rating_us">Rate us</string>
     <string name="about_app">Device Info is a detailed specification of your phone which includes all the possible hardware configurations and other required details about your own device.</string>
+    <string name="sim_empty_screen">Phone does not have any sim.</string>
+    <string name="c_symbol">\u00B0C</string>
 </resources>

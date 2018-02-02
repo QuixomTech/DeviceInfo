@@ -175,7 +175,7 @@ public class BatteryFragment extends BaseFragment {
             }
         };
         handler.postDelayed(runnable, 20);
-        tvBatteryTemperature.setText("".concat(String.valueOf(temperature)));
+        tvBatteryTemperature.setText("".concat(String.valueOf(temperature)).concat(mActivity.getResources().getString(R.string.c_symbol)));
 
         if (Validation.isRequiredField(technology)) {
             tvBatteryType.setText("".concat(technology));

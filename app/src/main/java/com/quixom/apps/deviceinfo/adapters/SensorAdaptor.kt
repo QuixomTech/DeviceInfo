@@ -32,9 +32,7 @@ class SensorAdaptor(internal var c: MainActivity, internal var sensorList: Array
         holder?.bindData(sensorList[position], c)
     }
 
-    override fun getItemCount(): Int {
-        return sensorList.size
-    }
+    override fun getItemCount(): Int = sensorList.size
 
     class SensorVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindData(sensorInfo: SensorDATA, c: MainActivity) {

@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
-        "source": "/home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
-        "source": "/home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+        "merged": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
     }
 ]

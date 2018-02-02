@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:airbnb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/font_white">
 
-    <pl.droidsonroids.gif.GifImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/ic_logo_splash_new"/>
-
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        airbnb:lottie_autoPlay="true"
+        airbnb:lottie_fileName="deviceinfo_splash.json"
+        airbnb:lottie_cacheStrategy="strong"
+        airbnb:lottie_enableMergePathsForKitKatAndAbove="true"
+        airbnb:lottie_repeatCount="10"
+        airbnb:lottie_loop="true"/>
 </LinearLayout>

@@ -61,7 +61,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:src="@drawable/ic_chevron_right_white_24dp"
+            android:src="@drawable/ic_move_to_the_next_page_symbol"
             android:tint="@color/primary_text" />
     </RelativeLayout>
 

@@ -42,7 +42,7 @@
             android:layout_centerVertical="true"
             android:layout_gravity="center_vertical"
             android:tint="@color/secondary_text"
-            android:src="@drawable/ic_chevron_right_white_24dp" />
+            android:src="@drawable/ic_move_to_the_next_page_symbol" />
     </RelativeLayout>
 
     <View

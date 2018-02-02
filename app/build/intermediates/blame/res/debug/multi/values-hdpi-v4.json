@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+        "outputFile": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "/home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/res/values-hdpi/dimens.xml",
+                    "file": "/home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/res/values-hdpi/dimens.xml",
                     "position": {
                         "startLine": 1,
                         "startColumn": 1,
@@ -31,7 +31,7 @@
                     "endOffset": 373
                 },
                 "from": {
-                    "file": "/home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "file": "/home/quixomtech/.android/build-cache/1eb0440aa760fe83dc43d4c2436017b36cf5f060/output/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

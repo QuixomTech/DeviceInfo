@@ -11,6 +11,7 @@ import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.utilities.Methods
 import android.content.Context.WIFI_SERVICE
 import android.net.wifi.WifiManager
+import kotlinx.android.synthetic.main.fragment_network.*
 
 
 class NetworkFragment : BaseFragment() {
@@ -26,8 +27,8 @@ class NetworkFragment : BaseFragment() {
     var tvSSID: TextView? = null
     var tvLinkSpeed: TextView? = null
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_network, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_network, container, false)
 
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBackNet = view.findViewById(R.id.iv_back)
@@ -64,13 +65,15 @@ class NetworkFragment : BaseFragment() {
         }
     }
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "WifiManagerLeak")
     private fun getNetworkInfo(): Unit {
 
         if (Methods.isNetworkConnected(mActivity)) {
             tvConnectionStatus?.text = mResources.getString(R.string.connect)
+            animationView.visibility = View.VISIBLE
             tvIpAddress?.text = Methods.getIPAddress(true)
         } else {
+            animationView.visibility = View.GONE
             tvConnectionStatus?.text = mResources.getString(R.string.disconnect)
             tvIpAddress?.text = mResources.getString(R.string.unavailable)
         }

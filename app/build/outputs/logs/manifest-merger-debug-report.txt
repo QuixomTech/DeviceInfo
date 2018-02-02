@@ -1,153 +1,160 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:2:1-50:12
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:2:1-57:12
 	package
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:3:5-41
-		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml
+		INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
+		INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml
+		INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
+		INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml
+		INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:6:5-67
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:7:5-79
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:8:5-76
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:7:5-76
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:8:22-73
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:7:22-73
 uses-permission#android.permission.CAMERA
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:9:5-65
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:8:5-65
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:9:22-62
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:8:22-62
+uses-permission#android.permission.CALL_PHONE
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:9:5-69
+	android:name
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:9:22-66
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:10:22-72
 uses-feature#android.hardware.sensor.proximity
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:11:5-13:35
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:12:5-14:36
 	android:required
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:13:9-32
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:14:9-33
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:12:9-57
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:13:9-57
 uses-feature#android.hardware.sensor.gyroscope
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:14:5-16:35
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:15:5-17:36
 	android:required
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:16:9-32
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:17:9-33
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:15:9-57
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:16:9-57
 uses-feature#android.hardware.wifi
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:18:5-20:35
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:19:5-21:36
 	android:required
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:20:9-32
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:21:9-33
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:19:9-45
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:20:9-45
 uses-feature#android.hardware.camera
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:22:5-60
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:23:5-60
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:22:19-57
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:23:19-57
+supports-screens
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:25:5-29:39
+	android:largeScreens
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:26:9-36
+	android:smallScreens
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:29:9-36
+	android:normalScreens
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:27:9-37
+	android:resizeable
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:28:9-34
 application
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:24:5-48:19
-MERGED from [com.android.support:design:26.0.0-alpha1] /home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:transition:26.0.0-alpha1] /home/akif/.android/build-cache/290ae60e485212e7edfd949ceeb362f271565772/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/akif/.android/build-cache/92449659d4bca1c779a12d85c0d3269aebbaa105/output/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /home/akif/.android/build-cache/4f83979b83af762cc312e6922b3f7b854a7e831c/output/AndroidManifest.xml:26:5-20
-MERGED from [uk.co.chrisjenx:calligraphy:2.2.0] /home/akif/.android/build-cache/fbff7c40a7aca9490f9d2ab7c31bb6ee0cf24095/output/AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/akif/.android/build-cache/079e855b4e35667a916e1f9c9848cd5ceda0de74/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/akif/.android/build-cache/8a74ff0855332b435f9cf7b9e9e184424a371820/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/akif/.android/build-cache/fbe1db5011dd65fc47e643f56d55e06a453114cf/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/akif/.android/build-cache/b701dc80d4a1940cd4fcd4ec483539b8f7529737/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/akif/.android/build-cache/3afaad852846d04a8aa1a40668548eb22d24d0bb/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/akif/.android/build-cache/eea77ffc70cc313beb886002124b1567c389c3ac/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/akif/.android/build-cache/006049d4176f309c84948d6e3d135c154bdc18ed/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/akif/.android/build-cache/e4ca429e1680cbc7db778e0afe53e6dab2d6c123/output/AndroidManifest.xml:29:5-20
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:31:5-55:19
+MERGED from [com.android.support:design:26.1.0] /home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/quixomtech/.android/build-cache/bb023c9a04bd4b84b552a38149058eea26682b55/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/quixomtech/.android/build-cache/f9e25c48517487f068906071a65470203220bc2e/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/quixomtech/.android/build-cache/da1f8725ffb894de6b4828f4550f40c9c6f3807d/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v4:26.1.0] /home/quixomtech/.android/build-cache/4a605df78a11a43c9e227fc7bc89240dcff5f415/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/quixomtech/.android/build-cache/f28c10ba9df68048a5e3d94957de9131e8739041/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/quixomtech/.android/build-cache/2d75f42fd051d5300265a54e0a7aacdb1e979998/output/AndroidManifest.xml:22:5-26:19
+MERGED from [uk.co.chrisjenx:calligraphy:2.2.0] /home/quixomtech/.android/build-cache/1a3917fa6b0cd44b8cd45e15aa6e05208e322e4c/output/AndroidManifest.xml:11:5-20
+MERGED from [com.airbnb.android:lottie:2.5.0-beta3] /home/quixomtech/.android/build-cache/591f96e3afd794b0e9281b499243294c4362f51a/output/AndroidManifest.xml:12:5-20
 	android:label
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:28:9-41
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:35:9-41
 	android:supportsRtl
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:30:9-35
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:37:9-35
 	android:roundIcon
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:29:9-48
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:36:9-48
 	android:allowBackup
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:26:9-35
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:33:9-35
 	android:icon
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:27:9-43
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:34:9-43
 	android:theme
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:31:9-40
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:38:9-40
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:25:9-42
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:32:9-42
 activity#com.quixom.apps.deviceinfo.MainActivity
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:32:9-34:52
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:39:9-41:52
 	android:screenOrientation
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:34:13-49
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:41:13-49
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:33:13-41
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:40:13-41
 activity#com.quixom.apps.deviceinfo.Splash
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:36:9-47:20
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:43:9-54:20
 	android:screenOrientation
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:38:13-49
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:45:13-49
 	android:theme
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:39:13-44
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:46:13-47
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:37:13-35
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:44:13-35
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:41:13-45:29
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:48:13-52:29
 action#android.intent.action.MAIN
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:42:17-69
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:49:17-69
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:42:25-66
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:49:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:44:17-77
+ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:51:17-77
 	android:name
-		ADDED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml:44:27-74
+		ADDED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml:51:27-74
 uses-sdk
-INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:26.0.0-alpha1] /home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/akif/.android/build-cache/a0ff8b2c3fa881cac8d2f9f1477bfc3d599d3633/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] /home/akif/.android/build-cache/290ae60e485212e7edfd949ceeb362f271565772/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/akif/.android/build-cache/92449659d4bca1c779a12d85c0d3269aebbaa105/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /home/akif/.android/build-cache/4f83979b83af762cc312e6922b3f7b854a7e831c/output/AndroidManifest.xml:20:5-44
-MERGED from [com.jakewharton:butterknife:8.8.1] /home/akif/.android/build-cache/245eead5cce2f3508600ab3d4300ffcd92e259ae/output/AndroidManifest.xml:5:5-43
-MERGED from [com.github.lzyzsd:circleprogress:1.2.1] /home/akif/.android/build-cache/f27e474d1cd73619a65ddac66327d8bf1ef42d50/output/AndroidManifest.xml:8:5-10:41
-MERGED from [uk.co.chrisjenx:calligraphy:2.2.0] /home/akif/.android/build-cache/fbff7c40a7aca9490f9d2ab7c31bb6ee0cf24095/output/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/akif/.android/build-cache/079e855b4e35667a916e1f9c9848cd5ceda0de74/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/akif/.android/build-cache/8a74ff0855332b435f9cf7b9e9e184424a371820/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/akif/.android/build-cache/fbe1db5011dd65fc47e643f56d55e06a453114cf/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/akif/.android/build-cache/b701dc80d4a1940cd4fcd4ec483539b8f7529737/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/akif/.android/build-cache/3afaad852846d04a8aa1a40668548eb22d24d0bb/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/akif/.android/build-cache/eea77ffc70cc313beb886002124b1567c389c3ac/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/akif/.android/build-cache/006049d4176f309c84948d6e3d135c154bdc18ed/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/akif/.android/build-cache/e4ca429e1680cbc7db778e0afe53e6dab2d6c123/output/AndroidManifest.xml:21:5-23:58
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.8] /home/akif/.android/build-cache/125b1f7bc6941aabbdd6b4a5d9701467c43fb3a4/output/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:26.1.0] /home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/quixomtech/.android/build-cache/bb023c9a04bd4b84b552a38149058eea26682b55/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/quixomtech/.android/build-cache/f9e25c48517487f068906071a65470203220bc2e/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/quixomtech/.android/build-cache/da1f8725ffb894de6b4828f4550f40c9c6f3807d/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:26.1.0] /home/quixomtech/.android/build-cache/4a605df78a11a43c9e227fc7bc89240dcff5f415/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/quixomtech/.android/build-cache/f28c10ba9df68048a5e3d94957de9131e8739041/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/quixomtech/.android/build-cache/2d75f42fd051d5300265a54e0a7aacdb1e979998/output/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.8.1] /home/quixomtech/.android/build-cache/0a99d8b92c74f6dacebf1440995389f2fc670040/output/AndroidManifest.xml:5:5-43
+MERGED from [com.github.lzyzsd:circleprogress:1.2.1] /home/quixomtech/.android/build-cache/21b35653d657c6a2f60527d51da6ff5b67feadc0/output/AndroidManifest.xml:8:5-10:41
+MERGED from [uk.co.chrisjenx:calligraphy:2.2.0] /home/quixomtech/.android/build-cache/1a3917fa6b0cd44b8cd45e15aa6e05208e322e4c/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.airbnb.android:lottie:2.5.0-beta3] /home/quixomtech/.android/build-cache/591f96e3afd794b0e9281b499243294c4362f51a/output/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/quixomtech/.android/build-cache/1eb0440aa760fe83dc43d4c2436017b36cf5f060/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /home/quixomtech/.android/build-cache/5df439d0ba2e5d4c4c9d6feaec4e6ad68684614e/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/quixomtech/.android/build-cache/08b5d6fafb7b89d9e341c1ec5010adaa9344ced6/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/quixomtech/.android/build-cache/a2a49d5d68133bfcde918840d8252521fce870ca/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/quixomtech/.android/build-cache/c5e203b7cdcd46104e9a855c4d140a831a8f7a3f/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/quixomtech/.android/build-cache/9b2de15db0f6a301d111fca9c4c5da12843d5ae5/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/quixomtech/.android/build-cache/c938e45f64a4d91d4986bf62665300e57f8c89eb/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/quixomtech/.android/build-cache/cde2af8fe5d098d536ac9b9f433862b2b4686b20/output/AndroidManifest.xml:20:5-22:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.0.0-alpha1] /home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.1.0] /home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
+		INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml
+		INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/akif/Documents/Android/Android Projects/Android Sensor/DevInfo/app/src/main/AndroidManifest.xml
+		INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml
+		INJECTED from /home/quixomtech/Documents/Android/Android Projects/Android Sensor/DeviceInfo18/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0-alpha1] /home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/akif/.android/build-cache/a0ff8b2c3fa881cac8d2f9f1477bfc3d599d3633/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] /home/akif/.android/build-cache/290ae60e485212e7edfd949ceeb362f271565772/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /home/akif/.android/build-cache/4f83979b83af762cc312e6922b3f7b854a7e831c/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/akif/.android/build-cache/a441afc6d91c509a560626035a7f9f99c0b46b10/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/akif/.android/build-cache/079e855b4e35667a916e1f9c9848cd5ceda0de74/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/akif/.android/build-cache/8a74ff0855332b435f9cf7b9e9e184424a371820/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/akif/.android/build-cache/fbe1db5011dd65fc47e643f56d55e06a453114cf/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/akif/.android/build-cache/b701dc80d4a1940cd4fcd4ec483539b8f7529737/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/akif/.android/build-cache/3afaad852846d04a8aa1a40668548eb22d24d0bb/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/akif/.android/build-cache/eea77ffc70cc313beb886002124b1567c389c3ac/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/akif/.android/build-cache/006049d4176f309c84948d6e3d135c154bdc18ed/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/akif/.android/build-cache/e4ca429e1680cbc7db778e0afe53e6dab2d6c123/output/AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:design:26.1.0] /home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/quixomtech/.android/build-cache/bb023c9a04bd4b84b552a38149058eea26682b55/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /home/quixomtech/.android/build-cache/f9e25c48517487f068906071a65470203220bc2e/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/quixomtech/.android/build-cache/4a605df78a11a43c9e227fc7bc89240dcff5f415/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/quixomtech/.android/build-cache/f28c10ba9df68048a5e3d94957de9131e8739041/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/quixomtech/.android/build-cache/2d75f42fd051d5300265a54e0a7aacdb1e979998/output/AndroidManifest.xml:23:9-25:38
 	android:value
-		ADDED from [com.android.support:design:26.0.0-alpha1] /home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:design:26.1.0] /home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:design:26.0.0-alpha1] /home/akif/.android/build-cache/57ee978c4927334126320fcf4970b158cae8279d/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:26.1.0] /home/quixomtech/.android/build-cache/0e7ed716dab5f1ce2f16d6fb03f6ff63f2e26df7/output/AndroidManifest.xml:27:13-51

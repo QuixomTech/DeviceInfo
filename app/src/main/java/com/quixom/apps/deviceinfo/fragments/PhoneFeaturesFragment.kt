@@ -1,5 +1,6 @@
 package com.quixom.apps.deviceinfo.fragments
 
+import android.bluetooth.BluetoothDevice
 import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -46,8 +47,8 @@ class PhoneFeaturesFragment : BaseFragment() {
     var tvSIP: TextView? = null
     var tvSIPBasedVOIP: TextView? = null
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_phone_features, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_phone_features, container, false)
 
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)

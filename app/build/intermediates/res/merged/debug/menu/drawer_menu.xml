@@ -19,7 +19,7 @@
         <item
             android:id="@+id/nav_cpu"
             android:icon="@drawable/ic_processor"
-            android:title="@string/cpu" />
+            android:title="@string/processor_label" />
 
         <item
             android:id="@+id/nav_battery"
@@ -30,6 +30,11 @@
             android:id="@+id/nav_network"
             android:icon="@drawable/ic_wifi_signal"
             android:title="@string/network" />
+
+        <item
+            android:id="@+id/nav_sim"
+            android:icon="@drawable/ic_sim"
+            android:title="@string/sim" />
 
         <item
             android:id="@+id/nav_camera"
@@ -64,10 +69,9 @@
         <item
             android:id="@+id/nav_about_us"
             android:icon="@drawable/ic_information"
-            android:visible="false"
             android:title="@string/about_us" />
 
-        <item android:title="@string/expanse_the_world" android:visible="false">
+        <item android:title="@string/expanse_the_world" android:visible="true">
             <menu>
                 <item
                     android:id="@+id/nav_share"
@@ -82,6 +86,7 @@
                 <item
                     android:id="@+id/nav_feedback"
                     android:icon="@drawable/ic_chat"
+                    android:visible="false"
                     android:title="@string/feedback" />
             </menu>
         </item>

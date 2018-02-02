@@ -18,6 +18,7 @@ public class KeyUtil {
 
     public static final int KEY_CAMERA_CODE = 101;
     public static final int KEY_CALL_PERMISSION = 102;
+    public static final int KEY_READ_PHONE_STATE = 103;
     public static final int IS_USER_COME_FROM_SYSTEM_APPS = 1;
     public static final int IS_USER_COME_FROM_USER_APPS = 2;
 }
