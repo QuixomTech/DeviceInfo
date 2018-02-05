@@ -8,17 +8,26 @@ android {
     buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "com.quixom.deviceinfo"
-        minSdkVersion 15
+        minSdkVersion 18
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 5
+        versionName "2.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        resConfigs "en"
     }
     buildTypes {
         release {
             shrinkResources true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            //Other parameters
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
         }
     }
 }
@@ -45,18 +54,10 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
     /*** Kotlin */
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-
-    /*** Anko */
-    compile "org.jetbrains.anko:anko-sdk15:$anko_version"
-    compile "org.jetbrains.anko:anko-support-v4:$anko_version"
-    compile 'org.jetbrains.anko:anko-appcompat-v7:0.9.1'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     /*** Circular Progress bar */
     compile 'com.github.lzyzsd:circleprogress:1.2.1'
-
-    /*** Calligraphy lib for custom fonts*/
-    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
 
     /** Lottie by Airbnb*/
     compile 'com.airbnb.android:lottie:2.5.0-beta3'

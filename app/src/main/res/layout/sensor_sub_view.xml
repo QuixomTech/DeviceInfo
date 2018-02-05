@@ -24,20 +24,23 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="start"
                     android:layout_weight=".7"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center|start"
                     android:text="@string/sensor_id"
-                    android:textColor="@color/secondary_text" />
+                    android:textColor="@color/secondary_text"
+                    tools:targetApi="jelly_bean" />
 
                 <TextView
                     android:id="@+id/tv_sensor_id"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 
@@ -50,18 +53,21 @@
                     android:layout_weight=".7"
                     android:gravity="center|start"
                     android:text="@string/sensor_name"
+                    android:fontFamily="@font/lato_regular"
+                    tools:targetApi="jelly_bean"
                     android:textColor="@color/secondary_text" />
 
                 <TextView
                     android:id="@+id/tv_sensor_name"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 
@@ -74,18 +80,21 @@
                     android:layout_weight=".7"
                     android:gravity="center|start"
                     android:text="@string/int_type"
+                    android:fontFamily="@font/lato_regular"
+                    tools:targetApi="jelly_bean"
                     android:textColor="@color/secondary_text" />
 
                 <TextView
                     android:id="@+id/tv_int_type"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 
@@ -98,18 +107,21 @@
                     android:layout_weight=".7"
                     android:gravity="center|start"
                     android:text="@string/vendor"
+                    android:fontFamily="@font/lato_regular"
+                    tools:targetApi="jelly_bean"
                     android:textColor="@color/secondary_text" />
 
                 <TextView
                     android:id="@+id/tv_vendor"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 
@@ -122,18 +134,21 @@
                     android:layout_weight=".7"
                     android:gravity="center|start"
                     android:text="@string/version"
+                    android:fontFamily="@font/lato_regular"
+                    tools:targetApi="jelly_bean"
                     android:textColor="@color/secondary_text" />
 
                 <TextView
                     android:id="@+id/tv_version"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 
@@ -146,18 +161,21 @@
                     android:layout_weight="0.7"
                     android:gravity="center|start"
                     android:text="@string/resolution"
+                    android:fontFamily="@font/lato_regular"
+                    tools:targetApi="jelly_bean"
                     android:textColor="@color/secondary_text" />
 
                 <TextView
                     android:id="@+id/tv_resolution"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 
@@ -170,18 +188,21 @@
                     android:layout_weight=".7"
                     android:gravity="center|start"
                     android:text="@string/power"
+                    android:fontFamily="@font/lato_regular"
+                    tools:targetApi="jelly_bean"
                     android:textColor="@color/secondary_text" />
 
                 <TextView
                     android:id="@+id/tv_power"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 
@@ -198,14 +219,15 @@
 
                 <TextView
                     android:id="@+id/tv_maximum_range"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 
@@ -218,18 +240,21 @@
                     android:layout_weight=".7"
                     android:gravity="center|start"
                     android:text="@string/is_dynamic"
+                    android:fontFamily="@font/lato_regular"
+                    tools:targetApi="jelly_bean"
                     android:textColor="@color/secondary_text" />
 
                 <TextView
                     android:id="@+id/tv_is_dynamic_sensor"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 
@@ -242,18 +267,21 @@
                     android:layout_weight=".7"
                     android:gravity="center|start"
                     android:text="@string/is_wakeup_sensor"
+                    android:fontFamily="@font/lato_regular"
+                    tools:targetApi="jelly_bean"
                     android:textColor="@color/secondary_text" />
 
                 <TextView
                     android:id="@+id/tv_is_wakeup_sensor"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 
@@ -266,18 +294,21 @@
                     android:layout_weight=".7"
                     android:gravity="center|start"
                     android:text="@string/reporting_mode"
+                    android:fontFamily="@font/lato_regular"
+                    tools:targetApi="jelly_bean"
                     android:textColor="@color/secondary_text" />
 
                 <TextView
                     android:id="@+id/tv_reporting_mode"
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
+                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix" />
+                    tools:ignore="MissingPrefix"
+                    tools:targetApi="jelly_bean" />
 
             </TableRow>
 

@@ -12,10 +12,9 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        airbnb:lottie_autoPlay="true"
+        airbnb:lottie_autoPlay="false"
         airbnb:lottie_fileName="deviceinfo_splash.json"
         airbnb:lottie_cacheStrategy="strong"
         airbnb:lottie_enableMergePathsForKitKatAndAbove="true"
-        airbnb:lottie_repeatCount="10"
-        airbnb:lottie_loop="true"/>
+        airbnb:lottie_loop="false"/>
 </LinearLayout>

@@ -28,9 +28,6 @@ import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.adapters.CameraAdapter
 import com.quixom.apps.deviceinfo.models.FeaturesHW
 import com.quixom.apps.deviceinfo.utilities.KeyUtil
-import org.jetbrains.anko.backgroundColor
-import org.jetbrains.anko.backgroundDrawable
-import org.jetbrains.anko.textColor
 import java.lang.StringBuilder
 import java.util.*
 
@@ -83,6 +80,7 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
         return view
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -160,16 +158,16 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
 
     private fun tabSelector(textview1: TextView, textview2: TextView) {
         /*** Set text color */
-        textview1.textColor = ContextCompat.getColor(mActivity, R.color.font_white)
-        textview2.textColor = ContextCompat.getColor(mActivity, R.color.orange)
+        textview1.setTextColor(ContextCompat.getColor(mActivity, R.color.font_white))
+        textview2.setTextColor(ContextCompat.getColor(mActivity, R.color.orange))
 
         /*** Background color */
-        textview1.backgroundColor = ContextCompat.getColor(mActivity, R.color.orange)
-        textview2.backgroundColor = ContextCompat.getColor(mActivity, R.color.font_white)
+        textview1.setBackgroundColor(ContextCompat.getColor(mActivity, R.color.orange))
+        textview2.setBackgroundColor(ContextCompat.getColor(mActivity, R.color.font_white))
 
         /*** Set background drawable */
-        textview1.backgroundDrawable = ContextCompat.getDrawable(mActivity, R.drawable.rectangle_fill)
-        textview2.backgroundDrawable = ContextCompat.getDrawable(mActivity, R.drawable.rectangle_unfill)
+        textview1.setBackgroundResource(R.drawable.rectangle_fill)
+        textview2.setBackgroundResource(R.drawable.rectangle_unfill)
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)

@@ -34,9 +34,9 @@
 
                     <com.github.lzyzsd.circleprogress.DonutProgress
                         android:id="@+id/donut_ram_usage"
-                        fontPath="fonts/Roboto-Medium.ttf"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
+                        android:fontFamily="@font/lato_regular"
                         custom:donut_finished_color="@color/ram_used_memory"
                         custom:donut_finished_stroke_width="12dp"
                         custom:donut_inner_bottom_text_size="12sp"
@@ -44,7 +44,8 @@
                         custom:donut_text_color="@color/primary_text"
                         custom:donut_unfinished_color="@color/ram_free_memory"
                         custom:donut_unfinished_stroke_width="12dp"
-                        tools:ignore="MissingPrefix" />
+                        tools:ignore="MissingPrefix"
+                        tools:targetApi="jelly_bean" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -56,42 +57,47 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_black"
                             android:text="@string/ram_usage"
                             android:textColor="@color/secondary_text"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            tools:targetApi="jelly_bean" />
 
                         <TextView
                             android:id="@+id/tv_used_memory"
-                            fontPath="fonts/Roboto-Medium.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:fontFamily="@font/lato_regular"
                             android:text="@string/used_memory"
                             android:textColor="@color/primary_text"
                             android:textSize="14sp"
-                            tools:ignore="MissingPrefix" />
+                            tools:ignore="MissingPrefix"
+                            tools:targetApi="jelly_bean" />
 
                         <TextView
                             android:id="@+id/tv_free_memory"
-                            fontPath="fonts/Roboto-Medium.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:fontFamily="@font/lato_regular"
                             android:text="@string/free"
                             android:textColor="@color/primary_text"
                             android:textSize="14sp"
-                            tools:ignore="MissingPrefix" />
+                            tools:ignore="MissingPrefix"
+                            tools:targetApi="jelly_bean" />
 
                         <TextView
                             android:id="@+id/tv_total_memory"
-                            fontPath="fonts/Roboto-Medium.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:fontFamily="@font/lato_regular"
                             android:text="@string/total"
                             android:textColor="@color/primary_text"
                             android:textSize="14sp"
-                            tools:ignore="MissingPrefix" />
+                            tools:ignore="MissingPrefix"
+                            tools:targetApi="jelly_bean" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -136,42 +142,47 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_black"
                             android:text="@string/internal_storage"
                             android:textColor="@color/secondary_text"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            tools:targetApi="jelly_bean" />
 
                         <TextView
                             android:id="@+id/tv_used_intmemory"
-                            fontPath="fonts/Roboto-Medium.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:fontFamily="@font/lato_regular"
                             android:text="@string/used_memory"
                             android:textColor="@color/primary_text"
                             android:textSize="14sp"
-                            tools:ignore="MissingPrefix" />
+                            tools:ignore="MissingPrefix"
+                            tools:targetApi="jelly_bean" />
 
                         <TextView
                             android:id="@+id/tv_free_intmemory"
-                            fontPath="fonts/Roboto-Medium.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:fontFamily="@font/lato_regular"
                             android:text="@string/free"
                             android:textColor="@color/primary_text"
                             android:textSize="14sp"
-                            tools:ignore="MissingPrefix" />
+                            tools:ignore="MissingPrefix"
+                            tools:targetApi="jelly_bean" />
 
                         <TextView
                             android:id="@+id/tv_total_intmemory"
-                            fontPath="fonts/Roboto-Medium.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:fontFamily="@font/lato_regular"
                             android:text="@string/total"
                             android:textColor="@color/primary_text"
                             android:textSize="14sp"
-                            tools:ignore="MissingPrefix" />
+                            tools:ignore="MissingPrefix"
+                            tools:targetApi="jelly_bean" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -195,9 +206,9 @@
 
                     <com.github.lzyzsd.circleprogress.DonutProgress
                         android:id="@+id/donut_external_storage"
-                        fontPath="fonts/Roboto-Medium.ttf"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
+                        android:fontFamily="@font/lato_regular"
                         custom:donut_finished_color="@color/ext_used_memory"
                         custom:donut_finished_stroke_width="12dp"
                         custom:donut_inner_bottom_text_size="12sp"
@@ -205,7 +216,8 @@
                         custom:donut_text_color="@color/primary_text"
                         custom:donut_unfinished_color="@color/ext_free_memory"
                         custom:donut_unfinished_stroke_width="12dp"
-                        tools:ignore="MissingPrefix" />
+                        tools:ignore="MissingPrefix"
+                        tools:targetApi="jelly_bean" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -217,42 +229,47 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_black"
                             android:text="@string/external_storage"
                             android:textColor="@color/secondary_text"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            tools:targetApi="jelly_bean" />
 
                         <TextView
                             android:id="@+id/tv_used_extmemory"
-                            fontPath="fonts/Roboto-Medium.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:fontFamily="@font/lato_regular"
                             android:text="@string/used_memory"
                             android:textColor="@color/primary_text"
                             android:textSize="14sp"
-                            tools:ignore="MissingPrefix" />
+                            tools:ignore="MissingPrefix"
+                            tools:targetApi="jelly_bean" />
 
                         <TextView
                             android:id="@+id/tv_free_extmemory"
-                            fontPath="fonts/Roboto-Medium.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:fontFamily="@font/lato_regular"
                             android:text="@string/free"
                             android:textColor="@color/primary_text"
                             android:textSize="14sp"
-                            tools:ignore="MissingPrefix" />
+                            tools:ignore="MissingPrefix"
+                            tools:targetApi="jelly_bean" />
 
                         <TextView
                             android:id="@+id/tv_total_extmemory"
-                            fontPath="fonts/Roboto-Medium.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:fontFamily="@font/lato_regular"
                             android:text="@string/total"
                             android:textColor="@color/primary_text"
                             android:textSize="14sp"
-                            tools:ignore="MissingPrefix" />
+                            tools:ignore="MissingPrefix"
+                            tools:targetApi="jelly_bean" />
                     </LinearLayout>
                 </LinearLayout>
 

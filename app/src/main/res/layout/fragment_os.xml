@@ -25,29 +25,33 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@mipmap/ic_launcher_round" />
+                android:contentDescription="@null"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_android_logo" />
 
             <TextView
                 android:id="@+id/tv_version_name"
-                fontPath="fonts/Roboto-Bold.ttf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:textAllCaps="true"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/darkBlue"
                 android:textSize="17sp"
-                tools:ignore="MissingPrefix" />
+                android:fontFamily="@font/lato_black"
+                tools:ignore="MissingPrefix"
+                tools:targetApi="jelly_bean" />
 
             <TextView
                 android:id="@+id/tv_release_date"
-                fontPath="fonts/Roboto-LightItalic.ttf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@color/secondary_text"
+                android:textColor="@color/darkBlue"
                 android:textSize="12sp"
-                tools:ignore="MissingPrefix" />
+                android:fontFamily="@font/lato_light"
+                tools:ignore="MissingPrefix"
+                tools:targetApi="jelly_bean" />
 
         </LinearLayout>
 
@@ -83,11 +87,12 @@
                         android:maxLines="4"
                         android:text="@string/version"
                         android:textColor="@color/secondary_text"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean" />
 
                     <TextView
                         android:id="@+id/tv_version"
-                        fontPath="fonts/Roboto-Regular.ttf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -97,7 +102,9 @@
                         android:maxLines="4"
                         android:textColor="@color/primary_text"
                         android:textSize="14sp"
-                        tools:ignore="MissingPrefix" />
+                        tools:ignore="MissingPrefix"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean" />
 
                 </TableRow>
 
@@ -116,11 +123,12 @@
                         android:maxLines="4"
                         android:text="@string/version_name"
                         android:textColor="@color/secondary_text"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean"
                         android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/tv_sdk_name"
-                        fontPath="fonts/Roboto-Regular.ttf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -130,6 +138,8 @@
                         android:maxLines="4"
                         android:textColor="@color/primary_text"
                         android:textSize="14sp"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean"
                         tools:ignore="MissingPrefix" />
                 </TableRow>
 
@@ -147,12 +157,13 @@
                         android:maxEms="5"
                         android:maxLines="4"
                         android:text="@string/api_level"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean"
                         android:textColor="@color/secondary_text"
                         android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/tv_api_level"
-                        fontPath="fonts/Roboto-Regular.ttf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -162,6 +173,8 @@
                         android:maxLines="4"
                         android:textColor="@color/primary_text"
                         android:textSize="14sp"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean"
                         tools:ignore="MissingPrefix" />
                 </TableRow>
 
@@ -179,12 +192,13 @@
                         android:maxEms="5"
                         android:maxLines="4"
                         android:text="@string/build_id"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean"
                         android:textColor="@color/secondary_text"
                         android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/tv_build_id"
-                        fontPath="fonts/Roboto-Regular.ttf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -194,6 +208,8 @@
                         android:maxLines="4"
                         android:textColor="@color/primary_text"
                         android:textSize="14sp"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean"
                         tools:ignore="MissingPrefix" />
                 </TableRow>
 
@@ -211,12 +227,13 @@
                         android:maxEms="5"
                         android:maxLines="4"
                         android:text="@string/build_name"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean"
                         android:textColor="@color/secondary_text"
                         android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/tv_build_time"
-                        fontPath="fonts/Roboto-Regular.ttf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -226,6 +243,8 @@
                         android:maxLines="4"
                         android:textColor="@color/primary_text"
                         android:textSize="14sp"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean"
                         tools:ignore="MissingPrefix" />
                 </TableRow>
 
@@ -243,12 +262,13 @@
                         android:maxEms="5"
                         android:maxLines="4"
                         android:text="@string/fingerprint"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean"
                         android:textColor="@color/secondary_text"
                         android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/tv_fingerprint"
-                        fontPath="fonts/Roboto-Regular.ttf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -258,6 +278,8 @@
                         android:maxLines="6"
                         android:textColor="@color/primary_text"
                         android:textSize="14sp"
+                        android:fontFamily="@font/lato_regular"
+                        tools:targetApi="jelly_bean"
                         tools:ignore="MissingPrefix" />
                 </TableRow>
             </TableLayout>

@@ -48,7 +48,7 @@ class CPUFragment : BaseFragment() {
     var cpuData: String = ""
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_cpu, container, false)
+        val view = inflater.inflate(R.layout.fragment_cpu, container, false)
 
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)
@@ -99,7 +99,7 @@ class CPUFragment : BaseFragment() {
     private fun initToolbar() {
         ivMenu?.visibility = View.VISIBLE
         ivBack?.visibility = View.GONE
-        tvTitle?.text = mResources.getString(R.string.cpu_t)
+        tvTitle?.text = mResources.getString(R.string.processor_label)
         ivMenu?.setOnClickListener {
             mActivity.openDrawer()
         }
@@ -117,9 +117,9 @@ class CPUFragment : BaseFragment() {
         val totalMemory = memoryInfo?.totalMem
         val usedMemory = freeMemory?.let { totalMemory?.minus(it) }
 
-        tvSystemAppsMemory?.text = Methods.getSpannableString(mActivity, mResources.getString(R.string.system_and_apps) + ":", formatSize(usedMemory!!))!!
-        tvAvailableRAM?.text = Methods.getSpannableString(mActivity, mResources.getString(R.string.available_ram) + ":", formatSize(freeMemory))
-        tvTotalRAMSpace?.text = Methods.getSpannableString(mActivity, mResources.getString(R.string.total_ram_space) + ":", formatSize(totalMemory!!))
+        tvSystemAppsMemory?.text = mResources.getString(R.string.system_and_apps) + ":  ".plus(formatSize(usedMemory!!))
+        tvAvailableRAM?.text = mResources.getString(R.string.available_ram) + ":  ".plus(formatSize(freeMemory))
+        tvTotalRAMSpace?.text = mResources.getString(R.string.total_ram_space) + ":  ".plus(formatSize(totalMemory!!))
     }
 
     private fun freeRamMemorySize(): Long {

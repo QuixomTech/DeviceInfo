@@ -25,7 +25,7 @@ class DeviceAdapter(internal var flag: Int?, internal var appslist: ArrayList<De
     }
 
     override fun onBindViewHolder(holder: DeviceAdapter.DeviceVH?, position: Int) {
-        holder?.bindData(appslist[position], mActivity)
+        holder?.bindData(appslist[position])
     }
 
     override fun getItemCount(): Int {
@@ -33,7 +33,7 @@ class DeviceAdapter(internal var flag: Int?, internal var appslist: ArrayList<De
     }
 
     inner class DeviceVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bindData(deviceInfo: DeviceInfo, c: MainActivity) {
+        fun bindData(deviceInfo: DeviceInfo) {
 
             val ivAppLogo: ImageView? = itemView.findViewById(R.id.iv_app_icon)
             val tvAppname: TextView? = itemView.findViewById(R.id.tv_app_name)

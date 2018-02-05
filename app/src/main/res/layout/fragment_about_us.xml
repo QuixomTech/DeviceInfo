@@ -24,21 +24,23 @@
             android:src="@mipmap/ic_launcher_round" />
 
         <TextView
-            fontPath="fonts/Roboto-Medium.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
             android:textColor="@color/font_white"
+            android:fontFamily="@font/lato_black"
+            tools:targetApi="jelly_bean"
             android:textSize="22sp"
             tools:ignore="MissingPrefix" />
 
         <TextView
             android:id="@+id/tv_version"
-            fontPath="fonts/Roboto-Regular.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/version"
             android:textColor="@color/font_white"
+            android:fontFamily="@font/lato_light"
+            tools:targetApi="jelly_bean"
             android:textSize="16sp"
             tools:ignore="MissingPrefix" />
 
@@ -54,6 +56,8 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="start"
+            android:fontFamily="@font/lato_regular"
+            tools:targetApi="jelly_bean"
             android:text="@string/about_app"
             android:textColor="@color/font_white"
             android:textSize="12sp" />
@@ -76,13 +80,13 @@
                 android:orientation="vertical">
 
                 <TextView
-                    fontPath="fonts/Roboto-Regular.ttf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:drawablePadding="5dp"
                     android:gravity="center_vertical"
                     android:padding="10dp"
+                    android:fontFamily="@font/lato_black"
                     android:text="@string/developer_info"
                     android:textColor="@color/colorAccent"
                     android:textSize="16sp"
@@ -95,6 +99,7 @@
                     android:gravity="center_vertical"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
+                    android:fontFamily="@font/lato_regular"
                     android:text="@string/dev_info"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
@@ -111,6 +116,7 @@
                     android:drawableTint="@color/colorPrimary"
                     android:gravity="center_vertical"
                     android:padding="10dp"
+                    android:fontFamily="@font/lato_regular"
                     android:text="@string/company_phone"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
@@ -131,6 +137,7 @@
                     android:drawablePadding="5dp"
                     android:drawableTint="@color/colorPrimary"
                     android:padding="10dp"
+                    android:fontFamily="@font/lato_regular"
                     android:text="@string/address"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
@@ -152,6 +159,7 @@
                     android:drawableTint="@color/colorPrimary"
                     android:padding="10dp"
                     android:text="@string/website"
+                    android:fontFamily="@font/lato_regular"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
                     tools:ignore="RtlHardcoded"
@@ -169,6 +177,8 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="@string/rating_us"
+                    android:fontFamily="@font/lato_black"
+                    tools:targetApi="jelly_bean"
                     android:textSize="16sp" />
 
                 <RatingBar

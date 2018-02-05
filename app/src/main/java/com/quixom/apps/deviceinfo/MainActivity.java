@@ -1,14 +1,18 @@
 package com.quixom.apps.deviceinfo;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
@@ -26,6 +30,7 @@ import android.widget.TextView;
 import com.quixom.apps.deviceinfo.fragments.AboutUsFragment;
 import com.quixom.apps.deviceinfo.fragments.AppsFragment;
 import com.quixom.apps.deviceinfo.fragments.BatteryFragment;
+import com.quixom.apps.deviceinfo.fragments.BlueToothFragment;
 import com.quixom.apps.deviceinfo.fragments.CPUFragment;
 import com.quixom.apps.deviceinfo.fragments.CameraFragment;
 import com.quixom.apps.deviceinfo.fragments.DisplayFragment;
@@ -37,6 +42,7 @@ import com.quixom.apps.deviceinfo.fragments.SensorCategoryFragment;
 import com.quixom.apps.deviceinfo.fragments.SimFragment;
 import com.quixom.apps.deviceinfo.fragments.StorageFragment;
 import com.quixom.apps.deviceinfo.models.DeviceInfo;
+import com.quixom.apps.deviceinfo.utilities.BaseActivity;
 import com.quixom.apps.deviceinfo.utilities.FragmentUtil;
 import com.quixom.apps.deviceinfo.utilities.KeyUtil;
 import com.quixom.apps.deviceinfo.utilities.Methods;
@@ -47,9 +53,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @BindView(R.id.fragment_container)
     FrameLayout fragmentContainer;
@@ -84,16 +89,11 @@ public class MainActivity extends AppCompatActivity {
 
         getAppsList();
         fragmentUtil.clearBackStackFragmets();
-        fragmentUtil.replaceFragment(new HomeFragment(), true, false);
+        fragmentUtil.replaceFragment(new HomeFragment(), false, true);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             this.getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
         }
-    }
-
-    @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     @Override
@@ -126,6 +126,8 @@ public class MainActivity extends AppCompatActivity {
 
         navigationView.getMenu().getItem(0).setChecked(true);
         navigationView.setItemIconTintList(null);
+
+
         View headerLayout = navigationView.getHeaderView(0);
         TextView tvDeviceName = headerLayout.findViewById(R.id.tv_device_name);
         TextView tvModelNumber = headerLayout.findViewById(R.id.tv_model_number);
@@ -179,32 +181,35 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_storage:
                         navItemIndex = 8;
                         break;
-                    case R.id.nav_display:
+                    case R.id.nav_bluetooth:
                         navItemIndex = 9;
                         break;
-                    case R.id.nav_features:
+                    case R.id.nav_display:
                         navItemIndex = 10;
                         break;
-                    case R.id.nav_user_apps:
+                    case R.id.nav_features:
                         navItemIndex = 11;
                         break;
-                    case R.id.nav_system_apps:
+                    case R.id.nav_user_apps:
                         navItemIndex = 12;
                         break;
-                    case R.id.nav_about_us:
+                    case R.id.nav_system_apps:
                         navItemIndex = 13;
                         break;
-                    case R.id.nav_share:
+                    case R.id.nav_about_us:
                         navItemIndex = 14;
                         break;
-                    case R.id.nav_rate_us:
+                    case R.id.nav_share:
                         navItemIndex = 15;
                         break;
-                    case R.id.nav_feedback:
+                    case R.id.nav_rate_us:
                         navItemIndex = 16;
                         break;
-                    case R.id.nav_connect_us:
+                    case R.id.nav_feedback:
                         navItemIndex = 17;
+                        break;
+                    case R.id.nav_connect_us:
+                        navItemIndex = 18;
                         break;
                     default:
                         navItemIndex = 0;
@@ -350,26 +355,28 @@ public class MainActivity extends AppCompatActivity {
             case 8:
                 return new StorageFragment();
             case 9:
-                return new DisplayFragment();
+                return new BlueToothFragment();
             case 10:
-                return new PhoneFeaturesFragment();
+                return new DisplayFragment();
             case 11:
-                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_USER_APPS);
+                return new PhoneFeaturesFragment();
             case 12:
-                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_SYSTEM_APPS);
+                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_USER_APPS);
             case 13:
-                return new AboutUsFragment();
+                return AppsFragment.Companion.getInstance(KeyUtil.IS_USER_COME_FROM_SYSTEM_APPS);
             case 14:
+                return new AboutUsFragment();
+            case 15:
                 Methods.sharing("https://play.google.com/store/apps/details?id=com.quixom.deviceinfo");
                 break;
-            case 15:
+            case 16:
                 RateUsApp.Companion.rateUsApp(MainActivity.this);
                 break;
-            case 16:
-                return HomeFragment.getInstance(7);
             case 17:
                 return HomeFragment.getInstance(7);
             case 18:
+                return HomeFragment.getInstance(7);
+            case 19:
                 return HomeFragment.getInstance(7);
             default:
                 return new HomeFragment();

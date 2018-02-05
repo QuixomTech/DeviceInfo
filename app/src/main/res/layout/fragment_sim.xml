@@ -41,11 +41,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            fontPath="fonts/Roboto-Regular.ttf"
             android:text="@string/sim_empty_screen"
             android:textSize="15sp"
             android:textColor="@color/secondary_text"
             android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/lato_regular"
+            tools:targetApi="jelly_bean"
             tools:ignore="MissingPrefix" />
     </LinearLayout>
 

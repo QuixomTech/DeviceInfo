@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 
-public class Splash extends Activity {
+import com.airbnb.lottie.LottieAnimationView;
+import com.quixom.apps.deviceinfo.utilities.BaseActivity;
+
+public class Splash extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +21,10 @@ public class Splash extends Activity {
         }
 
         setContentView(R.layout.activity_splash);
-        int SPLASH_TIME_OUT = 1600;
+
+        LottieAnimationView lottieAnimationView = findViewById(R.id.animationView);
+        lottieAnimationView.playAnimation();
+        int SPLASH_TIME_OUT = 1300;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

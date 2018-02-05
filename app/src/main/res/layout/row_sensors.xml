@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -15,10 +16,11 @@
             android:id="@+id/iv_sensor_image"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
             android:layout_alignParentLeft="true"
-            android:tint="@color/colorAccent"
-            android:src="@mipmap/ic_launcher_round" />
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher_round"
+            android:tint="@color/colorAccent" />
 
         <TextView
             android:id="@+id/tv_sensor_name_row"
@@ -30,10 +32,12 @@
             android:layout_toRightOf="@id/iv_sensor_image"
             android:drawablePadding="85dp"
             android:ellipsize="end"
+            android:fontFamily="@font/lato_regular"
             android:maxEms="15"
             android:maxLines="4"
             android:textColor="@color/primary_text"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:targetApi="jelly_bean" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -41,8 +45,8 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center_vertical"
-            android:tint="@color/secondary_text"
-            android:src="@drawable/ic_move_to_the_next_page_symbol" />
+            android:src="@drawable/ic_move_to_the_next_page_symbol"
+            android:tint="@color/secondary_text" />
     </RelativeLayout>
 
     <View

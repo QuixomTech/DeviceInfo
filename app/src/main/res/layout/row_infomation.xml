@@ -22,6 +22,7 @@
             android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
             android:src="@mipmap/ic_launcher_round" />
 
         <LinearLayout
@@ -33,7 +34,8 @@
 
             <TextView
                 android:id="@+id/tv_app_name"
-                fontPath="fonts/Roboto-Regular.ttf"
+                android:fontFamily="@font/lato_regular"
+                tools:targetApi="jelly_bean"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -51,6 +53,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
                 android:maxLines="3"
+                android:fontFamily="@font/lato_regular"
+                tools:targetApi="jelly_bean"
                 android:textColor="@color/secondary_text"
                 android:textSize="10sp" />
         </LinearLayout>

@@ -231,6 +231,17 @@
     <string name="xxxhdpi">xxxhdpi</string>
     <string name="dpi">\u0020dpi</string>
 
+    <!-- Bluetooth -->
+    <string name="bluetooth_name">Name</string>
+    <string name="bluetooth_address">Address</string>
+    <string name="scan_mode">Scan Mode</string>
+    <string name="bluetooth_state">Bluetooth State</string>
+    <string name="bluetooth_discovery">Bluetooth Discovery</string>
+    <string name="turn_on_bluetooth">Turn on bluetooth</string>
+    <string name="turn_off_bluetooth">Turn off bluetooth</string>
+    <string name="switch_on">On</string>
+    <string name="switch_off">Off</string>
+
     <!-- About us -->
     <string name="developer_info">Developer Information</string>
     <string name="dev_info">This app has been developed by Quixom Technology. Quixom is a mobile and web app development company oriented towards design thinking approach to mobile app development. Quixom has delivered apps for its customers all over the globe in sectors like gaming, delivery, ecommerce, IOT and many others. To get a free quote, email your requirements to info@quixom.com</string>
@@ -242,4 +253,6 @@
     <string name="about_app">Device Info is a detailed specification of your phone which includes all the possible hardware configurations and other required details about your own device.</string>
     <string name="sim_empty_screen">Phone does not have any sim.</string>
     <string name="c_symbol">\u00B0C</string>
+    <string name="rear_camera">Rear Camera</string>
+    <string name="front_camera">Front Camera</string>
 </resources>

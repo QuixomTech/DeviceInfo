@@ -47,6 +47,11 @@
             android:title="@string/storage" />
 
         <item
+            android:id="@+id/nav_bluetooth"
+            android:icon="@drawable/ic_bluetooth"
+            android:title="@string/bluetooth" />
+
+        <item
             android:id="@+id/nav_display"
             android:icon="@drawable/ic_screens"
             android:title="@string/display" />

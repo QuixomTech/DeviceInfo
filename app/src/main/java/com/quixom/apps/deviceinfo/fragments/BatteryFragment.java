@@ -181,7 +181,7 @@ public class BatteryFragment extends BaseFragment {
             tvBatteryType.setText("".concat(technology));
         }
 
-        tvBatteryVoltage.setText("".concat(String.valueOf(voltage)));
+        tvBatteryVoltage.setText("".concat(String.valueOf(voltage).concat("mV")));
         tvBatteryScale.setText("".concat(String.valueOf(scale)));
         tvBatteryLevel.setText("".concat(String.valueOf(level)).concat("%"));
 

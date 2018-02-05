@@ -35,7 +35,6 @@
 
         <com.github.lzyzsd.circleprogress.ArcProgress
             android:id="@+id/arc_ram"
-            fontPath="fonts/Roboto-Bold.ttf"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerVertical="true"
@@ -61,6 +60,7 @@
             android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/circle_view"
             android:drawablePadding="2dp"
+            android:fontFamily="@font/lato_regular"
             android:text="@string/used"
             android:textColor="@color/colorAccent" />
 
@@ -82,7 +82,8 @@
                 android:layout_gravity="right"
                 android:layout_marginTop="10dp"
                 android:text="@string/system_and_apps"
-                android:textColor="@color/darkBlue"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/font_white"
                 android:textSize="12sp" />
 
             <TextView
@@ -92,7 +93,8 @@
                 android:layout_gravity="right"
                 android:layout_marginTop="8dp"
                 android:text="@string/available_ram"
-                android:textColor="@color/darkBlue"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/font_white"
                 android:textSize="12sp" />
 
             <TextView
@@ -102,7 +104,8 @@
                 android:layout_gravity="right"
                 android:layout_marginTop="8dp"
                 android:text="@string/total_ram_space"
-                android:textColor="@color/darkBlue"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/font_white"
                 android:textSize="12sp" />
         </LinearLayout>
 

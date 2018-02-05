@@ -1,6 +1,7 @@
 package com.quixom.apps.deviceinfo.utilities;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +12,7 @@ import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
+import android.provider.FontRequest;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.text.SpannableString;
@@ -210,10 +212,12 @@ public class Methods {
      * @param second: string
      * @return: string with two different color
      */
+    @android.support.annotation.RequiresApi(api = Build.VERSION_CODES.O)
     public static SpannableStringBuilder getSpannableString(Context context, String first, String second) {
 
-        Typeface font1 = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Regular.ttf");
-        Typeface font2 = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Medium.ttf");
+        Typeface font1 = mActivity.getResources().getFont(R.font.lato_light);
+        Typeface font2 = mActivity.getResources().getFont(R.font.lato_regular);
+
         SpannableStringBuilder builder = new SpannableStringBuilder();
 
         SpannableString dkgraySpannable = new SpannableString(first + " ");
@@ -235,6 +239,7 @@ public class Methods {
      *
      * @return: string with two different color
      */
+    @android.support.annotation.RequiresApi(api = Build.VERSION_CODES.O)
     public static SpannableStringBuilder getSpannableSensorText(Context context, String text) {
 
 
@@ -242,8 +247,8 @@ public class Methods {
         String first = result[0];
         String second = result[1];
 
-        Typeface font1 = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-LightItalic.ttf");
-        Typeface font2 = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Medium.ttf");
+        Typeface font1 = mActivity.getResources().getFont(R.font.lato_light);
+        Typeface font2 = mActivity.getResources().getFont(R.font.lato_regular);
 
         SpannableStringBuilder builder = new SpannableStringBuilder();
 
@@ -270,7 +275,7 @@ public class Methods {
         String second = result[1];
         first = first.concat(":");
 
-        Typeface font = Typeface.createFromAsset(context.getAssets(), "fonts/GILROY-SEMIBOLD.OTF");
+//        Typeface font = Typeface.createFromAsset(context.getAssets(), "fonts/GILROY-SEMIBOLD.OTF");
 
         SpannableStringBuilder builder = new SpannableStringBuilder();
 
@@ -296,7 +301,7 @@ public class Methods {
         String second = result[1];
         first = first.concat(":");
 
-        Typeface font = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Medium.ttf");
+//        Typeface font = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Medium.ttf");
 
         SpannableStringBuilder builder = new SpannableStringBuilder();
 
@@ -320,7 +325,7 @@ public class Methods {
         String second = result[1];
         first = first.concat("=");
 
-        Typeface font = Typeface.createFromAsset(context.getAssets(), fontPath);
+//        Typeface font = Typeface.createFromAsset(context.getAssets(), fontPath);
 
         SpannableStringBuilder builder = new SpannableStringBuilder();
 
