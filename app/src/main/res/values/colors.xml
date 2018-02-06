@@ -20,6 +20,7 @@
     <color name="secondary_text">#757575</color>
     <color name="icons">#212121</color>
     <color name="divider">#d9d9d9</color>
+    <color name="card_background">#f1f1f1</color>
 
     <!-- Fonts color -->
     <color name="font_black">#000000</color>

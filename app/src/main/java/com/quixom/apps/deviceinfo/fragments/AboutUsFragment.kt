@@ -55,7 +55,7 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         initToolbar()
-        tvVersion?.text = mResources.getString(R.string.version).plus(": " + BuildConfig.VERSION_CODE.toString())
+        tvVersion?.text = mResources.getString(R.string.version).plus(": " + BuildConfig.VERSION_NAME)
         initOnclickListner()
     }
 

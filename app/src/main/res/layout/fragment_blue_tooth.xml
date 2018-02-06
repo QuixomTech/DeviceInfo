@@ -11,20 +11,6 @@
         android:id="@+id/bluetoothToolbar"
         layout="@layout/toolbar" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/bluetoothAnimationView"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@id/bluetoothToolbar"
-        android:layout_gravity="center_horizontal"
-        airbnb:lottie_autoPlay="true"
-        airbnb:lottie_cacheStrategy="strong"
-        airbnb:lottie_enableMergePathsForKitKatAndAbove="true"
-        airbnb:lottie_fileName="deviceinfo_bluetooth.json"
-        airbnb:lottie_loop="true"
-        tools:targetApi="lollipop" />
-
     <Button
         android:id="@+id/bluetoothOnOff"
         android:layout_width="wrap_content"
@@ -40,6 +26,7 @@
         android:textColor="@color/font_white" />
 
     <android.support.v7.widget.CardView
+        android:id="@+id/cardBluetoothData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/bluetoothToolbar"
@@ -245,5 +232,18 @@
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bluetoothAnimationView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/cardBluetoothData"
+        android:layout_gravity="center_horizontal"
+        airbnb:lottie_autoPlay="true"
+        airbnb:lottie_cacheStrategy="strong"
+        airbnb:lottie_enableMergePathsForKitKatAndAbove="true"
+        airbnb:lottie_fileName="deviceinfo_bluetooth.json"
+        airbnb:lottie_loop="true"
+        tools:targetApi="lollipop" />
 
 </RelativeLayout>

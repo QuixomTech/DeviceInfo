@@ -17,31 +17,31 @@ import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.utilities.Methods
 import java.io.File
 import java.text.DecimalFormat
-
-
+import java.util.*
 
 
 class StorageFragment : BaseFragment() {
 
-    var ivMenu: ImageView? = null
-    var ivBack: ImageView? = null
-    var tvTitle: TextView? = null
+    private var ivMenu: ImageView? = null
+    private var ivBack: ImageView? = null
+    private var tvTitle: TextView? = null
 
-    var donutRAMUsage: DonutProgress? = null
-    var donutInternalStorage: DonutProgress? = null
-    var donutExternalStorage: DonutProgress? = null
+    private var donutRAMUsage: DonutProgress? = null
+    private var donutInternalStorage: DonutProgress? = null
+    private var donutExternalStorage: DonutProgress? = null
 
-    var tvUsedMemory: TextView? = null
-    var tvFreeMemory: TextView? = null
-    var tvTotalMemory: TextView? = null
-    var tvUsedIntMemory: TextView? = null
-    var tvFreeIntMemory: TextView? = null
-    var tvTotalIntMemory: TextView? = null
-    var tvUsedExtMemory: TextView? = null
-    var tvFreeExtMemory: TextView? = null
-    var tvTotalExtMemory: TextView? = null
-    var llExtMemory: LinearLayout? = null
-    val df = DecimalFormat("#")
+    private var tvUsedMemory: TextView? = null
+    private var tvFreeMemory: TextView? = null
+    private var tvTotalMemory: TextView? = null
+    private var tvUsedIntMemory: TextView? = null
+    private var tvFreeIntMemory: TextView? = null
+    private var tvTotalIntMemory: TextView? = null
+    private var tvUsedExtMemory: TextView? = null
+    private var tvFreeExtMemory: TextView? = null
+    private var tvTotalExtMemory: TextView? = null
+    private var llExtMemory: LinearLayout? = null
+    private val df = DecimalFormat("#")
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_storage, container, false)

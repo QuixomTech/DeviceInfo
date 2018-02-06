@@ -35,12 +35,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -62,12 +60,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -89,12 +85,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -116,12 +110,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix"/>
 
             </TableRow>
 
@@ -143,12 +135,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -170,12 +160,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -197,12 +185,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -222,12 +208,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -249,12 +233,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -276,12 +258,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 
@@ -303,12 +283,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.3"
-                    android:fontFamily="@font/lato_regular"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp"
                     android:textColor="@color/primary_text"
-                    tools:ignore="MissingPrefix"
-                    tools:targetApi="jelly_bean" />
+                    tools:ignore="MissingPrefix" />
 
             </TableRow>
 

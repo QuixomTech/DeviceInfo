@@ -1,3 +1,4 @@
+
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
@@ -10,8 +11,8 @@ android {
         applicationId "com.quixom.deviceinfo"
         minSdkVersion 18
         targetSdkVersion 26
-        versionCode 5
-        versionName "2.2"
+        versionCode 8
+        versionName "2.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         resConfigs "en"
