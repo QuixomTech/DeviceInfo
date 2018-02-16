@@ -12,6 +12,7 @@
 bin/
 gen/
 out/
+app/src/main/res/values/key.xml
 
 # Gradle files
 .gradle/
