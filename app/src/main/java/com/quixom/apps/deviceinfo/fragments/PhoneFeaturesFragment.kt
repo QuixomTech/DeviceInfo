@@ -1,6 +1,5 @@
 package com.quixom.apps.deviceinfo.fragments
 
-import android.bluetooth.BluetoothDevice
 import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -15,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_phone_features.*
 
 class PhoneFeaturesFragment : BaseFragment() {
 
-    var pakageManager: PackageManager? = null
+    var packageManager: PackageManager? = null
 
     var ivMenu: ImageView? = null
     var ivBack: ImageView? = null
@@ -80,7 +79,7 @@ class PhoneFeaturesFragment : BaseFragment() {
         tvSIP = view.findViewById(R.id.tv_sip)
         tvSIPBasedVOIP = view.findViewById(R.id.tv_sip_based_voip)
 
-        pakageManager = mActivity.packageManager
+        packageManager = mActivity.packageManager
         return view
     }
 
@@ -119,168 +118,168 @@ class PhoneFeaturesFragment : BaseFragment() {
         }
 
         // WIFI Direct
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_WIFI_DIRECT)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_WIFI_DIRECT)!!) {
             tvWifiDirect?.text = mResources.getString(R.string.available)
         } else {
             tvWifiDirect?.text = mResources.getString(R.string.not_supported)
         }
 
         // Bluetooth
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)!!) {
             tvBluetooth?.text = mResources.getString(R.string.available)
         } else {
             tvBluetooth?.text = mResources.getString(R.string.not_supported)
         }
 
         // Bluetooth LE
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)!!) {
             tvBluetoothLE?.text = mResources.getString(R.string.available)
         } else {
             tvBluetoothLE?.text = mResources.getString(R.string.not_supported)
         }
 
         // GPS
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_LOCATION_GPS)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_LOCATION_GPS)!!) {
             tvGPS?.text = mResources.getString(R.string.available)
         } else {
             tvGPS?.text = mResources.getString(R.string.not_supported)
         }
 
         // Camera Flash
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)!!) {
             tvCameraFlash?.text = mResources.getString(R.string.available)
         } else {
             tvCameraFlash?.text = mResources.getString(R.string.not_supported)
         }
 
         // Camera Front
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_CAMERA_FRONT)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_CAMERA_FRONT)!!) {
             tvCameraFront?.text = mResources.getString(R.string.available)
         } else {
             tvCameraFront?.text = mResources.getString(R.string.not_supported)
         }
 
         // Microphone
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_MICROPHONE)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_MICROPHONE)!!) {
             tvMicrophone?.text = mResources.getString(R.string.available)
         } else {
             tvMicrophone?.text = mResources.getString(R.string.not_supported)
         }
 
         // NFC
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_NFC)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_NFC)!!) {
             tvNFC?.text = mResources.getString(R.string.available)
         } else {
             tvNFC?.text = mResources.getString(R.string.not_supported)
         }
 
         // USB Host
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_USB_HOST)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_USB_HOST)!!) {
             tv_usb_host?.text = mResources.getString(R.string.available)
         } else {
             tv_usb_host?.text = mResources.getString(R.string.not_supported)
         }
 
         // USB Accessory
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_USB_ACCESSORY)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_USB_ACCESSORY)!!) {
             tv_usb_accessory?.text = mResources.getString(R.string.available)
         } else {
             tv_usb_accessory?.text = mResources.getString(R.string.not_supported)
         }
 
         // Multitouch
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_TOUCHSCREEN_MULTITOUCH)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_TOUCHSCREEN_MULTITOUCH)!!) {
             tvMultitouch?.text = mResources.getString(R.string.available)
         } else {
             tvMultitouch?.text = mResources.getString(R.string.not_supported)
         }
 
         // Audio low-latency
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_AUDIO_LOW_LATENCY)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_AUDIO_LOW_LATENCY)!!) {
             tvAudioLowLatency?.text = mResources.getString(R.string.available)
         } else {
             tvAudioLowLatency?.text = mResources.getString(R.string.not_supported)
         }
 
         // Audio Output
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_AUDIO_OUTPUT)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_AUDIO_OUTPUT)!!) {
             tvAudioOutput?.text = mResources.getString(R.string.available)
         } else {
             tvAudioOutput?.text = mResources.getString(R.string.not_supported)
         }
 
         // Professional Audio
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_AUDIO_PRO)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_AUDIO_PRO)!!) {
             tvProfessionalAudio?.text = mResources.getString(R.string.available)
         } else {
             tvProfessionalAudio?.text = mResources.getString(R.string.not_supported)
         }
 
         // Consumer IR
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_CONSUMER_IR)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_CONSUMER_IR)!!) {
             tvConsumerIR?.text = mResources.getString(R.string.available)
         } else {
             tvConsumerIR?.text = mResources.getString(R.string.not_supported)
         }
 
         // Gamepad Support
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_GAMEPAD)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_GAMEPAD)!!) {
             tvGamepadSupport?.text = mResources.getString(R.string.available)
         } else {
             tvGamepadSupport?.text = mResources.getString(R.string.not_supported)
         }
 
         // HIFI Sensor
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_HIFI_SENSORS)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_HIFI_SENSORS)!!) {
             tvHIFISensor?.text = mResources.getString(R.string.available)
         } else {
             tvHIFISensor?.text = mResources.getString(R.string.not_supported)
         }
 
         // Printing
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_PRINTING)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_PRINTING)!!) {
             tvPrinting?.text = mResources.getString(R.string.available)
         } else {
             tvPrinting?.text = mResources.getString(R.string.not_supported)
         }
 
         // CDMA
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_TELEPHONY_CDMA)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_TELEPHONY_CDMA)!!) {
             tvCDMA?.text = mResources.getString(R.string.available)
         } else {
             tvCDMA?.text = mResources.getString(R.string.not_supported)
         }
 
         // GSM
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_TELEPHONY_GSM)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_TELEPHONY_GSM)!!) {
             tvGSM?.text = mResources.getString(R.string.available)
         } else {
             tvGSM?.text = mResources.getString(R.string.not_supported)
         }
 
         // Finger-print
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT)!!) {
             tvFingerprint?.text = mResources.getString(R.string.available)
         } else {
             tvFingerprint?.text = mResources.getString(R.string.not_supported)
         }
 
         // App Widgets
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_APP_WIDGETS)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_APP_WIDGETS)!!) {
             tvAppWidgets?.text = mResources.getString(R.string.available)
         } else {
             tvAppWidgets?.text = mResources.getString(R.string.not_supported)
         }
 
         // SIP
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_SIP)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_SIP)!!) {
             tvSIP?.text = mResources.getString(R.string.available)
         } else {
             tvSIP?.text = mResources.getString(R.string.not_supported)
         }
 
         // SIP based VOIP
-        if (pakageManager?.hasSystemFeature(PackageManager.FEATURE_SIP_VOIP)!!) {
+        if (packageManager?.hasSystemFeature(PackageManager.FEATURE_SIP_VOIP)!!) {
             tvSIPBasedVOIP?.text = mResources.getString(R.string.available)
         } else {
             tvSIPBasedVOIP?.text = mResources.getString(R.string.not_supported)

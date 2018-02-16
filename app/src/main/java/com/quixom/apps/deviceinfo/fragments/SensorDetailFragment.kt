@@ -23,7 +23,6 @@ import java.text.DecimalFormat
 import android.graphics.BitmapFactory
 
 
-
 class SensorDetailFragment : BaseFragment(), SensorEventListener {
 
     var ivMenuSensor: ImageView? = null
@@ -48,7 +47,6 @@ class SensorDetailFragment : BaseFragment(), SensorEventListener {
 
     var sensorName: String? = ""
     var sensorType: Int? = 0
-    var sensorIcon: Int? = 0
     var sensorManager: SensorManager? = null
 
     fun getInstance(mode: String, type: Int, imageBytes: ByteArray): SensorDetailFragment {
@@ -154,7 +152,7 @@ class SensorDetailFragment : BaseFragment(), SensorEventListener {
     }
 
     @SuppressLint("SetTextI18n")
-    private fun displayAccelerometer(event: SensorEvent) {
+    private fun displayAccelerometer(event: SensorEvent?) {
         val formatter = DecimalFormat("#0.00")
         /*** Accelerometer sensors
          * Gravity sensor */
@@ -165,9 +163,9 @@ class SensorDetailFragment : BaseFragment(), SensorEventListener {
 
             llTop?.visibility = View.VISIBLE
 
-            val x = event.values[0]
-            val y = event.values[1]
-            val z = event.values[2]
+            val x = event!!.values[0]
+            val y = event!!.values[1]
+            val z = event!!.values[2]
 
             tvXAxis?.text = (Html.fromHtml("X: " + formatter.format(x) + mResources.getString(R.string.ms) + "<small><sup>2</sup></small>"))
             tvYAxis?.text = (Html.fromHtml("Y: " + formatter.format(y) + mResources.getString(R.string.ms) + "<small><sup>2</sup></small>"))
@@ -178,9 +176,9 @@ class SensorDetailFragment : BaseFragment(), SensorEventListener {
                 || sensorManager?.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD_UNCALIBRATED)?.type === sensorType) {
 
             llTop?.visibility = View.VISIBLE
-            val x = event.values[0]
-            val y = event.values[1]
-            val z = event.values[2]
+            val x = event!!.values[0]
+            val y = event!!.values[1]
+            val z = event!!.values[2]
 
             if (sensorManager?.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD)?.type === (sensorType)) {
                 tvXAxis?.text = ("X: " + formatter.format(x) + mResources.getString(R.string.mu_tesla))
@@ -198,11 +196,13 @@ class SensorDetailFragment : BaseFragment(), SensorEventListener {
                 || sensorManager?.getDefaultSensor(Sensor.TYPE_GYROSCOPE_UNCALIBRATED)?.type === (sensorType)) {
 
             llTop?.visibility = View.VISIBLE
-            val x = event.values[0]
-            val y = event.values[1]
-            val z = event.values[2]
+            val x = event!!.values[0]
+            val y = event!!.values[1]
+            val z = event!!.values[2]
 
-            tvXAxis?.text = Methods.getSpannableSensorText(mActivity, mResources.getString(R.string.angular_speed) + "X: " + formatter.format(x) + mResources.getString(R.string.rad))
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                tvXAxis?.text = Methods.getSpannableSensorText(mActivity, mResources.getString(R.string.angular_speed) + "X: " + formatter.format(x) + mResources.getString(R.string.rad))
+            }
             tvYAxis?.text = ("Y: " + formatter.format(y) + mResources.getString(R.string.rad))
             tvZAxis?.text = ("Z: " + formatter.format(z) + mResources.getString(R.string.rad))
 
@@ -214,9 +214,9 @@ class SensorDetailFragment : BaseFragment(), SensorEventListener {
                 || sensorManager?.getDefaultSensor(Sensor.TYPE_ORIENTATION)?.type === (sensorType)
                 || sensorManager?.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR)?.type === (sensorType)) {
             llTop?.visibility = View.VISIBLE
-            val x = event.values[0]
-            val y = event.values[1]
-            val z = event.values[2]
+            val x = event!!.values[0]
+            val y = event!!.values[1]
+            val z = event!!.values[2]
 
             if (sensorManager?.getDefaultSensor(Sensor.TYPE_ORIENTATION)?.type === sensorType) {
                 tvXAxis?.text = ("X: " + formatter.format(x) + mResources.getString(R.string.degree_icon))
@@ -231,7 +231,9 @@ class SensorDetailFragment : BaseFragment(), SensorEventListener {
         }
         /*** Pressure sensor (Barometer) */
         else if (sensorManager?.getDefaultSensor(Sensor.TYPE_PRESSURE)?.type === (sensorType)) {
-            tvXAxis?.text = (mResources.getString(R.string.pressure) + event.values[0] + mResources.getString(R.string.hpa))
+            if (event != null) {
+                tvXAxis?.text = (mResources.getString(R.string.pressure) + event.values[0] + mResources.getString(R.string.hpa))
+            }
         }
         /*** Step counter sensor
         Proximity sensor
@@ -244,31 +246,34 @@ class SensorDetailFragment : BaseFragment(), SensorEventListener {
 
             llTop?.visibility = View.VISIBLE
 
-            if (event.sensor.type == Sensor.TYPE_RELATIVE_HUMIDITY && event.values[0] < sensorManager?.getDefaultSensor(Sensor.TYPE_PROXIMITY)?.maximumRange!!) {
-                tvXAxis?.text = (mResources.getString(R.string.proximity_sensor) + event.values[0].toString() + mResources.getString(R.string.cm))
-            } else {
-                tvXAxis?.text = (mResources.getString(R.string.proximity_sensor) + event.values[0].toString() + mResources.getString(R.string.cm))
-            }
+            if (event != null) {
+                if (event.sensor.type == Sensor.TYPE_RELATIVE_HUMIDITY && event.values[0] < sensorManager?.getDefaultSensor(Sensor.TYPE_PROXIMITY)?.maximumRange!!) {
+                    tvXAxis?.text = (mResources.getString(R.string.proximity_sensor) + event.values[0].toString() + mResources.getString(R.string.cm))
+                } else {
+                    tvXAxis?.text = (mResources.getString(R.string.proximity_sensor) + event.values[0].toString() + mResources.getString(R.string.cm))
+                }
 
-            if (event.sensor.type == Sensor.TYPE_RELATIVE_HUMIDITY) {
-                tvXAxis?.text = (mResources.getString(R.string.humidity_sensor) + event.values[0].toString() + mResources.getString(R.string.percentage))
-                KeyUtil.KEY_LAST_KNOWN_HUMIDITY = event.values[0]
-            }
+                if (event.sensor.type == Sensor.TYPE_RELATIVE_HUMIDITY) {
+                    tvXAxis?.text = (mResources.getString(R.string.humidity_sensor) + event.values[0].toString() + mResources.getString(R.string.percentage))
+                    KeyUtil.KEY_LAST_KNOWN_HUMIDITY = event.values[0]
+                }
 
-            if (event.sensor.type == Sensor.TYPE_LIGHT) {
-                tvXAxis?.text = (mResources.getString(R.string.illuminance) + event.values[0].toString() + mResources.getString(R.string.lx))
-            }
+                if (event.sensor.type == Sensor.TYPE_LIGHT) {
+                    tvXAxis?.text = (mResources.getString(R.string.illuminance) + event.values[0].toString() + mResources.getString(R.string.lx))
+                }
 
-            if (event.sensor.type == Sensor.TYPE_AMBIENT_TEMPERATURE && KeyUtil.KEY_LAST_KNOWN_HUMIDITY != 0f) {
-                val temperature = event.values[0]
-                val absoluteHumidity = Methods.calculateAbsoluteHumidity(temperature, KeyUtil.KEY_LAST_KNOWN_HUMIDITY)
-                tvXAxis?.text = (mResources.getString(R.string.absolute_humidity_temperature_sensor) + formatter.format(absoluteHumidity) + mResources.getString(R.string.percentage))
-                val dewPoint = Methods.calculateDewPoint(temperature, KeyUtil.KEY_LAST_KNOWN_HUMIDITY)
-                tvYAxis?.text = (mResources.getString(R.string.due_point_temperature) + formatter.format(dewPoint) + mResources.getString(R.string.percentage))
-            }
 
-            if (event.sensor.type == Sensor.TYPE_STEP_COUNTER) {
-                tvXAxis?.text = (mResources.getString(R.string.steps) + event.values[0].toString())
+                if (event.sensor.type == Sensor.TYPE_AMBIENT_TEMPERATURE && KeyUtil.KEY_LAST_KNOWN_HUMIDITY != 0f) {
+                    val temperature = event.values[0]
+                    val absoluteHumidity = Methods.calculateAbsoluteHumidity(temperature, KeyUtil.KEY_LAST_KNOWN_HUMIDITY)
+                    tvXAxis?.text = (mResources.getString(R.string.absolute_humidity_temperature_sensor) + formatter.format(absoluteHumidity) + mResources.getString(R.string.percentage))
+                    val dewPoint = Methods.calculateDewPoint(temperature, KeyUtil.KEY_LAST_KNOWN_HUMIDITY)
+                    tvYAxis?.text = (mResources.getString(R.string.due_point_temperature) + formatter.format(dewPoint) + mResources.getString(R.string.percentage))
+                }
+
+                if (event.sensor.type == Sensor.TYPE_STEP_COUNTER) {
+                    tvXAxis?.text = (mResources.getString(R.string.steps) + event.values[0].toString())
+                }
             }
         }
         /*** Other sensors */

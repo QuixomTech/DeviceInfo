@@ -30,6 +30,7 @@
         android:smallScreens="true" />
 
     <application
+        android:name=".DeviceInfoApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -53,6 +54,9 @@
 
         </activity>
 
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="@string/fabric_key" />
     </application>
 
 </manifest>
