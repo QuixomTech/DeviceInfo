@@ -12,6 +12,7 @@ import android.support.v4.app.ActivityCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.RatingBar.OnRatingBarChangeListener
@@ -21,8 +22,6 @@ import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.utilities.KeyUtil
 import com.quixom.apps.deviceinfo.utilities.RateUsApp
 import java.util.*
-
-
 
 
 class AboutUsFragment : BaseFragment(), View.OnClickListener {
@@ -39,6 +38,14 @@ class AboutUsFragment : BaseFragment(), View.OnClickListener {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_about_us, container, false)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = activity!!.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = resources.getColor(R.color.colorPrimaryDark)
+            window . navigationBarColor = resources . getColor (R.color.colorPrimaryDark)
+
+        }
+
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)
         tvTitle = view.findViewById(R.id.tv_title)

@@ -2,14 +2,13 @@ package com.quixom.apps.deviceinfo.fragments
 
 import android.content.Context
 import android.content.pm.PackageManager
+import android.net.ConnectivityManager
+import android.os.Build
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import com.quixom.apps.deviceinfo.R
-import android.net.ConnectivityManager
 import kotlinx.android.synthetic.main.fragment_phone_features.*
 
 class PhoneFeaturesFragment : BaseFragment() {
@@ -47,8 +46,18 @@ class PhoneFeaturesFragment : BaseFragment() {
     var tvSIPBasedVOIP: TextView? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_phone_features, container, false)
+//        val view = inflater.inflate(R.layout.fragment_phone_features, container, false)
+        val contextThemeWrapper = ContextThemeWrapper(activity, R.style.FeaturesTheme)
+        val localInflater = inflater.cloneInContext(contextThemeWrapper)
+        val view = localInflater.inflate(R.layout.fragment_phone_features, container, false)
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = activity!!.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = resources.getColor(R.color.dark_brown)
+            window.navigationBarColor = resources.getColor(R.color.dark_brown)
+
+        }
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)
         tvTitle = view.findViewById(R.id.tv_title)

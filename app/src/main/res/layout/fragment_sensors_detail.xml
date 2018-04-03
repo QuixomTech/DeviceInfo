@@ -11,7 +11,7 @@
         android:id="@+id/ll_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="#910055"
         android:elevation="4dp"
         android:orientation="horizontal"
         android:padding="20dp"

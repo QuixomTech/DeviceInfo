@@ -41,7 +41,18 @@ class DisplayFragment : BaseFragment(){
     val dm = DisplayMetrics()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_display, container, false)
+//        val view = inflater.inflate(R.layout.fragment_display, container, false)
+        val contextThemeWrapper = ContextThemeWrapper(activity, R.style.DisplayTheme)
+        val localInflater = inflater.cloneInContext(contextThemeWrapper)
+        val view = localInflater.inflate(R.layout.fragment_display, container, false)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = activity!!.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = resources.getColor(R.color.dark_violet_one)
+            window.navigationBarColor = resources.getColor(R.color.dark_violet_one)
+
+        }
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)
         tvTitle = view.findViewById(R.id.tv_title)

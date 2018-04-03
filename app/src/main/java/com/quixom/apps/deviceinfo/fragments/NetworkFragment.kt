@@ -1,16 +1,15 @@
 package com.quixom.apps.deviceinfo.fragments
 
 import android.annotation.SuppressLint
+import android.content.Context.WIFI_SERVICE
+import android.net.wifi.WifiManager
+import android.os.Build
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.utilities.Methods
-import android.content.Context.WIFI_SERVICE
-import android.net.wifi.WifiManager
 import kotlinx.android.synthetic.main.fragment_network.*
 
 
@@ -28,8 +27,17 @@ class NetworkFragment : BaseFragment() {
     var tvLinkSpeed: TextView? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_network, container, false)
+//        val view = inflater.inflate(R.layout.fragment_network, container, false)
+        val contextThemeWrapper = ContextThemeWrapper(activity, R.style.NetworkTheme)
+        val localInflater = inflater.cloneInContext(contextThemeWrapper)
+        val view = localInflater.inflate(R.layout.fragment_network, container, false)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = activity!!.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = resources.getColor(R.color.dark_sky_blue)
+            window.navigationBarColor = resources.getColor(R.color.dark_sky_blue)
 
+        }
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBackNet = view.findViewById(R.id.iv_back)
         tvTitle = view.findViewById(R.id.tv_title)

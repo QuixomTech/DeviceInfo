@@ -6,9 +6,7 @@ import android.app.ActivityManager
 import android.content.Context
 import android.os.*
 import android.support.v4.content.ContextCompat
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -17,7 +15,6 @@ import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.utilities.Methods
 import java.io.File
 import java.text.DecimalFormat
-import java.util.*
 
 
 class StorageFragment : BaseFragment() {
@@ -44,7 +41,19 @@ class StorageFragment : BaseFragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_storage, container, false)
+//        val view = inflater.inflate(R.layout.fragment_storage, container, false)
+
+        val contextThemeWrapper = ContextThemeWrapper(activity, R.style.StorageTheme)
+        val localInflater = inflater.cloneInContext(contextThemeWrapper)
+        val view = localInflater.inflate(R.layout.fragment_storage, container, false)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = activity!!.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = resources.getColor(R.color.dark_red)
+            window.navigationBarColor = resources.getColor(R.color.dark_red)
+
+        }
 
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)

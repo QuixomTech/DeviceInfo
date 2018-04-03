@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="ProcessorTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#5212b8</item>
+        <item name="colorPrimaryDark">#3a0d82</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">#5212b8</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="BatteryTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#4f7504</item>
+        <item name="colorPrimaryDark">#3f5d03</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">#4f7504</item>
+
+    </style>
+</resources>

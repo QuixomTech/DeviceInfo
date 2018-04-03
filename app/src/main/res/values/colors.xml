@@ -42,8 +42,22 @@
     <color name="cyan_500">#64418b</color>
     <color name="light_blue_500">#3e2483</color>
 
-        <!-- 545454 -->
-    <!-- 044463 -->
-    <!-- C73232 -->
-    <!-- 2E2F52 -->
+
+    <color name="dark_blue">#131a60</color>
+    <color name="dark_green">#3f5d03</color>
+    <color name="dark_purple">#570033</color>
+    <color name="dark_sky_blue">#025a61</color>
+    <color name="dark_parrot_green">#0c701b</color>
+    <color name="dark_violet">#3a0d82</color>
+    <color name="dark_green_blue">#022f45</color>
+    <color name="dark_red">#9f2828</color>
+    <color name="dark_blue_one">#072a65</color>
+    <color name="dark_violet_one">#2a233a</color>
+    <color name="dark_brown">#321d00</color>
+    <color name="dark_brown_black">#301C1D</color>
+    <color name="dark_parrot_green_blue">#037480</color>
+    <color name="purple">#910055</color>
+    <color name="blueetooth_color">#0A3C91</color>
+    <color name="app_snackbar_color">#04a8ba</color>
+
 </resources>

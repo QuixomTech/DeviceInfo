@@ -1,15 +1,22 @@
 package com.quixom.apps.deviceinfo.fragments;
 
 import android.annotation.TargetApi;
+import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.hardware.camera2.CameraCharacteristics;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.Toolbar;
+import android.util.TypedValue;
+import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -59,11 +66,36 @@ public class OSFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        final Context contextThemeWrapper = new ContextThemeWrapper(getActivity(), R.style.OSTheme);
+        LayoutInflater localInflater = inflater.cloneInContext(contextThemeWrapper);
+        View view = localInflater.inflate(R.layout.fragment_os, container, false);
+        unbinder = ButterKnife.bind(this, view);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getActivity().getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(getResources().getColor(R.color.dark_blue));
+            window.setNavigationBarColor(getResources().getColor(R.color.dark_blue));
+
+        }
+
+/*
         View view = inflater.inflate(R.layout.fragment_os, container, false);
         unbinder = ButterKnife.bind(this, view);
+*/
+
         return view;
     }
 
+
+
+    public static int fetchPrimaryDarkColor(Resources.Theme context) {
+        TypedValue typedValue = new TypedValue();
+        TypedArray a = context.obtainStyledAttributes(typedValue.data, new int[]{R.attr.colorPrimaryDark});
+        int color = a.getColor(0, 0);
+        a.recycle();
+        return color;
+    }
+    
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -72,6 +104,7 @@ public class OSFragment extends BaseFragment {
     }
 
     private void initToolbar() {
+//        toolbar.setBackgroundColor(Color.parseColor("#2633bf"));
         ivMenu.setVisibility(View.VISIBLE);
         ivBack.setVisibility(View.GONE);
         tvTitle.setText(mResources.getString(R.string.os));

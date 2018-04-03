@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
 
     <uses-feature
         android:name="android.hardware.sensor.proximity"
@@ -54,9 +54,20 @@
 
         </activity>
 
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="@string/fabric_key" />
+        <receiver android:name=".Widget.MyWidgetProvider" >
+            <intent-filter >
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <service android:name=".service.AppWidgetService" />
+
+
     </application>
 
 </manifest>

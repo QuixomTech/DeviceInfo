@@ -1,15 +1,13 @@
 package com.quixom.apps.deviceinfo;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.content.ContextCompat;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.quixom.apps.deviceinfo.utilities.BaseActivity;
 import com.crashlytics.android.Crashlytics;
+import com.quixom.apps.deviceinfo.utilities.BaseActivity;
+
 import io.fabric.sdk.android.Fabric;
 
 public class Splash extends BaseActivity {
@@ -19,9 +17,9 @@ public class Splash extends BaseActivity {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+   /*     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             this.getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
-        }
+        }*/
 
         setContentView(R.layout.activity_splash);
 

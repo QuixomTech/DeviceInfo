@@ -12,10 +12,7 @@ import android.support.design.widget.Snackbar
 import android.support.v4.content.ContextCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.view.Gravity
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import com.quixom.apps.deviceinfo.R
@@ -32,7 +29,18 @@ class SensorCategoryFragment : BaseFragment() {
 
     var rvSensorsList: RecyclerView? = null
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_sensors_categories, container, false)
+//        val view = inflater.inflate(R.layout.fragment_sensors_categories, container, false)
+
+        val contextThemeWrapper = ContextThemeWrapper(activity, R.style.SensorTheme)
+        val localInflater = inflater.cloneInContext(contextThemeWrapper)
+        val view = localInflater.inflate(R.layout.fragment_sensors_categories, container, false)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = activity!!.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = resources.getColor(R.color.dark_purple)
+            window.navigationBarColor = resources.getColor(R.color.dark_purple)
+
+        }
 
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)
@@ -108,7 +116,7 @@ class SensorCategoryFragment : BaseFragment() {
             mainTextView.gravity = Gravity.CENTER_HORIZONTAL
         mainTextView.gravity = Gravity.CENTER_HORIZONTAL
         mainTextView.setTextColor(Color.WHITE)
-        view?.setBackgroundColor(ContextCompat.getColor(mActivity, R.color.colorAccent))
+        view?.setBackgroundColor(ContextCompat.getColor(mActivity, R.color.purple))
 
 
         mSnackBar.show()

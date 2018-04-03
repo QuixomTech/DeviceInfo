@@ -14,6 +14,7 @@ import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -68,6 +69,7 @@ public class HomeFragment extends BaseFragment {
         Bundle bundle = new Bundle();
         bundle.putInt(KeyUtil.KEY_MODE, mode);
         homeFragment.setArguments(bundle);
+
         return homeFragment;
     }
 
@@ -76,6 +78,13 @@ public class HomeFragment extends BaseFragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         unbinder = ButterKnife.bind(this, view);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getActivity().getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));
+            window.setNavigationBarColor(getResources().getColor(R.color.colorPrimaryDark));
+
+        }
         return view;
     }
 

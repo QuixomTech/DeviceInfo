@@ -18,7 +18,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:background="@color/colorPrimary"
+        android:background="#0A3C91"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:text="@string/turn_on_bluetooth"

@@ -11,9 +11,7 @@ import android.support.annotation.RequiresApi
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import com.github.lzyzsd.circleprogress.ArcProgress
@@ -48,8 +46,22 @@ class CPUFragment : BaseFragment() {
     var cpuData: String = ""
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_cpu, container, false)
 
+        val contextThemeWrapper = ContextThemeWrapper(activity, R.style.ProcessorTheme)
+        val localInflater = inflater.cloneInContext(contextThemeWrapper)
+        val view = localInflater.inflate(R.layout.fragment_cpu, container, false)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = activity!!.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = resources.getColor(R.color.dark_violet)
+            window.navigationBarColor = resources.getColor(R.color.dark_violet)
+
+        }
+      /*  val intent = activity!!.intent
+        activity!!.finish()
+        startActivity(intent)*/
+//        val view = inflater.inflate(R.layout.fragment_cpu, container, false)
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)
         tvTitle = view.findViewById(R.id.tv_title)
@@ -59,6 +71,7 @@ class CPUFragment : BaseFragment() {
         tvAvailableRAM = view.findViewById(R.id.tv_available_ram)
         tvTotalRAMSpace = view.findViewById(R.id.tv_total_ram_space)
         rvCpuFeatureList = view.findViewById(R.id.rv_cpu_feature_list)
+
 
         return view
     }
@@ -111,16 +124,14 @@ class CPUFragment : BaseFragment() {
         activityManager = mActivity.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager?
         memoryInfo = ActivityManager.MemoryInfo()
         activityManager?.getMemoryInfo(memoryInfo)
-
-
         val freeMemory = memoryInfo?.availMem
         val totalMemory = memoryInfo?.totalMem
         val usedMemory = freeMemory?.let { totalMemory?.minus(it) }
-
         tvSystemAppsMemory?.text = mResources.getString(R.string.system_and_apps) + ":  ".plus(formatSize(usedMemory!!))
         tvAvailableRAM?.text = mResources.getString(R.string.available_ram) + ":  ".plus(formatSize(freeMemory))
         tvTotalRAMSpace?.text = mResources.getString(R.string.total_ram_space) + ":  ".plus(formatSize(totalMemory!!))
     }
+
 
     private fun freeRamMemorySize(): Long {
         val mi = ActivityManager.MemoryInfo()

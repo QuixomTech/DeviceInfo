@@ -1,7 +1,9 @@
 package com.quixom.apps.deviceinfo;
 
 import android.app.Application;
+
 import com.crashlytics.android.Crashlytics;
+
 import io.fabric.sdk.android.Fabric;
 
 /**

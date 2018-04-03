@@ -25,7 +25,7 @@
             android:id="@+id/progressBar"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@color/colorPrimary"
+            android:background="?attr/colorPrimary"
             wave:above_wave_color="@color/light_blue_500"
             wave:blow_wave_color="@color/cyan_500"
             wave:wave_height="large"

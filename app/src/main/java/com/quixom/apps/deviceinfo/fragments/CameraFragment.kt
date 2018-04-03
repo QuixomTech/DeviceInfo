@@ -20,9 +20,7 @@ import android.support.v7.widget.RecyclerView
 import android.util.Range
 import android.util.Rational
 import android.util.Size
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.*
 import com.quixom.apps.deviceinfo.R
 import com.quixom.apps.deviceinfo.adapters.CameraAdapter
@@ -64,8 +62,19 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_camera, container, false)
+//        val view = inflater.inflate(R.layout.fragment_camera, container, false)
 
+        val contextThemeWrapper = ContextThemeWrapper(activity, R.style.CameraTheme)
+        val localInflater = inflater.cloneInContext(contextThemeWrapper)
+        val view = localInflater.inflate(R.layout.fragment_camera, container, false)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = activity!!.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = resources.getColor(R.color.dark_green_blue)
+            window.navigationBarColor = resources.getColor(R.color.dark_green_blue)
+
+        }
         ivMenu = view.findViewById(R.id.iv_menu)
         ivBack = view.findViewById(R.id.iv_back)
         tvTitle = view.findViewById(R.id.tv_title)
@@ -85,10 +94,8 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         initToolbar()
-
         tvRearCamera?.setOnClickListener(this)
         tvFrontCamera?.setOnClickListener(this)
-
         if (cameraManager?.cameraIdList?.size!! >= 2) {
             llParentCamera?.visibility = View.VISIBLE
         } else {

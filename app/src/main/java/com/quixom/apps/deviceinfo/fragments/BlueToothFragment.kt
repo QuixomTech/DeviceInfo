@@ -7,19 +7,16 @@ import android.app.Activity.RESULT_OK
 import android.bluetooth.BluetoothAdapter
 import android.content.BroadcastReceiver
 import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import com.quixom.apps.deviceinfo.R
 import kotlinx.android.synthetic.main.fragment_blue_tooth.*
 import kotlinx.android.synthetic.main.toolbar_ui.*
-import android.content.Intent
-import android.content.IntentFilter
-import kotlinx.android.synthetic.main.activity_splash.*
 
 
 /**
@@ -58,7 +55,19 @@ class BlueToothFragment : BaseFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_blue_tooth, container, false)
+//        return inflater.inflate(R.layout.fragment_blue_tooth, container, false)
+        val contextThemeWrapper = ContextThemeWrapper(activity, R.style.BluetoothTheme)
+        val localInflater = inflater.cloneInContext(contextThemeWrapper)
+        val view = localInflater.inflate(R.layout.fragment_blue_tooth, container, false)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = activity!!.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = resources.getColor(R.color.dark_blue_one)
+            window.navigationBarColor = resources.getColor(R.color.dark_blue_one)
+
+        }
+        return view;
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -118,7 +127,7 @@ class BlueToothFragment : BaseFragment() {
             bluetoothOnOff.setBackgroundColor(ContextCompat.getColor(mActivity, R.color.divider))
         } else {
             bluetoothOnOff.isEnabled = true
-            bluetoothOnOff.setBackgroundColor(ContextCompat.getColor(mActivity, R.color.colorPrimary))
+            bluetoothOnOff.setBackgroundColor(ContextCompat.getColor(mActivity, R.color.blueetooth_color))
         }
 
     }
@@ -144,7 +153,7 @@ class BlueToothFragment : BaseFragment() {
             bluetoothAnimationView.visibility = View.GONE
             tv_bluetooth_state.text = mActivity.resources.getString(R.string.switch_off)
             bluetoothOnOff.text = mActivity.resources.getString(R.string.turn_on_bluetooth)
-            bluetoothOnOff.setBackgroundColor(ContextCompat.getColor(mActivity, R.color.colorPrimary))
+            bluetoothOnOff.setBackgroundColor(ContextCompat.getColor(mActivity, R.color.blueetooth_color))
         }
 
         if (mBluetoothAdapter!!.isDiscovering) {

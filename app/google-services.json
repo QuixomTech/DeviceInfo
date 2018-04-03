@@ -1,0 +1,203 @@
+{
+  "project_info": {
+    "project_number": "817066488849",
+    "firebase_url": "https://shareabook-aed46.firebaseio.com",
+    "project_id": "shareabook-aed46",
+    "storage_bucket": "shareabook-aed46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817066488849:android:4022912a017c89b4",
+        "android_client_info": {
+          "package_name": "com.quixom.shareabook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817066488849-j7rsao8hpo5cvt0k87psrg3ei35egp22.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quixom.shareabook",
+            "certificate_hash": "ceb9c38ad37b97becbfb605c1a726156b492e4f8"
+          }
+        },
+        {
+          "client_id": "817066488849-btcsbooob5ikd3t9b3tnl7ijia2e2me6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVgsvB14EcQrIC877N3JlsAZM9CugvUO4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817066488849-btcsbooob5ikd3t9b3tnl7ijia2e2me6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817066488849:android:eef18b0d012f9990",
+        "android_client_info": {
+          "package_name": "com.quixom.apps.weatherstream"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817066488849-5q6sacsibl810vm3hpoh6a4h1qba4qjs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quixom.apps.weatherstream",
+            "certificate_hash": "1c1fd76f0dc4333a7536931ecaca47f50527ec41"
+          }
+        },
+        {
+          "client_id": "817066488849-n77klhtgj499e7oao45fmkpr2p6sq1jn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quixom.apps.weatherstream",
+            "certificate_hash": "f9422e26dc3bf6ddeb1bd7369a5cf9febe5e1252"
+          }
+        },
+        {
+          "client_id": "817066488849-btcsbooob5ikd3t9b3tnl7ijia2e2me6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVgsvB14EcQrIC877N3JlsAZM9CugvUO4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817066488849-btcsbooob5ikd3t9b3tnl7ijia2e2me6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817066488849:android:0227a18deebaacff",
+        "android_client_info": {
+          "package_name": "com.apps.quixomtech.fieldrate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817066488849-2ddui0ac381j3bi0d8sji4q7pe2oh4j5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.quixomtech.fieldrate",
+            "certificate_hash": "4898883a242104d03f89bd52448d45a2c32177d3"
+          }
+        },
+        {
+          "client_id": "817066488849-o9cohsnopkfhhvqgpavus1dgao0ls74b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.quixomtech.fieldrate",
+            "certificate_hash": "e81b103bead7838d14e83b60776df0316ddf9a21"
+          }
+        },
+        {
+          "client_id": "817066488849-btcsbooob5ikd3t9b3tnl7ijia2e2me6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVgsvB14EcQrIC877N3JlsAZM9CugvUO4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817066488849-btcsbooob5ikd3t9b3tnl7ijia2e2me6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817066488849:android:99d16f7943b5c4e7",
+        "android_client_info": {
+          "package_name": "com.quixom.deviceinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817066488849-u785f4u4pu8gtj7g28089dfp0ogj5hqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quixom.deviceinfo",
+            "certificate_hash": "603ede32d883fe19e4626338f40d2dcd55ed234f"
+          }
+        },
+        {
+          "client_id": "817066488849-btcsbooob5ikd3t9b3tnl7ijia2e2me6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVgsvB14EcQrIC877N3JlsAZM9CugvUO4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817066488849-btcsbooob5ikd3t9b3tnl7ijia2e2me6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

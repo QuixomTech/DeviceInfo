@@ -13,4 +13,51 @@
     tools:targetApi="lollipop">
 
     <include layout="@layout/toolbar_ui" />
+
+<!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato_regular"
+            android:maxEms="12"
+            android:maxLines="1"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/toolbar_title"
+            tools:ignore="MissingPrefix"
+            tools:targetApi="jelly_bean" />
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_menu_button"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_go_back_left_arrow"
+            android:tint="@color/font_white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+-->
 </android.support.v7.widget.Toolbar>

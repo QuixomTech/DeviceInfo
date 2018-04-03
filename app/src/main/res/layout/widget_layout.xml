@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flwidgetParent"
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    android:layout_margin="8dip"
+    android:background="@drawable/circle_shape">
+
+
+    <!--  <ProgressBar
+        android:id="@+id/widgetProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="50dp"
+        android:rotation="270"
+        android:visibility="visible" />-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_processor"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/widgetProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="90dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:progressDrawable="@drawable/process_state"
+        android:visibility="visible" />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_processor"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="30dp"
+    />
+    <TextView
+        android:id="@+id/tvRamUsage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lato_black"
+        android:text="@string/ram_usage"
+        android:textColor="@color/font_black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:targetApi="jelly_bean" />
+
+
+
+    <TextView
+        android:id="@+id/tv_used_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRamUsage"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato_regular"
+        android:textColor="@color/font_black"
+        android:textSize="14sp"
+        android:layout_marginLeft="60dp"
+        tools:ignore="MissingPrefix"
+        tools:targetApi="jelly_bean" />
+
+
+    <TextView
+        android:id="@+id/tv_free_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_used_memory"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato_regular"
+        android:textColor="@color/font_black"
+        android:textSize="14sp"
+        android:layout_marginLeft="60dp"
+        tools:ignore="MissingPrefix"
+        tools:targetApi="jelly_bean" />
+
+
+    <TextView
+        android:id="@+id/tv_total_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_free_memory"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato_regular"
+        android:textColor="@color/font_black"
+        android:textSize="14sp"
+        android:layout_marginLeft="60dp"
+        tools:ignore="MissingPrefix"
+        tools:targetApi="jelly_bean" />
+
+</RelativeLayout>
